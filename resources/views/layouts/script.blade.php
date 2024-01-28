@@ -17,7 +17,7 @@
 
 <script src="/assets/js/script.js"></script>
 
-<script>
+{{-- <script>
     // grafik survey pengguna //
     new Chart(document.getElementById("pie-chart"), {
         type: "pie",
@@ -33,8 +33,8 @@
             maintainAspectRatio: true,
         },
     });
-</script>
-
+</script> --}}
+{{--
 <script>
     // grafik jumlah kategori produk hukum //
     new Chart(document.getElementById("chartKategori"), {
@@ -128,4 +128,4 @@
             maintainAspectRatio: false,
         },
     });
-</script>
+</script> --}}
