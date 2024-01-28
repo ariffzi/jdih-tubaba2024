@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -11,7 +13,21 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $klasifikasi = Http::get('https://aplikasi.tubaba.go.id/api/jdih/klasifikasi');
+        $responses = Http::get('https://aplikasi.tubaba.go.id/api/jdih');
+        $data_tahun = Http::get('https://aplikasi.tubaba.go.id/api/jdih/jumlah_tahun');
+        $data_jenis = Http::get('https://aplikasi.tubaba.go.id/api/jdih/jumlah_jenis');
+        $data = collect(json_decode($klasifikasi->getBody()));
+        $data1 = collect(json_decode($responses->getBody()));
+        $jumlah_tahun = json_decode($data_tahun);
+        // dd($jumlah_tahun);
+        $jumlah_jenis = json_decode($data_jenis);
+        return view('index', [
+            'jenis' => $data,
+            'data' => $data1,
+            'jumlah_tahun' => $jumlah_tahun,
+            'jumlah_jenis' => $jumlah_jenis,
+        ]);
     }
 
     public function galeri()

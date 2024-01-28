@@ -91,35 +91,57 @@
                             <div class="col-lg-3 col-md-5 col-12 p-2">
                                 <!-- <div>halo</div> -->
 
-                                <select class="form-select ps-lg-4 pe-lg-4">
-                                    <option selected disabled>Jenis Peraturan</option>
-                                    <option value="1">Perda</option>
+                                <select class="jenisUud form-select ps-lg-4 pe-lg-4">
+                                    <option label="&nbsp;"></option>
+                                    @foreach ($jenis as $j)
+                                        <option value="{{ $j->nama_klasifikasi }}">{{ $j->nama_klasifikasi }}</option>
+                                    @endforeach
+                                    {{-- <option value="1">Perda</option>
                                     <option value="2">Perbub</option>
                                     <option value="3">SK Bupati</option>
-                                    <option value="4">dst</option>
+                                    <option value="4">dst</option> --}}
                                 </select>
                             </div>
 
                             <div class="col-lg-3 col-md-4 col-12 p-2">
                                 <!-- <div>halo</div> -->
-                                <select class="form-select ps-lg-4 pe-lg-4">
-                                    <option selected disabled>Tahun</option>
-                                    <option value="1">2023</option>
-                                    <option value="2">2022</option>
-                                    <option value="3">2021</option>
-                                    <option value="4">2020</option>
-                                    <option value="5">2019</option>
-                                    <option value="6">dst</option>
+                                <select class="tahun form-select ps-lg-4 pe-lg-4">
+                                    <option label="&nbsp;"></option>
+                                    @php
+                                        $year_start = 1940;
+                                        $year_end = date('Y'); // current Year
+                                        $selected_year = date('Y'); // user date of birth year
+
+                                        for ($i_year = $year_start; $i_year <= $year_end; $i_year++) {
+                                            // $selected = $selected_year == $i_year ? ' selected' : '';
+                                            // echo ' <option value="' . $i_year . '">' . $i_year . '</option>';
+                                            $year[] = $i_year;
+                                        }
+                                        foreach (array_reverse($year) as $value) {
+                                            # code...
+                                            echo ' <option value="' . $value . '">' . $value . '</option>';
+                                        }
+                                    @endphp
                                 </select>
                             </div>
 
                             <div class="col-lg-2 col-md-3 col-12 p-2">
+                                <select class="judul form-select ps-lg-4 pe-lg-4">
+                                    <option label="&nbsp;"></option>
+                                    <option value=" ">all</option>
+                                    @foreach ($judul as $ju)
+                                        <option value="{{ $ju->judul }}">{{ $ju->judul }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
+                            {{-- <div class="col-lg-2 col-md-3 col-12 p-2">
                                 <a href="#">
                                     <button type="button" class="btn btn-filter">
                                         <i class="bi bi-funnel me-3"></i> Filter
                                     </button>
                                 </a>
-                            </div>
+                            </div> --}}
 
                             <div class="col-lg-2 col-md-12 col-12"></div>
                         </div>
@@ -134,19 +156,20 @@
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
+                                    <th scope="col">Jenis</th>
+                                    <th class="jud" scope="col">Judul</th>
                                     <th scope="col">Nomor</th>
                                     <th scope="col">Tahun</th>
                                     <th scope="col">Ditetapkan</th>
                                     <th scope="col">Diundangkan</th>
-                                    <th class="jud" scope="col">Judul</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Keterangan</th>
-                                    <th scope="col">File</th>
+                                    <th scope="col">Detail</th>
                                     <th scope="col">Dilihat</th>
                                     <th scope="col">Diunduh</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            {{-- <tbody>
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>1</td>
@@ -345,7 +368,7 @@
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
-                            </tbody>
+                            </tbody> --}}
                         </table>
                     </div>
                 </div>
@@ -354,3 +377,122 @@
         </div>
     </section>
 @endsection
+@push('script')
+    <script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+            return false;
+        };
+
+        $('.jenisUud').select2({
+            placeholder: 'Cari Jenis Peraturan'
+        });
+
+        $('.tahun').select2({
+            placeholder: 'Cari Tahun'
+        });
+
+        $('.judul').select2({
+            placeholder: 'Cari Judul'
+        });
+
+        $('.jenisUud').change(function(e) {
+            e.preventDefault();
+            $('#tableProduk').DataTable().columns(1).search(e.currentTarget.value).draw()
+            $('.jud').html(e.currentTarget.value)
+        });
+        $('.tahun').change(function(e) {
+            e.preventDefault();
+            $('#tableProduk').DataTable().columns(4).search(e.currentTarget.value).draw()
+        });
+        $('.judul').change(function(e) {
+            e.preventDefault();
+            $('#tableProduk').DataTable().columns(2).search(e.currentTarget.value).draw()
+        });
+
+        $('#tableProduk').DataTable({
+            processing: true,
+            serverSide: true,
+            destroy: true,
+            paging: true,
+            length: 10,
+            pageLength: 20,
+            buttons: ['copy', 'excel', 'csv', 'print'],
+            order: [
+                [0, "asc"]
+            ],
+            responsive: true,
+            ajax: '/produk-hukum/show',
+            columns: [{
+                    'data': null,
+                    'sortable': false,
+                    render: function(data, type, row, meta) {
+                        return meta.row + meta.settings._iDisplayStart + 1
+                    },
+
+                },
+                {
+                    data: 'jenis',
+                },
+                {
+                    data: 'judul',
+                },
+                {
+                    data: 'noPeraturan',
+                },
+                {
+                    data: 'tahun_pengundangan',
+                },
+                {
+                    data: 'tanggal_pengundangan',
+                },
+                {
+                    data: 'tanggal_penetapan',
+                },
+                {
+                    data: 'status',
+                },
+                {
+                    data: 'Keterangan',
+                },
+                {
+                    data: 'detail',
+                },
+                {
+                    data: 'view',
+                },
+                {
+                    data: 'download',
+                },
+            ],
+            sDom: '<"row"<"col-sm-12"<"table-container"t>r>><"row"<"col-12"p>>',
+            language: {
+                paginate: {
+                    previous: '<i class="cs-chevron-left"></i>',
+                    next: '<i class="cs-chevron-right"></i>',
+                },
+            },
+        });
+
+        $(document).ready(function() {
+            if (getUrlParameter('param') != '') {
+                $('#tableProduk').DataTable().columns(1).search(getUrlParameter('param')).draw()
+                $('.jud').html(getUrlParameter('param'))
+            } else {
+                $('#tbDokumenHukum').DataTable().columns(4).search('').draw()
+                $('.jud').html('Produk Hukum')
+            }
+        });
+    </script>
+@endpush

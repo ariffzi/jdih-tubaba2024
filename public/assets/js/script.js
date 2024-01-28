@@ -381,10 +381,10 @@ $(document).ready(function () {
 
 // PAGE PRODUK HUKUM
 $(document).ready(function () {
-    $("#tableProduk").DataTable({
-        filter: false,
-        bLengthChange: false,
-    });
+    // $("#tableProduk").DataTable({
+    //     filter: false,
+    //     bLengthChange: false,
+    // });
 });
 
 // PAGE PERPUSTAKAAN
@@ -396,114 +396,114 @@ $(document).ready(function () {
 });
 
 // grafik survey pengguna //
-new Chart(document.getElementById("pie-chart"), {
-    type: "pie",
-    data: {
-        labels: ["Sangat Puas", "Puas", "Tidak Puas"],
-        datasets: [
-            {
-                backgroundColor: ["#EAD196", "#BF3131", "#7D0A0A"],
-                data: [418, 263, 50],
-            },
-        ],
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: true,
-    },
-});
+// new Chart(document.getElementById("pie-chart"), {
+//     type: "pie",
+//     data: {
+//         labels: ["Sangat Puas", "Puas", "Tidak Puas"],
+//         datasets: [
+//             {
+//                 backgroundColor: ["#EAD196", "#BF3131", "#7D0A0A"],
+//                 data: [418, 263, 50],
+//             },
+//         ],
+//     },
+//     options: {
+//         responsive: true,
+//         maintainAspectRatio: true,
+//     },
+// });
 
 // grafik jumlah kategori produk hukum //
-new Chart(document.getElementById("chartKategori"), {
-    type: "bar",
-    data: {
-        labels: [
-            "Perda",
-            "Perbub",
-            ["Keputusan", "Bupati"],
-            ["Surat", "Edaran"],
-            ["Instruksi", "Bupati"],
-            ["Nota", "Kesepahaman"],
-            ["Peraturan dan", "Keputusan DPRD"],
-            ["Peraturan ", "Perundang-undangan"],
-        ],
-        datasets: [
-            {
-                backgroundColor: [
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                ],
-                data: [418, 263, 50, 120, 53, 70, 257, 392],
-            },
-        ],
-    },
-    options: {
-        responsive: true,
-        indexAxis: "y",
-        maintainAspectRatio: false,
-    },
-});
+// new Chart(document.getElementById("chartKategori"), {
+//     type: "bar",
+//     data: {
+//         labels: [
+//             "Perda",
+//             "Perbub",
+//             ["Keputusan", "Bupati"],
+//             ["Surat", "Edaran"],
+//             ["Instruksi", "Bupati"],
+//             ["Nota", "Kesepahaman"],
+//             ["Peraturan dan", "Keputusan DPRD"],
+//             ["Peraturan ", "Perundang-undangan"],
+//         ],
+//         datasets: [
+//             {
+//                 backgroundColor: [
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                 ],
+//                 data: [418, 263, 50, 120, 53, 70, 257, 392],
+//             },
+//         ],
+//     },
+//     options: {
+//         responsive: true,
+//         indexAxis: "y",
+//         maintainAspectRatio: false,
+//     },
+// });
 
 // grafik jumlah produk hukum pertahun //
-new Chart(document.getElementById("chartPertahun"), {
-    type: "bar",
-    data: {
-        labels: [
-            "2009",
-            "2010",
-            "2011",
-            "2012",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018",
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-        ],
-        datasets: [
-            {
-                backgroundColor: [
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                    "#e48f45",
-                ],
-                data: [
-                    418, 263, 50, 120, 53, 70, 257, 392, 200, 199, 50, 40, 10,
-                    32, 55, 99, 12,
-                ],
-            },
-        ],
-    },
-    options: {
-        responsive: true,
-        indexAxis: "y",
-        maintainAspectRatio: false,
-    },
-});
+// new Chart(document.getElementById("chartPertahun"), {
+//     type: "bar",
+//     data: {
+//         labels: [
+//             "2009",
+//             "2010",
+//             "2011",
+//             "2012",
+//             "2012",
+//             "2013",
+//             "2014",
+//             "2015",
+//             "2016",
+//             "2017",
+//             "2018",
+//             "2019",
+//             "2020",
+//             "2021",
+//             "2022",
+//             "2023",
+//             "2024",
+//         ],
+//         datasets: [
+//             {
+//                 backgroundColor: [
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                     "#e48f45",
+//                 ],
+//                 data: [
+//                     418, 263, 50, 120, 53, 70, 257, 392, 200, 199, 50, 40, 10,
+//                     32, 55, 99, 12,
+//                 ],
+//             },
+//         ],
+//     },
+//     options: {
+//         responsive: true,
+//         indexAxis: "y",
+//         maintainAspectRatio: false,
+//     },
+// });

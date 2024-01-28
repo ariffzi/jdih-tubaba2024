@@ -1,9 +1,7 @@
 @extends('layouts.main')
-
 @section('content')
     <!-- ======================== slide dashboard ========================= -->
-    <section
-        class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
+    <section class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
         <div class="slide">
             <div id="owl-car-dashboard" class="owl-carousel owl-theme">
                 <div class="item z-n1">
@@ -26,25 +24,24 @@
                         <div class="col-lg-3 col-md-3 col-12 d-flex align-items-center ver p-2 ps-lg-0 ps-md-0 ps-2">
                             <select class="form-select">
                                 <option selected>Jenis Peraturan</option>
-                                <option value="1">Perda</option>
-                                <option value="2">Perbub</option>
-                                <option value="3">SK Bupati</option>
+                                @foreach ($jenis as $j)
+                                    <option value="{{ $j->nama_klasifikasi }}">{{ $j->nama_klasifikasi }}</option>
+                                @endforeach
                             </select>
                         </div>
-                        <div class="col-lg-2 col-md-2 col-12 d-flex align-items-center ver p-2">
+                        {{-- <div class="col-lg-2 col-md-2 col-12 d-flex align-items-center ver p-2">
                             <input placeholder="Nomor" class="form-control" />
                         </div>
                         <div class="col-lg-2 col-md-2 col-12 d-flex align-items-center ver p-2">
                             <input placeholder="Tahun" class="form-control" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12 d-flex align-items-center ver p-2">
+                        </div> --}}
+                        <div class="col-lg-8 col-md-8 col-12 d-flex align-items-center ver p-2">
                             <input placeholder="Judul Peraturan" class="form-control" />
                         </div>
-                        <div
-                            class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
+                        <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
                             <div class="cari">
                                 <a href="#">
-                                    <button type="button" class="btn btn-cari ps-lg-4 pe-lg-4">
+                                    <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4">
                                         <i class="bi bi-arrow-right ps-lg-0 pe-lg-0 ps-md-0 pe-md-0 ps-4 pe-4"></i>
                                     </button>
                                 </a>
@@ -65,7 +62,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=PERATURAN DAERAH KABUPATEN">
                         <div class="p-lg-2 p-md-2 p-1">
                             <img class="img-fluid" src="/assets/logo/perda.jpg" alt="" />
                         </div>
@@ -73,7 +70,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=PERATURAN BUPATI">
                         <div class="p-lg-2 p-md-2 p-1">
                             <img class="img-fluid" src="/assets/logo/perbub.jpg" alt="" />
                         </div>
@@ -81,7 +78,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=KEPUTUSAN BUPATI">
                         <div class="p-lg-2 p-md-2 p-1">
                             <img class="img-fluid" src="/assets/logo/kepbup.jpg" alt="" />
                         </div>
@@ -89,7 +86,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=SURAT EDARAN">
                         <div class="p-lg-2 p-md-2 p-1">
                             <img class="img-fluid" src="/assets/logo/surat_edaran.jpg" alt="" />
                         </div>
@@ -97,7 +94,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=INSTRUKSI BUPATI">
                         <div class="p-lg-2 p-md-2 p-1">
                             <img class="img-fluid" src="/assets/logo/instruksi.jpg" alt="" />
                         </div>
@@ -105,7 +102,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=PERATURAN DPRD KABUPATEN">
                         <div class="p-lg-2 p-md-2 p-1">
                             <img class="img-fluid" src="/assets/logo/DPRD.jpg" alt="" />
                         </div>
@@ -113,7 +110,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=PERATURAN PERUNDANG-UNDANGAN">
                         <div class="p-lg-2 p-md-2 p-1">
                             <img class="img-fluid" src="/assets/logo/UU.jpg" alt="" />
                         </div>
@@ -121,7 +118,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                    <a href="produk-hukum">
+                    <a href="produk-hukum?param=MEMORANDUM OF UNDERSTANDING ">
                         <div class="p-lg-2 p-md-2 p-1">
                             <!-- <div class="card p-1 p-md-2 p-lg-0"> -->
                             <img class="img-fluid" src="/assets/logo/mou.jpg" alt="" />
@@ -131,7 +128,7 @@
             </div>
             <div class="d-flex justify-content-end mt-lg-5 mt-md-4 mt-3">
                 <div class="det">
-                    <a href="/produk-hukum">
+                    <a href="/produk-hukum?param=">
                         <button type="button" class="btn btn-atas ps-lg-4 pe-lg-4">
                             Lihat Semua Produk Hukum
                             <i class="bi bi-arrow-right ms-3"></i>
@@ -157,46 +154,51 @@
                     <div class="produk-hukum-terbaru">
                         <div class="row">
                             <!-- foreach -->
-                            <div class="col-12 mb-2">
-                                <a href="/lihat-produk-hukum">
-                                    <div class="card bg-card p-3">
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <div class="card card-icon p-lg-2 p-md-2 p-1 rounded-circle">
-                                                    <img src="/assets/logo/pdf-icon.svg" alt="" />
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="ket d-flex">
-                                                    <div>SK Bupati</div>
-                                                    <div class="ms-lg-2 ms-md-2 ms-1 me-lg-2 me-md-2 me-1">
-                                                        |
+                            @php
+                                $i = 0;
+                            @endphp
+                            @foreach ($data as $dt)
+                                @if ($i++ < 5)
+                                    <div class="col-12 mb-2">
+                                        <a href="/lihat-produk-hukum">
+                                            <div class="card bg-card p-3">
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <div class="card card-icon p-lg-2 p-md-2 p-1 rounded-circle">
+                                                            <img src="/assets/logo/pdf-icon.svg" alt="" />
+                                                        </div>
                                                     </div>
-                                                    <div>Nomor 22 Tahun 2023</div>
-                                                </div>
-                                                <div class="judul-peraturan mt-1 mb-1">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                    elit. Sequi id accusantium temporibus dignissimos
-                                                    quis porro dolores iste incidunt consectetur totam!
-                                                </div>
+                                                    <div class="col">
+                                                        <div class="ket d-flex">
+                                                            <div>{{ $dt->jenis }}</div>
+                                                            <div class="ms-lg-2 ms-md-2 ms-1 me-lg-2 me-md-2 me-1">
+                                                                |
+                                                            </div>
+                                                            <div>Nomor {{ $dt->noPeraturan }} Tahun {{ $dt->tahun_pengundangan }}</div>
+                                                        </div>
+                                                        <div class="judul-peraturan mt-1 mb-1">
+                                                            {{ $dt->judul }}
+                                                        </div>
 
-                                                <div class="d-flex inf">
-                                                    <div>Status <span>:</span> Berlaku</div>
-                                                    <div class="ms-auto">
-                                                        Dilihat <span>:</span> 156
+                                                        <div class="d-flex inf">
+                                                            <div>Status <span>:</span> {{ $dt->status }}</div>
+                                                            <div class="ms-auto">
+                                                                Dilihat <span>:</span> {{ $dt->view }}
+                                                            </div>
+                                                            <div class="ps-lg-2 ps-md-2 ps-1 pe-lg-2 pe-md-2 pe-1">
+                                                                |
+                                                            </div>
+                                                            <div>Diunduh <span>:</span> {{ $dt->download }}</div>
+                                                        </div>
                                                     </div>
-                                                    <div class="ps-lg-2 ps-md-2 ps-1 pe-lg-2 pe-md-2 pe-1">
-                                                        |
-                                                    </div>
-                                                    <div>Diunduh <span>:</span> 38</div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
+                                @endif
+                            @endforeach
                             <!-- end foreach -->
-
+                            {{--
                             <div class="col-12 mb-2">
                                 <a href="/lihat-produk-hukum">
                                     <div class="card bg-card p-3">
@@ -351,7 +353,7 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -365,8 +367,7 @@
                                             GALERI
                                         </div>
                                         <div class="txt-2">Lihat Galeri Kami</div>
-                                        <div
-                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/gallery.jpeg" alt="" />
                                         </div>
                                     </div>
@@ -380,8 +381,7 @@
                                             PERPUSTAKAAN
                                         </div>
                                         <div class="txt-2">Lihat Perpustakaan Kami</div>
-                                        <div
-                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/perpus.jpg  " alt="" />
                                         </div>
                                     </a>
@@ -564,9 +564,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1528892952291-009c663ce843?q=80&w=2363&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1528892952291-009c663ce843?q=80&w=2363&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -588,9 +586,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1546998590-6a6195049fa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1546998590-6a6195049fa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -612,9 +608,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -636,9 +630,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -678,8 +670,7 @@
                             <canvas id="pie-chart"></canvas>
                         </div>
                         <div class="d-flex justify-content-end mt-lg-4">
-                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
+                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Ikti Survey
                                 <i class="bi bi-arrow-right ms-4"></i>
                             </button>
@@ -690,8 +681,7 @@
         </div>
 
         <!-- Modal Survey -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -708,8 +698,7 @@
                             <button type="button" class="btn btn-danger">
                                 Beri penilaian
                             </button>
-                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Sesuai</a></li>
                                 <li><a class="dropdown-item" href="#">Sangat Sesuai</a></li>
@@ -796,3 +785,111 @@
         </div>
     </section>
 @endsection
+@push('script')
+    <script>
+        $(document).ready(function() {
+            // grafik survey pengguna //
+            new Chart(document.getElementById("pie-chart"), {
+                type: "pie",
+                data: {
+                    labels: ["Sangat Puas", "Puas", "Tidak Puas"],
+                    datasets: [{
+                        backgroundColor: ["#EAD196", "#BF3131", "#7D0A0A"],
+                        data: [418, 263, 50],
+                    }, ],
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                },
+            });
+
+            // grafik jumlah kategori produk hukum //
+            new Chart(document.getElementById("chartKategori"), {
+                type: "bar",
+                data: {
+                    labels: [
+                        @foreach ($jumlah_tahun as $jt)
+                            "{{ $jt->tahun_peraturan }}",
+                        @endforeach
+                    ],
+                    datasets: [{
+                        backgroundColor: [
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                        ],
+                        data: [
+                            @foreach ($jumlah_tahun as $jt)
+                                "{{ $jt->total }}",
+                            @endforeach
+                        ],
+                    }, ],
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                    },
+                    responsive: true,
+                    indexAxis: "y",
+                    maintainAspectRatio: false,
+                },
+            });
+
+            // grafik jumlah produk hukum pertahun //
+            new Chart(document.getElementById("chartPertahun"), {
+                type: "bar",
+                data: {
+                    labels: [
+                        @foreach ($jumlah_jenis as $jp)
+                            "{{ $jp->jenis_peraturan }}",
+                        @endforeach
+                    ],
+                    datasets: [{
+                        backgroundColor: [
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                            "#e48f45",
+                        ],
+                        data: [
+                            @foreach ($jumlah_jenis as $jp)
+                                "{{ $jp->total }}",
+                            @endforeach
+                        ],
+                    }, ],
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                    },
+                    responsive: true,
+                    indexAxis: "y",
+                    maintainAspectRatio: false,
+                },
+            });
+        });
+    </script>
+@endpush
