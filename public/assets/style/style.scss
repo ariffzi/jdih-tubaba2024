@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+
+:root {
+    --maroon: #680000;
+    --maroon-trans: rgba(65, 0, 0, 0.8);
+    --color-1: #191919;
+    --color-2: #96efff;
+    --color-3: #f5f3f0;
+    --color-4: #503c3c;
+    --color-5: #f4f8fb;
+    --color-6: #e4f1fd;
+    --color-7: #e0dad3;
+    --color-8: #b09b86;
+    --color-9: #e8d8c4;
+    --color-10: #f3edc8;
+    --color-11: #ead196;
+    --color-12: #e48f45;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    // overflow-x: hidden;
+
+    .line-1 {
+        background: var(--color-11);
+        height: 2px;
+        flex: 1;
+        margin: 0 0 0 10px;
+        // margin: 0 0 0 clamp(0.8888888889rem, 1.4285714286vw, 1.3333333333rem);
+    }
+    .line-2 {
+        background: var(--color-7);
+        height: 2px;
+        flex: 1;
+        margin: 0 0 0 0px;
+        // margin: 0 0 0 clamp(0.8888888889rem, 1.4285714286vw, 1.3333333333rem);
+    }
+
+    .line-3 {
+        background: var(--color-11);
+        height: 1px;
+        flex: 1;
+        margin: 0 0 0 0;
+    }
+    .line-4 {
+        background: var(--color-11);
+        height: 2px;
+        flex: 1;
+        margin: 0 0 0 0;
+    }
+    .line-5 {
+        background: var(--color-12);
+        height: 1px;
+        flex: 1;
+        margin: 0 0 0 0;
+    }
+}
+
+@import "layout/navbar";
+@import "layout/slide-dashboard";
+@import "layout/hero-dashboard";
+@import "layout/home";
+@import "layout/pages";
+@import "layout/page-galeri";
+@import "layout/berita";
+@import "layout/baca-berita";
+@import "layout/dash-galeri";
+@import "layout/footer";

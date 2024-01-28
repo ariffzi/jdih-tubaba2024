@@ -1,0 +1,470 @@
+.pages-all {
+    margin-top: 13vh;
+    .head {
+        .jud {
+            font-size: 3em;
+            font-weight: bolder;
+        }
+
+        .jak {
+            color: var(--maroon);
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .kab {
+            font-weight: lighter;
+        }
+    }
+}
+
+.judul-pages {
+    .card {
+        border-radius: 48px;
+        background-color: var(--color-9);
+        border: none;
+        width: 75%;
+
+        .judul {
+            font-size: 30px;
+            font-weight: 500;
+            text-wrap: wrap;
+            text-align: center;
+        }
+    }
+}
+
+.profil {
+    .struktur {
+        // border-style: solid;
+        // border-color: var(--color-3);
+        border-radius: 48px;
+
+        img {
+            border-radius: 48px;
+            height: 75vh;
+            width: auto;
+        }
+
+        .bagan {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .profil-struktur {
+            .card {
+                border: none;
+
+                img {
+                    width: 340px;
+                    height: 450px;
+                    object-fit: cover;
+                    border-radius: 48px;
+                    transition: all 0.3s;
+                }
+
+                .nama {
+                    font-size: 17px;
+                    font-weight: bold;
+                    transition: all 0.3s;
+                }
+                .jabatan {
+                    font-size: 15px;
+                    font-weight: 500;
+                    transition: all 0.3s;
+                }
+            }
+
+            .card:hover {
+                img {
+                    transform: scale(1.05);
+                }
+
+                .nama,
+                .jabatan {
+                    color: var(--color-8);
+                }
+            }
+        }
+    }
+}
+
+.page-jenis-produk {
+    .card {
+        border: none;
+        img {
+            transition: all 0.3s;
+            border-radius: 48px;
+        }
+    }
+
+    .card:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    .konten {
+        .head {
+            font-size: 50px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .filter-produk {
+            .box-cari {
+                select {
+                    background-color: var(--color-3);
+                    border-radius: 48px;
+                    border: none;
+                    height: 50px;
+                    font-size: 16px;
+                }
+
+                select:focus {
+                    box-shadow: none;
+                }
+
+                .box-cari-perpustakaan {
+                    input {
+                        background-color: var(--color-3);
+                        border-radius: 48px;
+                        border: none;
+                        height: 50px;
+                        font-size: 16px;
+                    }
+
+                    input:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .btn-filter {
+                width: 100%;
+                height: 50px;
+                border-radius: 48px;
+                font-size: 16px;
+                background-color: var(--maroon);
+                color: var(--color-11);
+                transition: all 0.5s;
+            }
+
+            .btn-filter:hover {
+                background-color: var(--color-11);
+                color: var(--maroon);
+            }
+        }
+
+        .data {
+            table {
+                .jud {
+                    width: 400px;
+                    text-wrap: wrap;
+                }
+                thead {
+                    tr {
+                        th {
+                            background-color: var(--color-9);
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            a {
+                                text-decoration: none;
+                            }
+
+                            a:hover {
+                                color: var(--color-8);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+                background: var(--color-11);
+                color: var(--maroon) !important;
+                border: none;
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button {
+                background: var(--color-3);
+                color: var(--maroon) !important;
+                border-radius: 14px;
+            }
+
+            .tabel-perpustakaan {
+                .card {
+                    background-color: transparent;
+                    height: 100px;
+                    width: 75px;
+                    // border-radius: 14px;
+
+                    img {
+                        height: 100px;
+                        width: 75px;
+                        object-fit: cover;
+                        border-radius: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-detail-produk {
+    .card {
+        border: none;
+        img {
+            transition: all 0.3s;
+            border-radius: 48px;
+        }
+    }
+
+    .card:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    .konten {
+        .judul-produk {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: start;
+        }
+        .card-pdf {
+            background-color: var(--maroon);
+            border-radius: 7px;
+            .cont-pdf {
+                height: 90vh;
+                width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn-unduh {
+            // width: 100%;
+            border-radius: 48px;
+            background-color: var(--maroon);
+            color: var(--color-11);
+            display: flex;
+            justify-content: space-between;
+            transition: all 0.5s;
+
+            i {
+                transition: all 0.5s;
+            }
+        }
+
+        .btn-unduh:hover {
+            background-color: var(--color-11);
+            color: var(--maroon);
+
+            i {
+                transform: rotate(-30deg);
+            }
+        }
+
+        .ket {
+            font-size: medium;
+        }
+
+        .inf {
+            font-weight: 500;
+        }
+    }
+}
+
+/* ============= !!! TABLET !!! ============= */
+@media screen and (max-width: 769px) {
+    .pages-all {
+        margin-top: 50px;
+        .head {
+            .jud {
+                font-size: 25px;
+                font-weight: bolder;
+            }
+
+            .jak {
+                color: var(--maroon);
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            .kab {
+                font-size: 15px;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .profil {
+        .struktur {
+            .bagan {
+                font-size: 17px;
+            }
+
+            .profil-struktur {
+                .card {
+                    img {
+                        width: auto;
+                        height: 230px;
+                        border-radius: 24px;
+                    }
+
+                    .nama {
+                        font-size: 12px;
+                    }
+                    .jabatan {
+                        font-size: 10px;
+                        font-weight: 500;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-jenis-produk {
+        .konten {
+            .filter-produk {
+                .box-cari {
+                    select {
+                        height: 35px;
+                        font-size: 15px;
+                    }
+                }
+
+                .btn-filter {
+                    height: 35px;
+                    font-size: 15px;
+                }
+            }
+            .data {
+                table {
+                    font-size: 14px;
+                    .jud {
+                        width: 400px;
+                        text-wrap: wrap;
+                    }
+                }
+                .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+                    font-size: 12px;
+                    border-radius: 12px;
+                }
+                .dataTables_wrapper .dataTables_paginate .paginate_button {
+                    font-size: 12px;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+
+    .page-detail-produk {
+        .konten {
+            .judul-produk {
+                font-size: 20px;
+            }
+            .card-pdf {
+                background-color: var(--maroon);
+                border-radius: 7px;
+                .cont-pdf {
+                    height: 90vh;
+                    width: 100%;
+                }
+            }
+
+            .btn-unduh {
+                border-radius: 48px;
+                font-size: small;
+            }
+
+            .ket {
+                font-size: small;
+            }
+
+            .inf {
+                font-size: small;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/* ============= !!! MOBILE !!! ============= */
+@media only screen and (max-width: 600px) {
+    .pages-all {
+        margin-top: 13vh;
+        .head {
+            .jud {
+                font-size: 17px;
+                font-weight: bolder;
+            }
+
+            .jak {
+                font-size: 13px;
+            }
+
+            .kab {
+                font-size: 12px;
+            }
+        }
+    }
+    .page-detail-produk {
+        .konten {
+            .judul-produk {
+                font-size: 18px;
+            }
+            .card-pdf {
+                .cont-pdf {
+                    height: 70vh;
+                    width: 100%;
+                }
+            }
+
+            .btn-unduh {
+                font-size: 12px;
+            }
+
+            .ket {
+                font-size: 12px;
+            }
+
+            .inf {
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .profil {
+        .struktur {
+            .bagan {
+                font-size: 12px;
+            }
+
+            .profil-struktur {
+                .card {
+                    img {
+                        width: auto;
+                        height: 165px;
+                        border-radius: 24px;
+                    }
+
+                    .nama {
+                        font-size: 10px;
+                    }
+                    .jabatan {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

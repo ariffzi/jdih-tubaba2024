@@ -1,0 +1,61 @@
+.baca-berita {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    .gambar-berita {
+        img {
+            height: 90vh;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 48px;
+        }
+    }
+
+    .judul-berita {
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    .isber {
+        font-size: larger;
+    }
+
+    .tgl {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .dibaca {
+        font-size: small;
+    }
+
+    .kej {
+        font-weight: bold;
+        color: var(--maroon);
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+
+        .gambar-berita {
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .judul-berita {
+            font-size: larger;
+        }
+
+        .isber {
+            font-size: larger;
+        }
+
+        .tgl {
+            font-size: larger;
+            font-weight: 300;
+        }
+    }
+}

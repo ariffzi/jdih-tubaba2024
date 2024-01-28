@@ -1,0 +1,123 @@
+/* ================= Navbar ================= */
+nav {
+    transition: 0.5s;
+    background-color: rgba(65, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    margin: 0;
+
+    .navbar-brand {
+        img {
+            height: 50px;
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .dropdown {
+        a {
+            color: white;
+            transition: 0.5s;
+        }
+    }
+
+    .dropdown:hover {
+        a {
+            color: var(--color-11) !important;
+        }
+    }
+
+    .dropdown:active {
+        a {
+            color: var(--color-11) !important;
+        }
+    }
+    .dropdown::after {
+        a {
+            color: var(--color-11) !important;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+
+    a:hover,
+    :focus {
+        color: var(--color-11);
+    }
+
+    .modif-drop {
+        background-color: rgba(65, 0, 0, 0.8);
+        a {
+            color: white;
+        }
+        a:hover {
+            background-color: rgba(65, 0, 0, 0.8);
+            color: var(--color-11);
+        }
+    }
+
+    .jdih-text {
+        font-size: 35px;
+        color: var(--color-12);
+        font-weight: bold;
+        margin-top: -12px;
+    }
+
+    .tubaba-text {
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+        margin-top: -10px;
+    }
+}
+
+// /* ============ Navbar OnScroll ============= */
+// .nav-color {
+//     background-color: rgba(65, 0, 0, 0.8);
+//     backdrop-filter: blur(4px);
+//     border-radius: 50px;
+//     margin: 0;
+// }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        .navbar {
+            .navbar-brand {
+                img {
+                    height: 30px;
+                }
+            }
+
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        .navbar {
+            .navbar-brand {
+                img {
+                    height: 23px;
+                }
+            }
+
+            a {
+                font-size: 12px !important;
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
+}

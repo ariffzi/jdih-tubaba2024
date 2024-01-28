@@ -1,0 +1,108 @@
+.slide-dashboard {
+    .slide {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+
+        img {
+            height: 95vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .cari-produk-hukum {
+        position: absolute;
+        margin-bottom: 100px;
+        background-color: var(--maroon-trans);
+        border-radius: 24px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        label {
+            color: var(--color-11);
+            font-weight: bold;
+            display: block;
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .box-cari {
+            .ver {
+                height: 40px;
+                color: var(--color-11);
+            }
+            input {
+                background-color: white;
+                border: none;
+            }
+
+            select,
+            input {
+                background-color: white;
+                border-radius: 12px;
+                border: none;
+            }
+
+            select:focus {
+                box-shadow: none;
+            }
+
+            input:focus {
+                box-shadow: none;
+            }
+
+            .cari {
+                .btn-cari {
+                    border-radius: 12px;
+                    width: 100%;
+                    background-color: var(--color-11);
+                    display: flex;
+                    justify-content: space-between;
+
+                    i {
+                        transition: all 0.5s;
+                    }
+                }
+
+                .btn-cari:hover {
+                    background-color: var(--color-12);
+
+                    i {
+                        transform: rotate(-30deg);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        .slide {
+            width: 100vw;
+            height: 70vh;
+
+            img {
+                height: 70vh;
+                width: 100%;
+            }
+        }
+
+        .cari-produk-hukum {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .slide-dashboard {
+            .slide {
+                width: 100vw;
+                height: 70vh;
+            }
+        }
+    }
+}
