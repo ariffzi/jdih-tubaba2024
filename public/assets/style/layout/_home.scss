@@ -2,6 +2,7 @@
     font-size: 30px;
     font-weight: bold;
     color: var(--maroon);
+    font-family: tubaba-bold;
 }
 
 .sub-judul {
@@ -86,7 +87,7 @@
 
                 .judul-peraturan {
                     font-size: 16px;
-                    font-weight: 600;
+                    font-family: tubaba-bold;
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 2;
@@ -196,7 +197,8 @@
     }
     .judul-atas-grafik {
         font-size: 30px;
-        font-weight: bold;
+        // font-weight: bold;
+        font-family: tubaba-bold;
         color: var(--color-12);
     }
 
@@ -230,7 +232,8 @@
             .txt-1 {
                 font-size: medium;
                 color: #000;
-                font-weight: 500;
+                // font-weight: 500;
+                font-family: tubaba-bold;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 3;
@@ -293,13 +296,15 @@
         color: white;
         .kepala {
             font-size: 25px;
-            font-weight: bold;
+            // font-weight: bold;
+            font-family: tubaba-bold;
             color: var(--color-4);
         }
 
         .nama {
             font-size: 22px;
-            font-weight: bold;
+            // font-weight: bold;
+            font-family: tubaba-bold;
         }
 
         .testi {
@@ -342,7 +347,9 @@
 
         .txt-1 {
             font-size: large;
-            font-weight: bold;
+            // font-weight: bold;
+            font-family: tubaba-bold;
+
             text-align: center;
             color: var(--color-1);
         }
@@ -382,7 +389,8 @@
 .dash-link-terkait {
     .head {
         font-size: 30px;
-        font-weight: bold;
+        // font-weight: bold;
+        font-family: tubaba-bold;
     }
 
     .card {
@@ -440,7 +448,7 @@
 
         .lihat-galeri-agenda {
             .txt-1 {
-                font-size: 40px;
+                font-size: 27px;
             }
 
             .txt-2 {
@@ -582,7 +590,7 @@
 
         .lihat-galeri-agenda {
             .txt-1 {
-                font-size: 20px;
+                font-size: 14px;
             }
 
             .txt-2 {

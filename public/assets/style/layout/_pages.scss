@@ -4,12 +4,14 @@
         .jud {
             font-size: 3em;
             font-weight: bolder;
+            font-family: tubaba-bold;
         }
 
         .jak {
             color: var(--maroon);
             font-weight: bold;
             font-size: large;
+            font-family: tubaba-bold;
         }
 
         .kab {
@@ -49,6 +51,7 @@
         .bagan {
             font-size: 20px;
             font-weight: bold;
+            font-family: tubaba-bold;
         }
 
         .profil-struktur {
@@ -66,6 +69,8 @@
                 .nama {
                     font-size: 17px;
                     font-weight: bold;
+                    font-family: tubaba-bold;
+
                     transition: all 0.3s;
                 }
                 .jabatan {
@@ -166,6 +171,7 @@
                     tr {
                         th {
                             background-color: var(--color-9);
+                            font-family: tubaba-bold;
                         }
                     }
                 }

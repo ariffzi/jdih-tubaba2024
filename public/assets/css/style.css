@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+@font-face {
+  font-family: tubaba;
+  src: url(../font/tubaba-fonts/Tubaba-Regular.ttf);
+}
+@font-face {
+  font-family: tubaba-bold;
+  src: url(../font/tubaba-fonts/Tubaba-Bold.ttf);
+}
 :root {
   --maroon: #680000;
   --maroon-trans: rgba(65, 0, 0, 0.8);
@@ -17,7 +24,7 @@
 }
 
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: tubaba;
 }
 body .line-1 {
   background: var(--color-11);
@@ -99,7 +106,7 @@ nav .modif-drop a:hover {
 nav .jdih-text {
   font-size: 35px;
   color: var(--color-12);
-  font-weight: bold;
+  font-family: tubaba-bold;
   margin-top: -12px;
 }
 nav .tubaba-text {
@@ -2022,6 +2029,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
   font-size: 30px;
   font-weight: bold;
   color: var(--maroon);
+  font-family: tubaba-bold;
 }
 
 .sub-judul {
@@ -2090,7 +2098,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 }
 .produk-update .produk-hukum-terbaru a .bg-card .judul-peraturan {
   font-size: 16px;
-  font-weight: 600;
+  font-family: tubaba-bold;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -2173,7 +2181,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 }
 .grafik-produk-hukum .judul-atas-grafik {
   font-size: 30px;
-  font-weight: bold;
+  font-family: tubaba-bold;
   color: var(--color-12);
 }
 .grafik-produk-hukum .sub-judul-grafik {
@@ -2202,7 +2210,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .berita-terbaru .card a .txt-1 {
   font-size: medium;
   color: #000;
-  font-weight: 500;
+  font-family: tubaba-bold;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -2253,12 +2261,12 @@ body[data-route-option=next-section] .c-header-home_buttons {
 }
 .profil-testi .ket .kepala {
   font-size: 25px;
-  font-weight: bold;
+  font-family: tubaba-bold;
   color: var(--color-4);
 }
 .profil-testi .ket .nama {
   font-size: 22px;
-  font-weight: bold;
+  font-family: tubaba-bold;
 }
 .profil-testi .ket .testi {
   font-size: 17px;
@@ -2290,7 +2298,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 }
 .apk-survey .survey .txt-1 {
   font-size: large;
-  font-weight: bold;
+  font-family: tubaba-bold;
   text-align: center;
   color: var(--color-1);
 }
@@ -2321,7 +2329,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 
 .dash-link-terkait .head {
   font-size: 30px;
-  font-weight: bold;
+  font-family: tubaba-bold;
 }
 .dash-link-terkait .card {
   background-color: transparent;
@@ -2360,7 +2368,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
     font-size: 12px;
   }
   .produk-update .lihat-galeri-agenda .txt-1 {
-    font-size: 40px;
+    font-size: 27px;
   }
   .produk-update .lihat-galeri-agenda .txt-2 {
     font-size: 20px;
@@ -2440,7 +2448,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
     font-size: 8px;
   }
   .produk-update .lihat-galeri-agenda .txt-1 {
-    font-size: 20px;
+    font-size: 14px;
   }
   .produk-update .lihat-galeri-agenda .txt-2 {
     font-size: 10px;
@@ -2502,11 +2510,13 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .pages-all .head .jud {
   font-size: 3em;
   font-weight: bolder;
+  font-family: tubaba-bold;
 }
 .pages-all .head .jak {
   color: var(--maroon);
   font-weight: bold;
   font-size: large;
+  font-family: tubaba-bold;
 }
 .pages-all .head .kab {
   font-weight: lighter;
@@ -2536,6 +2546,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .profil .struktur .bagan {
   font-size: 20px;
   font-weight: bold;
+  font-family: tubaba-bold;
 }
 .profil .struktur .profil-struktur .card {
   border: none;
@@ -2550,6 +2561,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .profil .struktur .profil-struktur .card .nama {
   font-size: 17px;
   font-weight: bold;
+  font-family: tubaba-bold;
   transition: all 0.3s;
 }
 .profil .struktur .profil-struktur .card .jabatan {
@@ -2619,6 +2631,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 }
 .page-jenis-produk .konten .data table thead tr th {
   background-color: var(--color-9);
+  font-family: tubaba-bold;
 }
 .page-jenis-produk .konten .data table tbody tr td a {
   text-decoration: none;
@@ -3153,6 +3166,7 @@ footer .logo img {
 footer .head {
   font-size: 17px;
   font-weight: bold;
+  font-family: tubaba-bold;
 }
 footer .ket-2 {
   font-size: 14px;

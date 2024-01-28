@@ -1,5 +1,15 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+// @charset "UTF-8";
+// @import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+
+@font-face {
+    font-family: tubaba;
+    src: url(../font/tubaba-fonts/Tubaba-Regular.ttf);
+}
+
+@font-face {
+    font-family: tubaba-bold;
+    src: url(../font/tubaba-fonts/Tubaba-Bold.ttf);
+}
 
 :root {
     --maroon: #680000;
@@ -19,7 +29,8 @@
 }
 
 body {
-    font-family: "Barlow", sans-serif;
+    // font-family: "Barlow", sans-serif;
+    font-family: tubaba;
     // overflow-x: hidden;
 
     .line-1 {
