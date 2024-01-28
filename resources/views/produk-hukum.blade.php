@@ -161,7 +161,7 @@
                                     <td>
                                         <a href="#">Peraturan Bupati Nomor 12 Tahun 2009</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>269</td>
                                     <td>179</td>
                                 </tr>
@@ -179,7 +179,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>187</td>
                                     <td>35</td>
                                 </tr>
@@ -197,7 +197,7 @@
                                     <td>
                                         <a href="#">Peraturan Bupati Nomor 23 Tahun 2023</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>223</td>
                                     <td>65</td>
                                 </tr>
@@ -215,7 +215,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
@@ -233,7 +233,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
@@ -251,7 +251,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
@@ -269,7 +269,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
@@ -287,7 +287,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
@@ -305,7 +305,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
@@ -323,7 +323,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>
@@ -341,7 +341,7 @@
                                     <td>
                                         <a href="#">-</a>
                                     </td>
-                                    <td><a href="#">Lihat</a></td>
+                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
                                     <td>125</td>
                                     <td>12</td>
                                 </tr>

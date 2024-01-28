@@ -158,7 +158,7 @@
                         <div class="row">
                             <!-- foreach -->
                             <div class="col-12 mb-2">
-                                <a href="#">
+                                <a href="/lihat-produk-hukum">
                                     <div class="card bg-card p-3">
                                         <div class="row">
                                             <div class="col-auto">
@@ -198,7 +198,7 @@
                             <!-- end foreach -->
 
                             <div class="col-12 mb-2">
-                                <a href="#">
+                                <a href="/lihat-produk-hukum">
                                     <div class="card bg-card p-3">
                                         <div class="row">
                                             <div class="col-auto">
@@ -237,7 +237,7 @@
                             </div>
 
                             <div class="col-12 mb-2">
-                                <a href="#">
+                                <a href="/lihat-produk-hukum">
                                     <div class="card bg-card p-3">
                                         <div class="row">
                                             <div class="col-auto">
@@ -276,7 +276,7 @@
                             </div>
 
                             <div class="col-12 mb-2">
-                                <a href="#">
+                                <a href="/lihat-produk-hukum">
                                     <div class="card bg-card p-3">
                                         <div class="row">
                                             <div class="col-auto">
@@ -315,7 +315,7 @@
                             </div>
 
                             <div class="col-12 mb-2">
-                                <a href="#">
+                                <a href="/lihat-produk-hukum">
                                     <div class="card bg-card p-3">
                                         <div class="row">
                                             <div class="col-auto">
@@ -547,7 +547,7 @@
                 </div>
             </div>
             <div class="btn-lihat-semua d-flex justify-content-center mt-4 mt-md-4 mt-lg-5">
-                <a href="#">
+                <a href="/berita">
                     <button type="button" class="btn btn-sendiri ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-3 pe-3">
                         Lihat berita terkini lainnya
                         <i class="bi bi-arrow-right"></i>
