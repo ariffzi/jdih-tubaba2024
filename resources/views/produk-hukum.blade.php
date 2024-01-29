@@ -103,7 +103,7 @@
                                 </select>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-12 p-2">
+                            <div class="col-lg-2 col-md-4 col-12 p-2">
                                 <!-- <div>halo</div> -->
                                 <select class="tahun form-select ps-lg-4 pe-lg-4">
                                     <option label="&nbsp;"></option>
@@ -125,7 +125,7 @@
                                 </select>
                             </div>
 
-                            <div class="col-lg-2 col-md-3 col-12 p-2">
+                            <div class="col-lg-3 col-md-3 col-12 p-2">
                                 <select class="judul form-select ps-lg-4 pe-lg-4">
                                     <option label="&nbsp;"></option>
                                     <option value=" ">all</option>
@@ -479,8 +479,8 @@
             sDom: '<"row"<"col-sm-12"<"table-container"t>r>><"row"<"col-12"p>>',
             language: {
                 paginate: {
-                    previous: '<i class="cs-chevron-left"></i>',
-                    next: '<i class="cs-chevron-right"></i>',
+                    previous: '<i class="bi bi-chevron-double-left"></i>',
+                    next: '<i class="bi bi-chevron-double-right"></i>',
                 },
             },
         });
