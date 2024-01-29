@@ -99,6 +99,14 @@ nav {
                 font-size: 15px;
             }
         }
+        .jdih-text {
+            font-size: 30px;
+            margin-top: 0px;
+        }
+
+        .tubaba-text {
+            font-size: 12px;
+        }
     }
 }
 
@@ -109,7 +117,8 @@ nav {
         .navbar {
             .navbar-brand {
                 img {
-                    height: 23px;
+                    height: 10px !important;
+                    width: auto;
                 }
             }
 
@@ -120,6 +129,14 @@ nav {
             ul {
                 display: none;
             }
+        }
+        .jdih-text {
+            font-size: 20px;
+            margin-top: 0px;
+        }
+
+        .tubaba-text {
+            font-size: 10px;
         }
     }
 }

@@ -2,7 +2,7 @@
     <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand m-0 ps-1 ps-md-3 ps-lg-3" href="/">
-                <img src="/assets/logo/Logo-JDIH.svg" alt="" />
+                <img class="img-fluid" src="/assets/logo/Logo-jdih.svg" alt="" />
             </a>
             <div class="d-grid ms-lg-3 ms-md-3 ms-2 me-auto align-items-center">
                 <div class="jdih-text">JDIH</div>
