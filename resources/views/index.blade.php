@@ -411,7 +411,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="sub-judul-grafik text-center">
-                            Kategori Produk Hukum
+                            Produk Hukum per Tahun
                         </div>
                         <div class="info-grafik mt-lg-3 mt-md-0 mt-2">
                             <div class="row">
@@ -428,7 +428,7 @@
 
                     <div class="col-lg-6 col-md-6 col-12 mt-lg-0 mt-md-0 mt-4">
                         <div class="sub-judul-grafik text-center">
-                            Produk Hukum per Tahun
+                            Kategori Produk Hukum
                         </div>
                         <div class="info-grafik mt-lg-3 mt-md-0 mt-2">
                             <div class="row">
