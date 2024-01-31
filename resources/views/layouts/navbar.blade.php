@@ -1,13 +1,13 @@
 <section>
     <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand m-0 ps-1 ps-md-3 ps-lg-3" href="/">
+            <a href="/" class="navbar-brand icon-nav m-0 ps-1 ps-md-3 ps-lg-3 d-flex align-items-center">
                 <img class="img-fluid" src="/assets/logo/Logo-jdih.svg" alt="" />
+                <div class="ms-lg-2 ms-md-3 ms-2 ">
+                    <div class="jdih-text m-0 p-0">JDIH</div>
+                    <div class="tubaba-text m-0 p-0">Kabupaten Tubaba</div>
+                </div>
             </a>
-            <div class="d-grid ms-lg-3 ms-md-3 ms-2 me-auto align-items-center">
-                <div class="jdih-text">JDIH</div>
-                <div class="tubaba-text">Kabupaten Tubaba</div>
-            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

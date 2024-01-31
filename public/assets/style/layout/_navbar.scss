@@ -5,12 +5,25 @@ nav {
     backdrop-filter: blur(4px);
     margin: 0;
 
-    .navbar-brand {
+    .icon-nav {
         img {
             height: 50px;
             width: auto;
             margin: 0;
             padding: 0;
+        }
+        .jdih-text {
+            font-size: 35px;
+            color: var(--color-12);
+            // font-weight: bold;
+            font-family: tubaba-bold;
+            margin-bottom: -12px !important;
+        }
+
+        .tubaba-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
         }
     }
 
@@ -59,22 +72,6 @@ nav {
             background-color: rgba(65, 0, 0, 0.8);
             color: var(--color-11);
         }
-    }
-
-    .jdih-text {
-        font-size: 35px;
-        color: var(--color-12);
-        // font-weight: bold;
-        font-family: tubaba-bold;
-
-        margin-top: -12px;
-    }
-
-    .tubaba-text {
-        font-size: 12px;
-        font-weight: 500;
-        color: white;
-        margin-top: -10px;
     }
 }
 

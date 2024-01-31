@@ -64,11 +64,22 @@ nav {
   backdrop-filter: blur(4px);
   margin: 0;
 }
-nav .navbar-brand img {
+nav .icon-nav img {
   height: 50px;
   width: auto;
   margin: 0;
   padding: 0;
+}
+nav .icon-nav .jdih-text {
+  font-size: 35px;
+  color: var(--color-12);
+  font-family: tubaba-bold;
+  margin-bottom: -12px !important;
+}
+nav .icon-nav .tubaba-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
 }
 nav .dropdown a {
   color: white;
@@ -102,18 +113,6 @@ nav .modif-drop a {
 nav .modif-drop a:hover {
   background-color: rgba(65, 0, 0, 0.8);
   color: var(--color-11);
-}
-nav .jdih-text {
-  font-size: 35px;
-  color: var(--color-12);
-  font-family: tubaba-bold;
-  margin-top: -12px;
-}
-nav .tubaba-text {
-  font-size: 12px;
-  font-weight: 500;
-  color: white;
-  margin-top: -10px;
 }
 
 @media only screen and (max-width: 768px) {
