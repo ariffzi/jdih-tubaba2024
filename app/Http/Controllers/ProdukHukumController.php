@@ -8,6 +8,24 @@ use Illuminate\Support\Facades\Storage;
 
 class ProdukHukumController extends Controller
 {
+    public function search(Request $request)
+    {
+        $responses = Http::get('https://aplikasi.tubaba.go.id/api/jdih');
+        $klasifikasi = Http::get('https://aplikasi.tubaba.go.id/api/jdih/klasifikasi');
+        // $data_tahun = Http::get('https://aplikasi.tubaba.go.id/api/jdih/jumlah_tahun');
+        // $data_jenis = Http::get('https://aplikasi.tubaba.go.id/api/jdih/jumlah_jenis');
+        $data = collect(json_decode($klasifikasi->getBody()));
+        $data1 = collect(json_decode($responses->getBody()));
+        // $jumlah_tahun = collect(json_decode($data_tahun->getBody()));
+        // $jumlah_jenis = collect(json_decode($data_jenis->getBody()));
+        return view('produk-hukum', [
+            'jenis' => $data,
+            'judul' => $data1,
+            // 'jumlah_tahun' => $jumlah_tahun,
+            // 'jumlah_jenis' => $jumlah_jenis,
+        ]);
+    }
+
     /**
      * Display a listing of the resource.
      */

@@ -487,8 +487,13 @@
 
         $(document).ready(function() {
             if (getUrlParameter('param') != '') {
-                $('#tableProduk').DataTable().columns(1).search(getUrlParameter('param')).draw()
-                $('.jud').html(getUrlParameter('param'))
+                if (getUrlParameter('judul') != '') {
+                    $('#tableProduk').DataTable().column(1).search(getUrlParameter('param')).column(2).search(getUrlParameter('judul')).draw();
+                    $('.jud').html(getUrlParameter('param'))
+                } else {
+                    $('#tableProduk').DataTable().columns(1).search(getUrlParameter('param')).draw()
+                    $('.jud').html(getUrlParameter('param'))
+                }
             } else {
                 $('#tbDokumenHukum').DataTable().columns(4).search('').draw()
                 $('.jud').html('Produk Hukum')

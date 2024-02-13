@@ -25,6 +25,7 @@ Route::prefix('produk-hukum')->group(function () {
     Route::get('/show', [ProdukHukumController::class, 'show']);
     Route::get('/detail', [ProdukHukumController::class, 'create']);
     Route::get('/download', [ProdukHukumController::class, 'download']);
+    Route::get('/search', [ProdukHukumController::class, 'search']);
 });
 Route::get('/sop', [UserController::class, 'sop']);
 Route::get('/struktur', [UserController::class, 'struktur']);

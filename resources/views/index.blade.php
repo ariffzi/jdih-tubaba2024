@@ -1,8 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <!-- ======================== slide dashboard ========================= -->
-    <section
-        class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
+    <section class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
         <div class="slide">
             <div id="owl-car-dashboard" class="owl-carousel owl-theme">
                 <div class="item z-n1">
@@ -23,8 +22,8 @@
                 <form class="pt-lg-0 pt-md-3" action="">
                     <div class="box-cari d-lg-flex d-md-flex d-grid align-items-center p-lg-3 p-md-0 p-0">
                         <div class="col-lg-3 col-md-3 col-12 d-flex align-items-center ver p-2 ps-lg-0 ps-md-0 ps-2">
-                            <select class="form-select">
-                                <option selected>Jenis Peraturan</option>
+                            <select class="form-select" id="jenisPeraturan">
+                                <option value="" disabled selected>Jenis Peraturan</option>
                                 @foreach ($jenis as $j)
                                     <option value="{{ $j->nama_klasifikasi }}">{{ $j->nama_klasifikasi }}</option>
                                 @endforeach
@@ -37,13 +36,12 @@
                             <input placeholder="Tahun" class="form-control" />
                         </div> --}}
                         <div class="col-lg-8 col-md-8 col-12 d-flex align-items-center ver p-2">
-                            <input placeholder="Judul Peraturan" class="form-control" />
+                            <input placeholder="Judul Peraturan" class="form-control" id="judulPeraturan" />
                         </div>
-                        <div
-                            class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
+                        <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
                             <div class="cari">
                                 {{-- <a href="#"> --}}
-                                <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4">
+                                <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4" id="cari">
                                     <i class="bi bi-arrow-right ps-lg-0 pe-lg-0 ps-md-0 pe-md-0 ps-4 pe-4"></i>
                                 </button>
                                 {{-- </a> --}}
@@ -370,8 +368,7 @@
                                             GALERI
                                         </div>
                                         <div class="txt-2">Lihat Galeri Kami</div>
-                                        <div
-                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/gallery.jpeg" alt="" />
                                         </div>
                                     </div>
@@ -385,8 +382,7 @@
                                             PERPUSTAKAAN
                                         </div>
                                         <div class="txt-2">Lihat Perpustakaan Kami</div>
-                                        <div
-                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/perpus.jpg  " alt="" />
                                         </div>
                                     </a>
@@ -569,9 +565,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1528892952291-009c663ce843?q=80&w=2363&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1528892952291-009c663ce843?q=80&w=2363&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -593,9 +587,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1546998590-6a6195049fa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1546998590-6a6195049fa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -617,9 +609,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -641,9 +631,7 @@
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
                     <div class="col-12 col-md-6 col-lg-6 m-0 p-0">
                         <div class="profil d-flex justify-content-center">
-                            <img class="img-fluid rounded-circle p-5"
-                                src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="" vh />
+                            <img class="img-fluid rounded-circle p-5" src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" vh />
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -683,8 +671,7 @@
                             <canvas id="pie-chart"></canvas>
                         </div>
                         <div class="d-flex justify-content-end mt-lg-4">
-                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
+                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Ikti Survey
                                 <i class="bi bi-arrow-right ms-4"></i>
                             </button>
@@ -695,8 +682,7 @@
         </div>
 
         <!-- Modal Survey -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -713,8 +699,7 @@
                             <button type="button" class="btn btn-danger">
                                 Beri penilaian
                             </button>
-                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Sesuai</a></li>
                                 <li><a class="dropdown-item" href="#">Sangat Sesuai</a></li>
@@ -804,6 +789,14 @@
 @push('script')
     <script>
         $(document).ready(function() {
+            $('#cari').click(function(e) {
+                e.preventDefault();
+                var jenis = $('#jenisPeraturan').val()
+                var judul = $('#judulPeraturan').val()
+                console.log(jenis + judul);
+                window.location.href = 'produk-hukum?param=' + jenis + '&judul=' + judul;
+            });
+
             // grafik survey pengguna //
             new Chart(document.getElementById("pie-chart"), {
                 type: "pie",
