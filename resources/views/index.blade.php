@@ -791,7 +791,11 @@
         $(document).ready(function() {
             $('#cari').click(function(e) {
                 e.preventDefault();
-                var jenis = $('#jenisPeraturan').val()
+                if ($('#jenisPeraturan').val() == null) {
+                    var jenis = ''
+                } else {
+                    var jenis = $('#jenisPeraturan').val()
+                }
                 var judul = $('#judulPeraturan').val()
                 console.log(jenis + judul);
                 window.location.href = 'produk-hukum?param=' + jenis + '&judul=' + judul;
