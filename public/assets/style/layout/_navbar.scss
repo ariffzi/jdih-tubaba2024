@@ -5,12 +5,25 @@ nav {
     backdrop-filter: blur(4px);
     margin: 0;
 
-    .navbar-brand {
+    .icon-nav {
         img {
             height: 50px;
             width: auto;
             margin: 0;
             padding: 0;
+        }
+        .jdih-text {
+            font-size: 35px;
+            color: var(--color-12);
+            // font-weight: bold;
+            font-family: tubaba-bold;
+            margin-bottom: -12px !important;
+        }
+
+        .tubaba-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
         }
     }
 
@@ -60,22 +73,6 @@ nav {
             color: var(--color-11);
         }
     }
-
-    .jdih-text {
-        font-size: 35px;
-        color: var(--color-12);
-        // font-weight: bold;
-        font-family: tubaba-bold;
-
-        margin-top: -12px;
-    }
-
-    .tubaba-text {
-        font-size: 12px;
-        font-weight: 500;
-        color: white;
-        margin-top: -10px;
-    }
 }
 
 // /* ============ Navbar OnScroll ============= */
@@ -99,6 +96,14 @@ nav {
                 font-size: 15px;
             }
         }
+        .jdih-text {
+            font-size: 30px;
+            margin-top: 0px;
+        }
+
+        .tubaba-text {
+            font-size: 12px;
+        }
     }
 }
 
@@ -109,7 +114,8 @@ nav {
         .navbar {
             .navbar-brand {
                 img {
-                    height: 23px;
+                    height: 10px !important;
+                    width: auto;
                 }
             }
 
@@ -120,6 +126,14 @@ nav {
             ul {
                 display: none;
             }
+        }
+        .jdih-text {
+            font-size: 20px;
+            margin-top: 0px;
+        }
+
+        .tubaba-text {
+            font-size: 10px;
         }
     }
 }

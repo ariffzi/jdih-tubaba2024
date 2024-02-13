@@ -16,7 +16,7 @@
 
     <!-- ===================== Script ========================= -->
     @include('layouts.script')
-    @stack('script');
+    @stack('script')
 </body>
 
 </html>

@@ -380,12 +380,12 @@ $(document).ready(function () {
 });
 
 // PAGE PRODUK HUKUM
-$(document).ready(function () {
-    // $("#tableProduk").DataTable({
-    //     filter: false,
-    //     bLengthChange: false,
-    // });
-});
+// $(document).ready(function () {
+// $("#tableProduk").DataTable({
+//     filter: false,
+//     bLengthChange: false,
+// });
+// });
 
 // PAGE PERPUSTAKAAN
 $(document).ready(function () {

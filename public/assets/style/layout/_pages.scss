@@ -118,16 +118,23 @@
 
         .filter-produk {
             .box-cari {
-                select {
-                    background-color: var(--color-3);
-                    border-radius: 48px;
-                    border: none;
-                    height: 50px;
-                    font-size: 16px;
-                }
+                .selection {
+                    .select2-selection {
+                        background-color: var(--color-3);
+                        border-radius: 48px;
+                        border: solid;
+                        border-color: var(--color-9);
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        font-size: 16px;
+                        padding: 5px;
+                    }
 
-                select:focus {
-                    box-shadow: none;
+                    .select2-selection__arrow {
+                        margin-top: 8px;
+                        margin-right: 10px;
+                    }
                 }
 
                 .box-cari-perpustakaan {

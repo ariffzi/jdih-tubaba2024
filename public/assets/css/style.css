@@ -64,11 +64,22 @@ nav {
   backdrop-filter: blur(4px);
   margin: 0;
 }
-nav .navbar-brand img {
+nav .icon-nav img {
   height: 50px;
   width: auto;
   margin: 0;
   padding: 0;
+}
+nav .icon-nav .jdih-text {
+  font-size: 35px;
+  color: var(--color-12);
+  font-family: tubaba-bold;
+  margin-bottom: -12px !important;
+}
+nav .icon-nav .tubaba-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
 }
 nav .dropdown a {
   color: white;
@@ -103,18 +114,6 @@ nav .modif-drop a:hover {
   background-color: rgba(65, 0, 0, 0.8);
   color: var(--color-11);
 }
-nav .jdih-text {
-  font-size: 35px;
-  color: var(--color-12);
-  font-family: tubaba-bold;
-  margin-top: -12px;
-}
-nav .tubaba-text {
-  font-size: 12px;
-  font-weight: 500;
-  color: white;
-  margin-top: -10px;
-}
 
 @media only screen and (max-width: 768px) {
   nav .navbar .navbar-brand img {
@@ -123,6 +122,13 @@ nav .tubaba-text {
   nav .navbar a {
     font-size: 15px;
   }
+  nav .jdih-text {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  nav .tubaba-text {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 600px) {
   nav {
@@ -130,13 +136,21 @@ nav .tubaba-text {
     padding-right: 1rem !important;
   }
   nav .navbar .navbar-brand img {
-    height: 23px;
+    height: 10px !important;
+    width: auto;
   }
   nav .navbar a {
     font-size: 12px !important;
   }
   nav .navbar ul {
     display: none;
+  }
+  nav .jdih-text {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  nav .tubaba-text {
+    font-size: 10px;
   }
 }
 .pagination {
@@ -2592,15 +2606,20 @@ body[data-route-option=next-section] .c-header-home_buttons {
   font-weight: 500;
   text-align: center;
 }
-.page-jenis-produk .konten .filter-produk .box-cari select {
+.page-jenis-produk .konten .filter-produk .box-cari .selection .select2-selection {
   background-color: var(--color-3);
   border-radius: 48px;
-  border: none;
+  border: solid;
+  border-color: var(--color-9);
+  display: flex;
+  align-items: center;
   height: 50px;
   font-size: 16px;
+  padding: 5px;
 }
-.page-jenis-produk .konten .filter-produk .box-cari select:focus {
-  box-shadow: none;
+.page-jenis-produk .konten .filter-produk .box-cari .selection .select2-selection__arrow {
+  margin-top: 8px;
+  margin-right: 10px;
 }
 .page-jenis-produk .konten .filter-produk .box-cari .box-cari-perpustakaan input {
   background-color: var(--color-3);
