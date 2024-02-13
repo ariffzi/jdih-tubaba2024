@@ -40,11 +40,11 @@
                         </div>
                         <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
                             <div class="cari">
-                                <a href="#">
-                                    <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4">
-                                        <i class="bi bi-arrow-right ps-lg-0 pe-lg-0 ps-md-0 pe-md-0 ps-4 pe-4"></i>
-                                    </button>
-                                </a>
+                                {{-- <a href="#"> --}}
+                                <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4">
+                                    <i class="bi bi-arrow-right ps-lg-0 pe-lg-0 ps-md-0 pe-md-0 ps-4 pe-4"></i>
+                                </button>
+                                {{-- </a> --}}
                             </div>
                         </div>
                     </div>
