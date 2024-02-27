@@ -3048,6 +3048,10 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .berita .content .card .judul {
   font-weight: bolder;
   color: var(--maroon);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .berita .content .card .isi-berita {
   font-weight: lighter;

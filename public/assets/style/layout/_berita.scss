@@ -52,6 +52,10 @@
                 font-weight: bolder;
                 color: var(--maroon);
                 //   font-size: large;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
             }
 
             .isi-berita {

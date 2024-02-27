@@ -1,14 +1,12 @@
 <footer class="margin-top">
     <div class="card container">
         <div class="d-grid d-md-flex d-lg-flex logo mt-3 mt-md-4 mt-lg-5">
-            <div
-                class="d-flex justify-content-center justify-content-md-start justify-content-lg-start col-12 col-md-auto col-lg-auto">
+            <div class="d-flex justify-content-center justify-content-md-start justify-content-lg-start col-12 col-md-auto col-lg-auto">
                 <img class="img-fluid pe-2" src="/assets/logo/Logo-JDIH.svg" alt="" />
                 <img class="img-fluid pe-2" src="/assets/logo/lambang_tubaba.svg" alt="" />
             </div>
 
-            <div
-                class="col-12 col-md-10 col-lg-8 ps-3 pe-lg-0 pe-md-3 text-lg-start text-md-start text-center mt-3 mt-md-0 mt-lg-0">
+            <div class="col-12 col-md-10 col-lg-8 ps-3 pe-lg-0 pe-md-3 text-lg-start text-md-start text-center mt-3 mt-md-0 mt-lg-0">
                 <div class="head">JDIH KABUPATEN TUBABA</div>
                 <div class="keterangan mt-2">
                     JDIH Kabupaten Tubaba hadir untuk meningkatkan pelayanan kepada
@@ -111,7 +109,7 @@
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="https://www.instagram.com/bagianhukumtubaba_/">
                     <div class="row keterangan">
                         <div class="col-auto">
                             <i class="bi bi-instagram"></i>
