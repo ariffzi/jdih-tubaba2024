@@ -160,7 +160,7 @@
                             @foreach ($data as $dt)
                                 @if ($i++ < 5)
                                     <div class="col-12 mb-2">
-                                        <a href="/produk-hukum/detail?code={{ $dt->id }}">
+                                        <a href="/produk-hukum/detail?code={{ $dt->idData }}">
                                             <div class="card bg-card p-3">
                                                 <div class="row">
                                                     <div class="col-auto">
