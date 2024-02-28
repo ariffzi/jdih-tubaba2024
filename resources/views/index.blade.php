@@ -86,14 +86,6 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                <a href="produk-hukum?param=SURAT EDARAN">
-                    <div class="p-lg-2 p-md-2 p-1">
-                        <img class="img-fluid" src="/assets/logo/surat_edaran.jpg" alt="" />
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
                 <a href="produk-hukum?param=INSTRUKSI BUPATI">
                     <div class="p-lg-2 p-md-2 p-1">
                         <img class="img-fluid" src="/assets/logo/instruksi.jpg" alt="" />
@@ -102,17 +94,25 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                <a href="produk-hukum?param=PERATURAN DPRD KABUPATEN">
+                <a href="produk-hukum?param=SURAT EDARAN">
                     <div class="p-lg-2 p-md-2 p-1">
-                        <img class="img-fluid" src="/assets/logo/DPRD.jpg" alt="" />
+                        <img class="img-fluid" src="/assets/logo/surat_edaran.jpg" alt="" />
                     </div>
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
-                <a href="produk-hukum?param=PERATURAN PERUNDANG-UNDANGAN">
+                <a href="produk-hukum?param=PERATURAN DPRD KABUPATEN">
                     <div class="p-lg-2 p-md-2 p-1">
-                        <img class="img-fluid" src="/assets/logo/UU.jpg" alt="" />
+                        <img class="img-fluid" src="/assets/logo/peraturan-dprd.jpg" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6 m-0 p-lg-2 p-md-0 p-0">
+                <a href="produk-hukum?param=KEPUTUSAN DPRD KABUPATEN">
+                    <div class="p-lg-2 p-md-2 p-1">
+                        <img class="img-fluid" src="/assets/logo/keputusan-dprd.jpg" alt="" />
                     </div>
                 </a>
             </div>
@@ -121,7 +121,7 @@
                 <a href="produk-hukum?param=MEMORANDUM OF UNDERSTANDING ">
                     <div class="p-lg-2 p-md-2 p-1">
                         <!-- <div class="card p-1 p-md-2 p-lg-0"> -->
-                        <img class="img-fluid" src="/assets/logo/mou.jpg" alt="" />
+                        <img class="img-fluid" src="/assets/logo/kerjasama.jpg" alt="" />
                     </div>
                 </a>
             </div>

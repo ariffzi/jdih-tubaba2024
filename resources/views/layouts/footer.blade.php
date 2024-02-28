@@ -24,8 +24,8 @@
                 <div class="keterangan d-flex">
                     <div class="col-auto"><i class="bi bi-houses-fill"> </i></div>
                     <div class="col ps-3 ket-2">
-                        Panaragan Jaya, Komplek Perkantoran Pemerintah Kabupaten Tulang
-                        Bawang Barat
+                        Jl. Tuan Rio Sanak, Komplek Perkantoran Pemerintah Daerah
+                        Kabupaten Tulang Bawang Barat, Panaragan 34593
                     </div>
                 </div>
                 <div class="keterangan d-flex">

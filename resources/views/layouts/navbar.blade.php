@@ -8,9 +8,7 @@
                     <div class="tubaba-text m-0 p-0">Kabupaten Tubaba</div>
                 </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,8 +25,7 @@
                     </li>
 
                     <li class="nav-item dropdown mt-lg-2 mt-md-0">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Profil
                         </a>
                         <ul class="dropdown-menu modif-drop mt-3">
@@ -48,31 +45,33 @@
                     </li>
 
                     <li class="nav-item dropdown mt-lg-2 mt-md-0">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dokumen Hukum
                         </a>
                         <ul class="dropdown-menu modif-drop mt-3">
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Perda</a>
+                                <a class="dropdown-item text-wrap" href="/produk-hukum">Peraturan Daerah</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Perbub</a>
+                                <a class="dropdown-item text-wrap" href="/produk-hukum">Peraturan Bupati</a>
                             </li>
                             <li>
                                 <a class="dropdown-item text-wrap" href="/produk-hukum">Keputusan Bupati</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Surat Edaran</a>
-                            </li>
-                            <li>
                                 <a class="dropdown-item text-wrap" href="/produk-hukum">Instruksi Bupati</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Keputusan SKPD</a>
+                                <a class="dropdown-item text-wrap" href="/produk-hukum">Surat Edaran Bupati</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Nota Kesepahaman</a>
+                                <a class="dropdown-item text-wrap" href="/produk-hukum">Peraturan DPRD</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-wrap" href="/produk-hukum">Keputusan DPRD</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-wrap" href="/produk-hukum">Kerjasama Daerah</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider" />
