@@ -77,7 +77,13 @@ class ProdukHukumController extends Controller
         //
         $responses = Http::get('https://aplikasi.tubaba.go.id/api/jdih');
         $data = collect(json_decode($responses->getBody()));
-        return DataTables()->of($data)
+
+        return DataTables()->of($data->sortBy(
+            [
+                ['noPeraturan', 'asc'],
+                ['tahun_pengundangan', 'desc']
+            ]
+        ))
             ->addColumn('Keterangan', function ($data) {
                 $state = $data->status_perubahan;
                 if ($state == 'Perubahan Peraturan') {
