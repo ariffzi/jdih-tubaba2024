@@ -27,7 +27,7 @@ class UserController extends Controller
             'jenis' => $data,
             'data' => $data1->sortBy(
                 [
-                    ['noPeraturan', 'desc'],
+                    ['noPeraturan', 'asc'],
                     ['tahun_pengundangan', 'desc']
                 ]
             ),
