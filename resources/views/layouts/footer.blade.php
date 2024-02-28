@@ -91,7 +91,7 @@
             <div class="col-6 col-md-3 col-lg-3 mt-4 mt-md-0 mt-lg-0">
                 <div class="head mb-2">Sosial Media</div>
 
-                <a href="#">
+                {{-- <a href="#">
                     <div class="row keterangan">
                         <div class="col-auto">
                             <i class="bi bi-facebook"></i>
@@ -107,7 +107,7 @@
                         </div>
                         <div class="col ket-2 link">Bagian Hukum Tubaba</div>
                     </div>
-                </a>
+                </a> --}}
 
                 <a href="https://www.instagram.com/bagianhukumtubaba_/">
                     <div class="row keterangan">
