@@ -26,8 +26,10 @@ class UserController extends Controller
         return view('index', [
             'jenis' => $data,
             'data' => $data1->sortBy(
-                ['noPeraturan', 'desc'],
-                ['tahun_pengundangan', 'desc']
+                [
+                    ['noPeraturan', 'desc'],
+                    ['tahun_pengundangan', 'desc']
+                ]
             ),
             'jumlah_tahun' => $jumlah_tahun,
             'jumlah_jenis' => $jumlah_jenis,
