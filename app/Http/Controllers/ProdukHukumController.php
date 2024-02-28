@@ -80,8 +80,8 @@ class ProdukHukumController extends Controller
 
         return DataTables()->of($data->sortBy(
             [
+                ['tahun_pengundangan', 'desc'],
                 ['noPeraturan', 'asc'],
-                ['tahun_pengundangan', 'desc']
             ]
         ))
             ->addColumn('Keterangan', function ($data) {
