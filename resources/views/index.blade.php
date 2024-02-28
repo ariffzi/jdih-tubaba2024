@@ -454,7 +454,7 @@
                 <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
                     <div class="card">
                         <img class="img-fluid" src="/assets/img/berita/apbt.jpeg" alt="" />
-                        <a href="baca-berita">
+                        <a href="#">
                             <div class="txt-1 mt-md-2 mt-lg-3">
                                 Pemberian Nomor Register Peraturan Tiyuh tentang Anggaran Pendapatan dan Belanja Tiyuh
                                 Tahun Anggaran 2024 Kecamatan Tulang Bawang Udik dan Kecamatan Tulang Bawang Tengah
@@ -475,7 +475,7 @@
                 <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
                     <div class="card">
                         <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg" alt="" />
-                        <a href="baca-berita">
+                        <a href="#">
                             <div class="txt-1 mt-md-2 mt-lg-3">
                                 Rapat pembahasan Rancangan Peraturan Bupati tentang Tambahan Penghasilan ASN
                             </div>
@@ -495,7 +495,7 @@
                 <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
                     <div class="card">
                         <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg" alt="" />
-                        <a href="baca-berita">
+                        <a href="#">
                             <div class="txt-1 mt-md-2 mt-lg-3">
                                 Koordinasi Pengisian KKP HAM
                             </div>
@@ -515,7 +515,7 @@
                 <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
                     <div class="card">
                         <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg" alt="" />
-                        <a href="baca-berita">
+                        <a href="#">
                             <div class="txt-1 mt-md-2 mt-lg-3">
                                 Kepala bagian hukum menghadiri undangan Rapat Disiplin ASN dilingkungan Dinas Kesehatan
                             </div>
