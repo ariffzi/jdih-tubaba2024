@@ -20,7 +20,7 @@ class UserController extends Controller
         $data = collect(json_decode($klasifikasi->getBody()));
         $data1 = collect(json_decode($responses->getBody()));
         $jumlah_tahun = json_decode($data_tahun);
-        // dd($jumlah_tahun);
+        dd($data1);
         $jumlah_jenis = json_decode($data_jenis);
         return view('index', [
             'jenis' => $data,
