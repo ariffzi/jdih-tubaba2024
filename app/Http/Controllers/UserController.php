@@ -25,7 +25,10 @@ class UserController extends Controller
         $jumlah_jenis = json_decode($data_jenis);
         return view('index', [
             'jenis' => $data,
-            'data' => $data1->sortBy(['noPeraturan', 'asc']),
+            'data' => $data1->sortBy(
+                ['noPeraturan', 'asc'],
+                ['tahun_pengundangan', 'desc']
+            ),
             'jumlah_tahun' => $jumlah_tahun,
             'jumlah_jenis' => $jumlah_jenis,
         ]);
