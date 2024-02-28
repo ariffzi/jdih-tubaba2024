@@ -157,7 +157,7 @@
                             @php
                                 $i = 0;
                             @endphp
-                            @foreach ($data as $dt)
+                            @foreach ($data1 as $dt)
                                 @if ($i++ < 5)
                                     <div class="col-12 mb-2">
                                         <a href="/produk-hukum/detail?code={{ $dt->idData }}">
