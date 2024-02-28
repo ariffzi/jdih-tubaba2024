@@ -19,13 +19,13 @@ class UserController extends Controller
         $data_jenis = Http::get('https://aplikasi.tubaba.go.id/api/jdih/jumlah_jenis');
         $data = collect(json_decode($klasifikasi->getBody()));
         $data1 = collect(json_decode($responses->getBody()));
-        dd($data1);
+        dd($data1->orderBy('noPeraturan', 'asc'));
         $jumlah_tahun = json_decode($data_tahun);
         // dd($data1);
         $jumlah_jenis = json_decode($data_jenis);
         return view('index', [
             'jenis' => $data,
-            'data' => $data1->orderBy('updated_at', 'DESC'),
+            'data' => $data1->orderBy('noPeraturan', 'asc'),
             'jumlah_tahun' => $jumlah_tahun,
             'jumlah_jenis' => $jumlah_jenis,
         ]);
