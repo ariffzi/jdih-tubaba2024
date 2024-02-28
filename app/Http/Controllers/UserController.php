@@ -19,7 +19,7 @@ class UserController extends Controller
         $data_jenis = Http::get('https://aplikasi.tubaba.go.id/api/jdih/jumlah_jenis');
         $data = collect(json_decode($klasifikasi->getBody()));
         $data1 = collect(json_decode($responses->getBody()));
-        dd($data1);
+        // dd($data1);
         $jumlah_tahun = json_decode($data_tahun);
         // dd($data1);
         $jumlah_jenis = json_decode($data_jenis);
