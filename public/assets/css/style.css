@@ -1959,7 +1959,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
   height: 100vh;
 }
 .slide-dashboard .slide img {
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
 }
@@ -3050,7 +3050,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
   color: var(--maroon);
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 .berita .content .card .isi-berita {
