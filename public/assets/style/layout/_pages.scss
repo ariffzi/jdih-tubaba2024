@@ -169,43 +169,121 @@
         }
 
         .data {
+            a {
+                text-decoration: none;
+            }
+
             table {
-                .jud {
-                    width: 400px;
-                    text-wrap: wrap;
-                }
+                border-style: none;
+
                 thead {
-                    tr {
-                        th {
-                            background-color: var(--color-9);
-                            font-family: tubaba-bold;
-                        }
-                    }
+                    display: none;
                 }
-                tbody {
-                    tr {
+
+                .card-tabel-produk {
+                    // background-color: var(--color-7);
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    border-radius: 24px;
+                    color: var(--color-1);
+                    font-size: 14px;
+                    transition: all 0.3s;
+
+                    h1 {
+                        color: var(--color-1);
+                        font-size: 18px;
+                        padding: 0;
+                    }
+
+                    h2 {
+                        color: var(--color-8);
+                        font-size: 16px;
+                        padding: 0;
+                    }
+
+                    .tabel-card-produk {
                         td {
-                            a {
-                                text-decoration: none;
-                            }
-
-                            a:hover {
-                                color: var(--color-8);
-                            }
+                            margin: 0;
+                            padding: 0;
+                            font-size: 14px;
                         }
+                    }
+                }
+
+                .card-tabel-produk:hover {
+                    background-color: var(--color-7);
+                }
+
+                .btn-keterangan {
+                    border-style: solid;
+                    border-color: var(--maroon);
+                    color: var(--maroon);
+                    transition: all 0.5s;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--maroon);
+                        transition: all 0.5s;
+                        font-size: 14px;
+                    }
+                }
+
+                .btn-keterangan:hover {
+                    background-color: var(--maroon);
+                    transition: all 0.5s;
+
+                    a {
+                        color: var(--color-11);
                     }
                 }
             }
 
-            .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-                background: var(--color-11);
-                color: var(--maroon) !important;
-                border: none;
-            }
-            .dataTables_wrapper .dataTables_paginate .paginate_button {
-                background: var(--color-3);
-                color: var(--maroon) !important;
-                border-radius: 14px;
+            .dataTables_wrapper {
+                .dataTables_length {
+                    label {
+                        select {
+                            border-radius: var(--maroon);
+                            color: var(--maroon) !important;
+                            border-radius: 7px;
+                        }
+                        select:hover,
+                        select:focus,
+                        select:active,
+                        select:active:focus:not(:disabled):not(.disabled) {
+                            box-shadow: none !important;
+                            outline: 0;
+                        }
+                    }
+                }
+
+                .dataTables_filter {
+                    label {
+                        input {
+                            border-radius: 12px;
+                        }
+
+                        input:hover,
+                        input:focus,
+                        input:active,
+                        input:active:focus:not(:disabled):not(.disabled) {
+                            box-shadow: none !important;
+                            outline: 0;
+                        }
+                    }
+                }
+
+                .dataTables_paginate {
+                    .paginate_button {
+                        background: var(--color-3);
+                        color: var(--maroon) !important;
+                        border-radius: 14px;
+                    }
+
+                    .paginate_button.current {
+                        background: var(--color-11);
+                        color: var(--maroon) !important;
+                        border: none;
+                    }
+                }
             }
 
             .tabel-perpustakaan {
@@ -429,6 +507,7 @@
             }
         }
     }
+
     .page-detail-produk {
         .konten {
             .judul-produk {
@@ -475,6 +554,41 @@
                     }
                     .jabatan {
                         font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-jenis-produk {
+        .data {
+            table {
+                .card-tabel-produk {
+                    font-size: 10px !important;
+                    h1 {
+                        font-size: 12px !important;
+                    }
+
+                    h2 {
+                        font-size: 10px !important;
+                    }
+
+                    .tabel-card-produk {
+                        tr {
+                            td {
+                                font-size: 10px !important;
+
+                                .btn {
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                    a {
+                                        font-size: 10px !important;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

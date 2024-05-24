@@ -64,7 +64,7 @@
     </section>
 
     <!-- ======================== judul pages ========================= -->
-    <section class="margin-top pages-all">
+    <section class="mt-lg-5 mt-md-4 mt-3 pages-all">
         <div class="container">
             <div class="head mb-2">
                 <div class="row">
@@ -82,293 +82,70 @@
     <!-- ======================== konten ========================= -->
     <section class="page-jenis-produk">
         <div class="konten container mt-lg-5 mt-md-3 mt-3">
-            <div>
-                <div class="filter-produk  mt-lg-5 mt-md-4 mt-3">
-                    <form class="m-0 p-0">
-                        <div class="box-cari row">
-                            <div class="col-lg-2 col-md-12 col-12"></div>
-
-                            <div class="col-lg-3 col-md-5 col-12 p-2">
-                                <!-- <div>halo</div> -->
-
-                                <select class="jenisUud form-select ps-lg-4 pe-lg-4">
-                                    <option label="&nbsp;"></option>
-                                    @foreach ($jenis as $j)
-                                        <option value="{{ $j->nama_klasifikasi }}">{{ $j->nama_klasifikasi }}</option>
-                                    @endforeach
-                                    {{-- <option value="1">Perda</option>
-                                    <option value="2">Perbub</option>
-                                    <option value="3">SK Bupati</option>
-                                    <option value="4">dst</option> --}}
-                                </select>
-                            </div>
-
-                            <div class="col-lg-2 col-md-4 col-12 p-2">
-                                <!-- <div>halo</div> -->
-                                <select class="tahun form-select ps-lg-4 pe-lg-4">
-                                    <option label="&nbsp;"></option>
-                                    @php
-                                        $year_start = 1940;
-                                        $year_end = date('Y'); // current Year
-                                        $selected_year = date('Y'); // user date of birth year
-
-                                        for ($i_year = $year_start; $i_year <= $year_end; $i_year++) {
-                                            // $selected = $selected_year == $i_year ? ' selected' : '';
-                                            // echo ' <option value="' . $i_year . '">' . $i_year . '</option>';
-                                            $year[] = $i_year;
-                                        }
-                                        foreach (array_reverse($year) as $value) {
-                                            # code...
-                                            echo ' <option value="' . $value . '">' . $value . '</option>';
-                                        }
-                                    @endphp
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-12 p-2">
-                                <select class="judul form-select ps-lg-4 pe-lg-4">
-                                    <option label="&nbsp;"></option>
-                                    <option value=" ">all</option>
-                                    @foreach ($judul as $ju)
-                                        <option value="{{ $ju->judul }}">{{ $ju->judul }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-
-                            {{-- <div class="col-lg-2 col-md-3 col-12 p-2">
-                                <a href="#">
-                                    <button type="button" class="btn btn-filter">
-                                        <i class="bi bi-funnel me-3"></i> Filter
-                                    </button>
-                                </a>
-                            </div> --}}
-
-                            <div class="col-lg-2 col-md-12 col-12"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
 
             <section>
                 <div class="data mt-lg-5 mt-md-2 mt-3">
                     <div class="table-responsive">
-                        <table id="tableProduk" class="table table-hover ">
+                        <table id="tableProduk" class="table table-borderless">
                             <thead>
                                 <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col">Jenis</th>
-                                    <th class="jud" scope="col">Judul</th>
-                                    <th scope="col">Nomor</th>
-                                    <th scope="col">Tahun</th>
-                                    <th scope="col">Ditetapkan</th>
-                                    <th scope="col">Diundangkan</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Keterangan</th>
-                                    <th scope="col">Detail</th>
-                                    <th scope="col">Dilihat</th>
-                                    <th scope="col">Diunduh</th>
+                                    <th></th>
                                 </tr>
                             </thead>
-                            {{-- <tbody>
+                            <tbody>
+
+                                {{-- foreach --}}
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>1</td>
-                                    <td>2023</td>
-                                    <td>25 Dessember 2023</td>
-                                    <td>25 Dessember 2023</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 23 Tahun 2023 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Mengubah</td>
                                     <td>
-                                        <a href="#">Peraturan Bupati Nomor 12 Tahun 2009</a>
+                                        <a href="/lihat-produk-hukum">
+                                            <div class="card-tabel-produk p-md-4 p-3">
+                                                <h2>PERATURAN BUPATI <span><i class="bi bi-dot"></i></span> NOMOR 1 TAHUN
+                                                    2024</h2>
+                                                <h1>PERBUP NOMOR 1 TAHUN 2024 TENTANG PENETAPAN DAN PENEGASAN BATAS TIYUH
+                                                    WONOKERTO KECAMATAN TULANG BAWANG TENGAH</h1>
+
+                                                <table class="tabel-card-produk">
+
+                                                    <tr>
+                                                        <td>Ditetapkan</td>
+                                                        <td class="ps-3 pe-3">:</td>
+                                                        <td>
+                                                            12-12-2023
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Diundangkan</td>
+                                                        <td class="ps-3 pe-3">:</td>
+                                                        <td>
+                                                            12-12-2023
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Status</td>
+                                                        <td class="ps-3 pe-3">:</td>
+                                                        <td>Berlaku</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Keterangan</td>
+                                                        <td class="ps-3 pe-3">:</td>
+                                                        <td>
+                                                            {{-- button ini ngelink ke peraturan yang di rubah cok --}}
+                                                            <button class="btn btn-sm btn-keterangan">
+                                                                <a href="/contoh">Perubahan</a>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <div class="d-flex justify-content-end">
+                                                    <div>Lihat selengkapnya...</div>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>269</td>
-                                    <td>179</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>1</td>
-                                    <td>2023</td>
-                                    <td>20 Januari 2023</td>
-                                    <td>25 Januari 2023</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 2 Tahun 2023 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Berlaku</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>187</td>
-                                    <td>35</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>23 Januari 2009</td>
-                                    <td>23 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 12 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Diubah</td>
-                                    <td>
-                                        <a href="#">Peraturan Bupati Nomor 23 Tahun 2023</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>223</td>
-                                    <td>65</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>1</td>
-                                    <td>2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td>2 Januari 2009</td>
-                                    <td class="jud">
-                                        Peraturan Bupati Nomor 1 Tahun 2009 Tentang Lorem ipsum
-                                        dolor sit amet consectetur, adipisicing elit.
-                                    </td>
-                                    <td>Dicabut</td>
-                                    <td>
-                                        <a href="#">-</a>
-                                    </td>
-                                    <td><a href="/lihat-produk-hukum">Lihat</a></td>
-                                    <td>125</td>
-                                    <td>12</td>
-                                </tr>
-                            </tbody> --}}
+                                {{-- end foreach --}}
+
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -377,7 +154,8 @@
         </div>
     </section>
 @endsection
-@push('script')
+
+{{-- @push('script')
     <script>
         var getUrlParameter = function getUrlParameter(sParam) {
             var sPageURL = window.location.search.substring(1),
@@ -488,7 +266,8 @@
         $(document).ready(function() {
             if (getUrlParameter('param') != '') {
                 if (getUrlParameter('judul') != '') {
-                    $('#tableProduk').DataTable().column(1).search(getUrlParameter('param')).column(2).search(getUrlParameter('judul')).draw();
+                    $('#tableProduk').DataTable().column(1).search(getUrlParameter('param')).column(2).search(
+                        getUrlParameter('judul')).draw();
                     $('.jud').html(getUrlParameter('param'))
                 } else {
                     $('#tableProduk').DataTable().columns(1).search(getUrlParameter('param')).draw()
@@ -500,4 +279,4 @@
             }
         });
     </script>
-@endpush
+@endpush --}}

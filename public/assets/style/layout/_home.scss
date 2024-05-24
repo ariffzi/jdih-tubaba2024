@@ -413,6 +413,32 @@
     }
 }
 
+.dash-profil {
+    background-color: var(--color-8);
+    min-height: 80vh;
+
+    h4 {
+        color: var(--color-4);
+    }
+    h3,
+    p {
+        color: var(--color-6);
+    }
+
+    .dash-img {
+        img {
+            border-radius: 24px;
+        }
+    }
+
+    // .owl-stage-outer {
+    //     .active {
+    //         margin-top: 100px;
+    //     }
+
+    // }
+}
+
 /* ============= !!! TABLET !!! ============= */
 @media screen and (max-width: 769px) {
     .jenis-produk-hukum {

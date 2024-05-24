@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('content')
     <!-- ======================== slide dashboard ========================= -->
-    <section class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
+    <section
+        class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
         <div class="slide">
             <div id="owl-car-dashboard" class="owl-carousel owl-theme">
                 <div class="item z-n1">
@@ -38,7 +39,8 @@
                         <div class="col-lg-8 col-md-8 col-12 d-flex align-items-center ver p-2">
                             <input placeholder="Judul Peraturan" class="form-control" id="judulPeraturan" />
                         </div>
-                        <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
+                        <div
+                            class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
                             <div class="cari">
                                 {{-- <a href="#"> --}}
                                 <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4" id="cari">
@@ -368,7 +370,8 @@
                                             GALERI
                                         </div>
                                         <div class="txt-2">Lihat Galeri Kami</div>
-                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div
+                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/gallery.jpeg" alt="" />
                                         </div>
                                     </div>
@@ -382,7 +385,8 @@
                                             PERPUSTAKAAN
                                         </div>
                                         <div class="txt-2">Lihat Perpustakaan Kami</div>
-                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div
+                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/perpus.jpg  " alt="" />
                                         </div>
                                     </a>
@@ -544,7 +548,66 @@
     </section>
 
     <!-- ======================== testi profile ========================= -->
-    <section class="profil-testi margin-top">
+    <section class="margin-top dash-profil pt-5 pb-5 d-flex align-items-center">
+        <div class="container  mt-5">
+            <div class="row ps-lg-5">
+                <div class="col-lg-4 pe-md-5">
+                    <h4>TIM KAMI</h4>
+                    <h3 class="mt-1">Bagian Hukum Pemerintah Kabupaten Tulang Bawang Barat</h3>
+                    <p class="mt-3">Konsep NeNeMo harus menjadi komitmen dan gaya kerja kita sebagai ASN Di Kabupaten
+                        Tulang Bawang Barat.</p>
+                </div>
+
+                <div class="col-lg-8 mt-md-0 mt-4">
+                    <div id="owl-profil-dash" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp3.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp4.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp5.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp6.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp7.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp8.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== testi profile OLD ========================= -->
+    {{-- <section class="profil-testi margin-top">
         <div id="owl-profil-dash" class="owl-carousel owl-theme">
             <div class="item">
                 <div class="row d-flex align-items-center justify-content-center m-0 p-0">
@@ -634,7 +697,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+
+
 
     <!-- ======================== Info APK JDIH dan survey ========================= -->
     <section class="margin-top apk-survey pt-lg-5 pt-md-3 pt-3 pb-lg-5 pb-md-3 pb-3">
@@ -656,7 +721,8 @@
                             <canvas id="pie-chart"></canvas>
                         </div>
                         <div class="d-flex justify-content-end mt-lg-4">
-                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
                                 Ikti Survey
                                 <i class="bi bi-arrow-right ms-4"></i>
                             </button>
@@ -667,7 +733,8 @@
         </div>
 
         <!-- Modal Survey -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -684,7 +751,8 @@
                             <button type="button" class="btn btn-danger">
                                 Beri penilaian
                             </button>
-                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Sesuai</a></li>
                                 <li><a class="dropdown-item" href="#">Sangat Sesuai</a></li>
@@ -813,7 +881,8 @@
                     ],
                     datasets: [{
                         backgroundColor: [
-                            "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45",
+                            "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45",
+                            "#e48f45", "#e48f45",
                         ],
                         data: [
                             @foreach ($jumlah_tahun as $jt)
@@ -845,7 +914,9 @@
                     ],
                     datasets: [{
                         backgroundColor: [
-                            "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45",
+                            "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45",
+                            "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45",
+                            "#e48f45", "#e48f45", "#e48f45", "#e48f45", "#e48f45",
                         ],
                         data: [
                             @foreach ($jumlah_jenis as $jp)

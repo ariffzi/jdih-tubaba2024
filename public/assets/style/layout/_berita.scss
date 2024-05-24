@@ -6,29 +6,87 @@
             font-weight: bolder;
         }
 
-        .src {
-            .input-group {
-                border-color: var(--color-4);
-                border-style: solid;
-                border-radius: 18px;
+        // .src {
+        //     .input-group {
+        //         border-color: var(--color-4);
+        //         border-style: solid;
+        //         border-radius: 18px;
+        //     }
+        //     .form-control {
+        //         border-color: var(--maroon) !important;
+        //         border-radius: 14px;
+        //     }
+
+        //     .btn {
+        //         border-color: var(--maroon) !important;
+        //         background-color: var(--maroon);
+        //         color: white;
+        //         font-weight: bolder;
+        //         border-radius: 14px;
+        //     }
+
+        //     .btn:hover {
+        //         border-color: var(--maroon) !important;
+        //         background-color: white;
+        //         color: var(--maroon);
+        //     }
+        // }
+
+        table {
+            border-style: none;
+            thead {
+                display: none;
             }
-            .form-control {
-                border-color: var(--maroon) !important;
-                border-radius: 14px;
+        }
+
+        .dataTables_wrapper {
+            .dataTables_length {
+                label {
+                    select {
+                        border-style: solid;
+                        border-color: var(--color-8);
+                        border-radius: 8px;
+                    }
+
+                    select:hover,
+                    select:focus,
+                    select:active,
+                    select:active:focus:not(:disabled):not(.disabled) {
+                        box-shadow: none !important;
+                        outline: 0;
+                    }
+                }
             }
 
-            .btn {
-                border-color: var(--maroon) !important;
-                background-color: var(--maroon);
-                color: white;
-                font-weight: bolder;
-                border-radius: 14px;
+            .dataTables_filter {
+                label {
+                    input {
+                        border-style: solid;
+                        border-color: var(--color-8);
+                        border-radius: 14px;
+                    }
+                    input:hover,
+                    input:focus,
+                    input:active,
+                    input:active:focus:not(:disabled):not(.disabled) {
+                        box-shadow: none !important;
+                        outline: 0;
+                    }
+                }
             }
 
-            .btn:hover {
-                border-color: var(--maroon) !important;
-                background-color: white;
-                color: var(--maroon);
+            .dataTables_paginate {
+                .paginate_button {
+                    background: var(--color-3);
+                    color: var(--maroon) !important;
+                    border-radius: 14px;
+                }
+
+                .paginate_button.current {
+                    background: var(--color-11);
+                    color: var(--maroon) !important;
+                    border: none;
+                }
             }
         }
 

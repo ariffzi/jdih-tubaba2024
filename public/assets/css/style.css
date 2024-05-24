@@ -26,6 +26,14 @@
 body {
   font-family: tubaba;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: tubaba-bold;
+}
 body .line-1 {
   background: var(--color-11);
   height: 2px;
@@ -2360,6 +2368,21 @@ body[data-route-option=next-section] .c-header-home_buttons {
   transform: scale(1.1);
 }
 
+.dash-profil {
+  background-color: var(--color-8);
+  min-height: 80vh;
+}
+.dash-profil h4 {
+  color: var(--color-4);
+}
+.dash-profil h3,
+.dash-profil p {
+  color: var(--color-6);
+}
+.dash-profil .dash-img img {
+  border-radius: 24px;
+}
+
 /* ============= !!! TABLET !!! ============= */
 @media screen and (max-width: 769px) {
   .jenis-produk-hukum {
@@ -2644,29 +2667,90 @@ body[data-route-option=next-section] .c-header-home_buttons {
   background-color: var(--color-11);
   color: var(--maroon);
 }
-.page-jenis-produk .konten .data table .jud {
-  width: 400px;
-  text-wrap: wrap;
-}
-.page-jenis-produk .konten .data table thead tr th {
-  background-color: var(--color-9);
-  font-family: tubaba-bold;
-}
-.page-jenis-produk .konten .data table tbody tr td a {
+.page-jenis-produk .konten .data a {
   text-decoration: none;
 }
-.page-jenis-produk .konten .data table tbody tr td a:hover {
-  color: var(--color-8);
+.page-jenis-produk .konten .data table {
+  border-style: none;
 }
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-  background: var(--color-11);
+.page-jenis-produk .konten .data table thead {
+  display: none;
+}
+.page-jenis-produk .konten .data table .card-tabel-produk {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 24px;
+  color: var(--color-1);
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.page-jenis-produk .konten .data table .card-tabel-produk h1 {
+  color: var(--color-1);
+  font-size: 18px;
+  padding: 0;
+}
+.page-jenis-produk .konten .data table .card-tabel-produk h2 {
+  color: var(--color-8);
+  font-size: 16px;
+  padding: 0;
+}
+.page-jenis-produk .konten .data table .card-tabel-produk .tabel-card-produk td {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.page-jenis-produk .konten .data table .card-tabel-produk:hover {
+  background-color: var(--color-7);
+}
+.page-jenis-produk .konten .data table .btn-keterangan {
+  border-style: solid;
+  border-color: var(--maroon);
+  color: var(--maroon);
+  transition: all 0.5s;
+}
+.page-jenis-produk .konten .data table .btn-keterangan a {
+  text-decoration: none;
+  color: var(--maroon);
+  transition: all 0.5s;
+  font-size: 14px;
+}
+.page-jenis-produk .konten .data table .btn-keterangan:hover {
+  background-color: var(--maroon);
+  transition: all 0.5s;
+}
+.page-jenis-produk .konten .data table .btn-keterangan:hover a {
+  color: var(--color-11);
+}
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select {
+  border-radius: var(--maroon);
   color: var(--maroon) !important;
-  border: none;
+  border-radius: 7px;
+}
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:hover,
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:focus,
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:active,
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
+}
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input {
+  border-radius: 12px;
+}
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:hover,
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:focus,
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:active,
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
 }
 .page-jenis-produk .konten .data .dataTables_wrapper .dataTables_paginate .paginate_button {
   background: var(--color-3);
   color: var(--maroon) !important;
   border-radius: 14px;
+}
+.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: var(--color-11);
+  color: var(--maroon) !important;
+  border: none;
 }
 .page-jenis-produk .konten .data .tabel-perpustakaan .card {
   background-color: transparent;
@@ -2857,6 +2941,27 @@ body[data-route-option=next-section] .c-header-home_buttons {
   .profil .struktur .profil-struktur .card .jabatan {
     font-size: 8px;
   }
+  .page-jenis-produk .data table .card-tabel-produk {
+    font-size: 10px !important;
+  }
+  .page-jenis-produk .data table .card-tabel-produk h1 {
+    font-size: 12px !important;
+  }
+  .page-jenis-produk .data table .card-tabel-produk h2 {
+    font-size: 10px !important;
+  }
+  .page-jenis-produk .data table .card-tabel-produk .tabel-card-produk tr td {
+    font-size: 10px !important;
+  }
+  .page-jenis-produk .data table .card-tabel-produk .tabel-card-produk tr td .btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .page-jenis-produk .data table .card-tabel-produk .tabel-card-produk tr td .btn a {
+    font-size: 10px !important;
+  }
 }
 .page-galeri {
   font-family: "Barlow", sans-serif;
@@ -3012,26 +3117,45 @@ body[data-route-option=next-section] .c-header-home_buttons {
   font-size: xx-large;
   font-weight: bolder;
 }
-.berita .content .src .input-group {
-  border-color: var(--color-4);
+.berita .content table {
+  border-style: none;
+}
+.berita .content table thead {
+  display: none;
+}
+.berita .content .dataTables_wrapper .dataTables_length label select {
   border-style: solid;
-  border-radius: 18px;
+  border-color: var(--color-8);
+  border-radius: 8px;
 }
-.berita .content .src .form-control {
-  border-color: var(--maroon) !important;
+.berita .content .dataTables_wrapper .dataTables_length label select:hover,
+.berita .content .dataTables_wrapper .dataTables_length label select:focus,
+.berita .content .dataTables_wrapper .dataTables_length label select:active,
+.berita .content .dataTables_wrapper .dataTables_length label select:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
+}
+.berita .content .dataTables_wrapper .dataTables_filter label input {
+  border-style: solid;
+  border-color: var(--color-8);
   border-radius: 14px;
 }
-.berita .content .src .btn {
-  border-color: var(--maroon) !important;
-  background-color: var(--maroon);
-  color: white;
-  font-weight: bolder;
+.berita .content .dataTables_wrapper .dataTables_filter label input:hover,
+.berita .content .dataTables_wrapper .dataTables_filter label input:focus,
+.berita .content .dataTables_wrapper .dataTables_filter label input:active,
+.berita .content .dataTables_wrapper .dataTables_filter label input:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
+}
+.berita .content .dataTables_wrapper .dataTables_paginate .paginate_button {
+  background: var(--color-3);
+  color: var(--maroon) !important;
   border-radius: 14px;
 }
-.berita .content .src .btn:hover {
-  border-color: var(--maroon) !important;
-  background-color: white;
-  color: var(--maroon);
+.berita .content .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: var(--color-11);
+  color: var(--maroon) !important;
+  border: none;
 }
 .berita .content .card {
   border: none;
@@ -3120,7 +3244,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
   margin-right: 2rem;
 }
 .baca-berita .gambar-berita img {
-  height: 90vh;
+  height: 120vh;
   width: 100%;
   object-fit: cover;
   border-radius: 48px;
