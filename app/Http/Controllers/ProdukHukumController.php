@@ -84,42 +84,49 @@ class ProdukHukumController extends Controller
                 ['noPeraturan', 'asc'],
             ]
         ))
-            ->addColumn('Keterangan', function ($data) {
-                $state = $data->status_perubahan;
-                if ($state == 'Perubahan Peraturan') {
-                    # code...
-                    $color = 'success';
-                    $button = '<a target="_blank" href="' . $data->urlDownload . '" class="btn btn-outline-' . $color . '">' . $data->status_perubahan . '</a>';
-                } else {
-                    $button = '';
-                }
-                return $button;
+            ->addColumn('keterangan', function ($data) {
+                $keterangan = '
+                            <div class="card-tabel-produk p-md-4 p-3">
+                                <h2>' . $data->jenis . ' <span><i class="bi bi-dot"></i></span> NOMOR ' . $data->noPeraturan . ' TAHUN ' . $data->tahun_pengundangan . '</h2>
+                                <h1>' . $data->judul . '</h1>
+                                    <table class="tabel-card-produk">
+                                        <tr>
+                                            <td>Ditetapkan</td>
+                                            <td class="ps-3 pe-3">:</td>
+                                            <td>
+                                                ' . $data->tanggal_penetapan . '
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Diundangkan</td>
+                                            <td class="ps-3 pe-3">:</td>
+                                            <td>
+                                            ' . $data->tanggal_pengundangan . '
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Status</td>
+                                            <td class="ps-3 pe-3">:</td>
+                                            <td>' . $data->status . '</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keterangan</td>
+                                            <td class="ps-3 pe-3">:</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-keterangan">
+                                                    <a href="/contoh">Perubahan</a>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="d-flex justify-content-end">
+                                        <div>Lihat selengkapnya...</div>
+                                    </div>
+                            </div>';
+
+                return $keterangan;
             })
-            ->addColumn('detail', function ($data) {
-                $button = '<a href="/produk-hukum/detail?code=' . $data->idData . '">Lihat</a>';
-                return $button;
-            })
-            ->addColumn('download', function ($data) {
-                if (($data->download == '') || ($data->download == NULL)) {
-                    # code...
-                    $download = 0;
-                } else {
-                    $download = $data->download;
-                }
-                $count = $download;
-                return $count;
-            })
-            ->addColumn('view', function ($data) {
-                if (($data->view == '') || ($data->view == NULL)) {
-                    # code...
-                    $view = 0;
-                } else {
-                    $view = $data->view;
-                }
-                $count = $view;
-                return $count;
-            })
-            ->rawColumns(['Keterangan', 'detail', 'download', 'view'])
+            ->rawColumns(['keterangan'])
             ->make(true);
     }
 

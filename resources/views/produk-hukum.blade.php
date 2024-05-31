@@ -92,60 +92,6 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
-
-                                {{-- foreach --}}
-                                <tr>
-                                    <td>
-                                        <a href="/lihat-produk-hukum">
-                                            <div class="card-tabel-produk p-md-4 p-3">
-                                                <h2>PERATURAN BUPATI <span><i class="bi bi-dot"></i></span> NOMOR 1 TAHUN
-                                                    2024</h2>
-                                                <h1>PERBUP NOMOR 1 TAHUN 2024 TENTANG PENETAPAN DAN PENEGASAN BATAS TIYUH
-                                                    WONOKERTO KECAMATAN TULANG BAWANG TENGAH</h1>
-
-                                                <table class="tabel-card-produk">
-
-                                                    <tr>
-                                                        <td>Ditetapkan</td>
-                                                        <td class="ps-3 pe-3">:</td>
-                                                        <td>
-                                                            12-12-2023
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Diundangkan</td>
-                                                        <td class="ps-3 pe-3">:</td>
-                                                        <td>
-                                                            12-12-2023
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Status</td>
-                                                        <td class="ps-3 pe-3">:</td>
-                                                        <td>Berlaku</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Keterangan</td>
-                                                        <td class="ps-3 pe-3">:</td>
-                                                        <td>
-                                                            {{-- button ini ngelink ke peraturan yang di rubah cok --}}
-                                                            <button class="btn btn-sm btn-keterangan">
-                                                                <a href="/contoh">Perubahan</a>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <div class="d-flex justify-content-end">
-                                                    <div>Lihat selengkapnya...</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                                {{-- end foreach --}}
-
-                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -155,128 +101,29 @@
     </section>
 @endsection
 
-{{-- @push('script')
+@push('script')
     <script>
-        var getUrlParameter = function getUrlParameter(sParam) {
-            var sPageURL = window.location.search.substring(1),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
-
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-                }
-            }
-            return false;
-        };
-
-        $('.jenisUud').select2({
-            placeholder: 'Cari Jenis Peraturan'
-        });
-
-        $('.tahun').select2({
-            placeholder: 'Cari Tahun'
-        });
-
-        $('.judul').select2({
-            placeholder: 'Cari Judul'
-        });
-
-        $('.jenisUud').change(function(e) {
-            e.preventDefault();
-            $('#tableProduk').DataTable().columns(1).search(e.currentTarget.value).draw()
-            $('.jud').html(e.currentTarget.value)
-        });
-        $('.tahun').change(function(e) {
-            e.preventDefault();
-            $('#tableProduk').DataTable().columns(4).search(e.currentTarget.value).draw()
-        });
-        $('.judul').change(function(e) {
-            e.preventDefault();
-            $('#tableProduk').DataTable().columns(2).search(e.currentTarget.value).draw()
-        });
-
-        $('#tableProduk').DataTable({
-            processing: true,
-            serverSide: true,
-            destroy: true,
-            paging: true,
-            length: 10,
-            pageLength: 20,
-            buttons: ['copy', 'excel', 'csv', 'print'],
-            order: [
-                [0, "asc"]
-            ],
-            responsive: true,
-            ajax: '/produk-hukum/show',
-            columns: [{
-                    'data': null,
-                    'sortable': false,
-                    render: function(data, type, row, meta) {
-                        return meta.row + meta.settings._iDisplayStart + 1
-                    },
-
-                },
-                {
-                    data: 'jenis',
-                },
-                {
-                    data: 'judul',
-                },
-                {
-                    data: 'noPeraturan',
-                },
-                {
-                    data: 'tahun_pengundangan',
-                },
-                {
-                    data: 'tanggal_pengundangan',
-                },
-                {
-                    data: 'tanggal_penetapan',
-                },
-                {
-                    data: 'status',
-                },
-                {
-                    data: 'Keterangan',
-                },
-                {
-                    data: 'detail',
-                },
-                {
-                    data: 'view',
-                },
-                {
-                    data: 'download',
-                },
-            ],
-            sDom: '<"row"<"col-sm-12"<"table-container"t>r>><"row"<"col-12"p>>',
-            language: {
-                paginate: {
-                    previous: '<i class="bi bi-chevron-double-left"></i>',
-                    next: '<i class="bi bi-chevron-double-right"></i>',
-                },
-            },
-        });
-
         $(document).ready(function() {
-            if (getUrlParameter('param') != '') {
-                if (getUrlParameter('judul') != '') {
-                    $('#tableProduk').DataTable().column(1).search(getUrlParameter('param')).column(2).search(
-                        getUrlParameter('judul')).draw();
-                    $('.jud').html(getUrlParameter('param'))
+            var tbprodukhukum = $("#tableProduk").DataTable({
+                deferRender: true,
+                processing: true,
+                serverSide: true,
+                bDestroy: true,
+                pagingType: "simple_numbers",
+                ajax: '/produk-hukum/show',
+                columns: [{
+                    data: 'keterangan',
+                }, ],
+            });
+            $('#dt-search-0').unbind();
+            $('#dt-search-0').bind('change', function() {
+                var levelID = $(this).val();
+                if (levelID == 0) {
+                    tbprodukhukum.search('').columns().search('').draw();
                 } else {
-                    $('#tableProduk').DataTable().columns(1).search(getUrlParameter('param')).draw()
-                    $('.jud').html(getUrlParameter('param'))
+                    tbprodukhukum.columns(0).search(levelID).draw();
                 }
-            } else {
-                $('#tbDokumenHukum').DataTable().columns(4).search('').draw()
-                $('.jud').html('Produk Hukum')
-            }
+            });
         });
     </script>
-@endpush --}}
+@endpush
