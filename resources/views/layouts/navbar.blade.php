@@ -2,13 +2,15 @@
     <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <a href="/" class="navbar-brand icon-nav m-0 ps-1 ps-md-3 ps-lg-3 d-flex align-items-center">
-                <img class="img-fluid" src="/assets/logo/Logo-jdih.svg" alt="" />
+                <img class="img-fluid" src="/assets/logo/Logo-JDIH.svg" alt="" />
                 <div class="ms-lg-2 ms-md-3 ms-2 ">
                     <div class="jdih-text m-0 p-0">JDIH</div>
                     <div class="tubaba-text m-0 p-0">Kabupaten Tubaba</div>
                 </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,7 +27,8 @@
                     </li>
 
                     <li class="nav-item dropdown mt-lg-2 mt-md-0">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Profil
                         </a>
                         <ul class="dropdown-menu modif-drop mt-3">
@@ -45,7 +48,8 @@
                     </li>
 
                     <li class="nav-item dropdown mt-lg-2 mt-md-0">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Dokumen Hukum
                         </a>
                         <ul class="dropdown-menu modif-drop mt-3">

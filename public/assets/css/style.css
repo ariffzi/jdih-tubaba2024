@@ -2629,49 +2629,18 @@ body[data-route-option=next-section] .c-header-home_buttons {
   font-weight: 500;
   text-align: center;
 }
-.page-jenis-produk .konten .filter-produk .box-cari .selection .select2-selection {
-  background-color: var(--color-3);
-  border-radius: 48px;
-  border: solid;
-  border-color: var(--color-9);
-  display: flex;
-  align-items: center;
-  height: 50px;
-  font-size: 16px;
-  padding: 5px;
-}
-.page-jenis-produk .konten .filter-produk .box-cari .selection .select2-selection__arrow {
-  margin-top: 8px;
-  margin-right: 10px;
-}
-.page-jenis-produk .konten .filter-produk .box-cari .box-cari-perpustakaan input {
-  background-color: var(--color-3);
-  border-radius: 48px;
-  border: none;
-  height: 50px;
-  font-size: 16px;
-}
-.page-jenis-produk .konten .filter-produk .box-cari .box-cari-perpustakaan input:focus {
-  box-shadow: none;
-}
-.page-jenis-produk .konten .filter-produk .btn-filter {
-  width: 100%;
-  height: 50px;
-  border-radius: 48px;
-  font-size: 16px;
-  background-color: var(--maroon);
-  color: var(--color-11);
-  transition: all 0.5s;
-}
-.page-jenis-produk .konten .filter-produk .btn-filter:hover {
-  background-color: var(--color-11);
-  color: var(--maroon);
-}
 .page-jenis-produk .konten .data a {
   text-decoration: none;
 }
 .page-jenis-produk .konten .data table {
+  border-style: none !important;
+  border: none !important;
+}
+.page-jenis-produk .konten .data table tbody,
+.page-jenis-produk .konten .data table tr,
+.page-jenis-produk .konten .data table td {
   border-style: none;
+  border: none !important;
 }
 .page-jenis-produk .konten .data table thead {
   display: none;
@@ -2720,38 +2689,6 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .page-jenis-produk .konten .data table .btn-keterangan:hover a {
   color: var(--color-11);
 }
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select {
-  border-radius: var(--maroon);
-  color: var(--maroon) !important;
-  border-radius: 7px;
-}
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:hover,
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:focus,
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:active,
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_length label select:active:focus:not(:disabled):not(.disabled) {
-  box-shadow: none !important;
-  outline: 0;
-}
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input {
-  border-radius: 12px;
-}
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:hover,
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:focus,
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:active,
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_filter label input:active:focus:not(:disabled):not(.disabled) {
-  box-shadow: none !important;
-  outline: 0;
-}
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_paginate .paginate_button {
-  background: var(--color-3);
-  color: var(--maroon) !important;
-  border-radius: 14px;
-}
-.page-jenis-produk .konten .data .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-  background: var(--color-11);
-  color: var(--maroon) !important;
-  border: none;
-}
 .page-jenis-produk .konten .data .tabel-perpustakaan .card {
   background-color: transparent;
   height: 100px;
@@ -2762,6 +2699,38 @@ body[data-route-option=next-section] .c-header-home_buttons {
   width: 75px;
   object-fit: cover;
   border-radius: 14px;
+}
+.page-jenis-produk #tableProduk_wrapper .dt-search input {
+  border-radius: 12px;
+}
+.page-jenis-produk #tableProduk_wrapper .dt-search input:hover,
+.page-jenis-produk #tableProduk_wrapper .dt-search input:focus,
+.page-jenis-produk #tableProduk_wrapper .dt-search input:active,
+.page-jenis-produk #tableProduk_wrapper .dt-search input:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
+}
+.page-jenis-produk #tableProduk_wrapper .dt-length select {
+  border-radius: var(--maroon);
+  color: var(--maroon) !important;
+  border-radius: 12px;
+}
+.page-jenis-produk #tableProduk_wrapper .dt-length select:hover,
+.page-jenis-produk #tableProduk_wrapper .dt-length select:focus,
+.page-jenis-produk #tableProduk_wrapper .dt-length select:active,
+.page-jenis-produk #tableProduk_wrapper .dt-length select:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
+}
+.page-jenis-produk #tableProduk_wrapper .dt-paging .dt-paging-button {
+  background: var(--color-3);
+  color: var(--maroon) !important;
+  border-radius: 14px;
+}
+.page-jenis-produk #tableProduk_wrapper .dt-paging .current {
+  background: var(--color-11);
+  color: var(--maroon) !important;
+  border: none;
 }
 
 .page-detail-produk .card {
@@ -3123,36 +3092,34 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .berita .content table thead {
   display: none;
 }
-.berita .content .dataTables_wrapper .dataTables_length label select {
-  border-style: solid;
-  border-color: var(--color-8);
-  border-radius: 8px;
+.berita .content #pageBerita_wrapper .dt-search input {
+  border-radius: 12px;
 }
-.berita .content .dataTables_wrapper .dataTables_length label select:hover,
-.berita .content .dataTables_wrapper .dataTables_length label select:focus,
-.berita .content .dataTables_wrapper .dataTables_length label select:active,
-.berita .content .dataTables_wrapper .dataTables_length label select:active:focus:not(:disabled):not(.disabled) {
+.berita .content #pageBerita_wrapper .dt-search input:hover,
+.berita .content #pageBerita_wrapper .dt-search input:focus,
+.berita .content #pageBerita_wrapper .dt-search input:active,
+.berita .content #pageBerita_wrapper .dt-search input:active:focus:not(:disabled):not(.disabled) {
   box-shadow: none !important;
   outline: 0;
 }
-.berita .content .dataTables_wrapper .dataTables_filter label input {
-  border-style: solid;
-  border-color: var(--color-8);
-  border-radius: 14px;
+.berita .content #pageBerita_wrapper .dt-length select {
+  border-radius: var(--maroon);
+  color: var(--maroon) !important;
+  border-radius: 12px;
 }
-.berita .content .dataTables_wrapper .dataTables_filter label input:hover,
-.berita .content .dataTables_wrapper .dataTables_filter label input:focus,
-.berita .content .dataTables_wrapper .dataTables_filter label input:active,
-.berita .content .dataTables_wrapper .dataTables_filter label input:active:focus:not(:disabled):not(.disabled) {
+.berita .content #pageBerita_wrapper .dt-length select:hover,
+.berita .content #pageBerita_wrapper .dt-length select:focus,
+.berita .content #pageBerita_wrapper .dt-length select:active,
+.berita .content #pageBerita_wrapper .dt-length select:active:focus:not(:disabled):not(.disabled) {
   box-shadow: none !important;
   outline: 0;
 }
-.berita .content .dataTables_wrapper .dataTables_paginate .paginate_button {
+.berita .content #pageBerita_wrapper .dt-paging .dt-paging-button {
   background: var(--color-3);
   color: var(--maroon) !important;
   border-radius: 14px;
 }
-.berita .content .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+.berita .content #pageBerita_wrapper .dt-paging .current {
   background: var(--color-11);
   color: var(--maroon) !important;
   border: none;
@@ -3172,6 +3139,7 @@ body[data-route-option=next-section] .c-header-home_buttons {
 .berita .content .card .judul {
   font-weight: bolder;
   color: var(--maroon);
+  font-family: tubaba-bold;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
