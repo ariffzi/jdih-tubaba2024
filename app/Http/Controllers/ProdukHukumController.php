@@ -77,7 +77,7 @@ class ProdukHukumController extends Controller
         //
         $responses = Http::get('https://aplikasi.tubaba.go.id/api/jdih');
         $data = collect(json_decode($responses->getBody()));
-
+        // dd($data);
         return DataTables()->of($data->sortBy(
             [
                 ['tahun_pengundangan', 'desc'],
@@ -86,6 +86,7 @@ class ProdukHukumController extends Controller
         ))
             ->addColumn('keterangan', function ($data) {
                 $keterangan = '
+                        <a href="/produk-hukum/detail?code=' . $data->idData . '">
                             <div class="card-tabel-produk p-md-4 p-3">
                                 <h2>' . $data->jenis . ' <span><i class="bi bi-dot"></i></span> NOMOR ' . $data->noPeraturan . ' TAHUN ' . $data->tahun_pengundangan . '</h2>
                                 <h1>' . $data->judul . '</h1>
@@ -122,7 +123,8 @@ class ProdukHukumController extends Controller
                                     <div class="d-flex justify-content-end">
                                         <div>Lihat selengkapnya...</div>
                                     </div>
-                            </div>';
+                            </div>
+                        </a>';
 
                 return $keterangan;
             })
