@@ -4,7 +4,7 @@
     <!-- ======================== detail produk hukum ========================= -->
     <section class="margin-top pt-lg-3 pt-md-4 pt-5">
         <div class="page-detail-produk container">
-            <div id="owl-jenis-produk" class="owl-carousel owl-theme">
+            {{-- <div id="owl-jenis-produk" class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card p-lg-3">
                         <a href="#">
@@ -61,14 +61,57 @@
                         </a>
                     </div>
                 </div>
+            </div> --}}
+            <div class="row pt-3">
+                @if ($status_peraturan->perubahan->judul_dokumen_perubahan)
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="fw-bolder fs-5">Merubah :</div>
+                            <table class="table ket">
+                                <tbody>
+                                    @php
+                                        $i = 1;
+                                    @endphp
+                                    @foreach ($status_peraturan->perubahan->judul_dokumen_perubahan as $doc_perubahan)
+                                        <tr style="font-size: 12px">
+                                            <td style="width: 5%">{{ $i++ }}.</td>
+                                            <td style="width: 95%"> <a href="/produk-hukum/detail?code={{ $doc_perubahan->id_dokumen_perubahan }}">{{ $doc_perubahan->judul_dokumen_perubahan }}</a></td>
+                                        </tr>
+                                    @endforeach
+                                <tbody>
+                            </table>
+                        </div>
+                    </div>
+                @endif
+                @if ($status_peraturan->diubah_dengan->judul_dokumen_dirubah_dengan)
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="fw-bolder fs-5">Diubah Dengan :</div>
+                            <table class="table ket">
+                                <tbody>
+                                    @php
+                                        $i = 1;
+                                    @endphp
+                                    @foreach ($status_peraturan->diubah_dengan as $doc_diubah)
+                                        <tr style="font-size: 12px">
+                                            <td style="width: 5%">{{ $i++ }}.</td>
+                                            <td style="width: 95%"> <a href="/produk-hukum/detail?code={{ $doc_diubah->id_dukumen_berlaku }}"> {{ $doc_diubah->dokumen_berlaku }}</a></td>
+                                        </tr>
+                                    @endforeach
+                                <tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                @endif
             </div>
 
             <div class="konten mt-lg-5 mt-md-4 mt-3">
-                <div class="row">
-                    <div class="col-lg-8 col-md-9 col-12 judul-produk">
+                {{-- <div class="row">
+                    <h4 class="col-lg-12 col-md-9 col-12 ">
                         {{ $judul_peraturan }}
-                    </div>
-                </div>
+                    </h4>
+                </div> --}}
 
                 <div class="row mt-lg-5 col-md-12 col-12 mt-md-4 mt-3 m-0 p-0">
                     <div class="col-lg-5">
@@ -139,14 +182,6 @@
                                     <td>{{ $status }}</td>
                                 </tr>
 
-                                @if ($status_perubahan == 1)
-                                    <tr>
-                                        <td>Status Peraturan</td>
-                                        <td>:</td>
-                                        <td class="fw-bold">{{ $judul_dokumen_perubahan }}</td>
-                                    </tr>
-                                @endif
-
                                 <tr>
                                     <td>Penandatangganan</td>
                                     <td>:</td>
@@ -201,6 +236,24 @@
                             </div>
                         </div>
                     </div>
+                    {{-- <div class="col-lg-2 col-md-12 col-12 ps-lg-5 ps-md-0 ps-0 mt-lg-0 mt-md-4 mt-3 m-0 p-0">
+                        <div class="card">
+                            <div class="card-body ">
+                                <table class="table ket">
+                                    <tbody>
+                                        <tr>
+                                            @foreach ($status_peraturan->perubahan->judul_dokumen_perubahan as $doc_perubahan)
+                                                {{ $doc_perubahan }}
+                                            @endforeach
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">b</div>
+                        </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

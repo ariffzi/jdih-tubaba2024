@@ -109,6 +109,9 @@
                 processing: true,
                 serverSide: true,
                 bDestroy: true,
+                order: [
+                    [0, "desc"]
+                ],
                 pagingType: "simple_numbers",
                 ajax: '/produk-hukum/show',
                 columns: [{
