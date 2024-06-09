@@ -43,9 +43,7 @@
                         <div class="col-lg-4 col-md-4 col-6 mt-lg-5 mt-md-5 mt-4">
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp4.jpeg" alt="" />
                                     <div class="nama">NOVRIADI, SH., MM</div>
                                     <div class="jabatan">Perancang Peraturan Per UU</div>
                                 </div>
@@ -66,9 +64,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp9.jpeg" alt="" />
                                     <div class="nama">RIKA ELVIANA, SE., MM</div>
                                     <div class="jabatan">Analis Kebijakan Ahli Muda</div>
                                 </div>
@@ -78,9 +74,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1554780336-390462301acf?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp5.jpeg" alt="" />
                                     <div class="nama">YUNIAR ASTINA, Amd</div>
                                     <div class="jabatan">Staff</div>
                                 </div>
@@ -90,9 +84,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp7.jpeg" alt="" />
                                     <div class="nama">ACHMAD FAISOL, Amd</div>
                                     <div class="jabatan">staff</div>
                                 </div>
@@ -102,9 +94,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp3.jpeg" alt="" />
                                     <div class="nama">ANDIKA SEPRIYANTO, SM</div>
                                     <div class="jabatan">Staff</div>
                                 </div>
@@ -114,9 +104,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1596285508507-5da6bec59433?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp1.jpeg" alt="" />
                                     <div class="nama">NUR'AINI, SE</div>
                                     <div class="jabatan">Staff</div>
                                 </div>
@@ -126,9 +114,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1573640076354-ddcbf94b9b09?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp2.jpeg" alt="" />
                                     <div class="nama">JUSI ELITA SARI, SE</div>
                                     <div class="jabatan">Staff</div>
                                 </div>
@@ -138,9 +124,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp8.jpeg" alt="" />
                                     <div class="nama">ROSITA IBRAHIM, SH., MH</div>
                                     <div class="jabatan">Staff</div>
                                 </div>
@@ -162,9 +146,7 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
 
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1605993439219-9d09d2020fa5?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        alt="" />
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp6.jpeg" alt="" />
                                     <div class="nama">ADHELIA FEBRIZA</div>
                                     <div class="jabatan">Staff</div>
                                 </div>

@@ -488,7 +488,8 @@
         $(document).ready(function() {
             if (getUrlParameter('param') != '') {
                 if (getUrlParameter('judul') != '') {
-                    $('#tableProduk').DataTable().column(1).search(getUrlParameter('param')).column(2).search(getUrlParameter('judul')).draw();
+                    $('#tableProduk').DataTable().column(1).search(getUrlParameter('param')).column(2).search(
+                        getUrlParameter('judul')).draw();
                     $('.jud').html(getUrlParameter('param'))
                 } else {
                     $('#tableProduk').DataTable().columns(1).search(getUrlParameter('param')).draw()

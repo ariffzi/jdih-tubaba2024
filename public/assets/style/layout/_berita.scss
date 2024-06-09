@@ -39,56 +39,100 @@
             }
         }
 
-        .dataTables_wrapper {
-            .dataTables_length {
-                label {
-                    select {
-                        border-style: solid;
-                        border-color: var(--color-8);
-                        border-radius: 8px;
-                    }
+        #pageBerita_wrapper {
+            .dt-search {
+                input {
+                    border-radius: 12px;
+                }
 
-                    select:hover,
-                    select:focus,
-                    select:active,
-                    select:active:focus:not(:disabled):not(.disabled) {
-                        box-shadow: none !important;
-                        outline: 0;
-                    }
+                input:hover,
+                input:focus,
+                input:active,
+                input:active:focus:not(:disabled):not(.disabled) {
+                    box-shadow: none !important;
+                    outline: 0;
                 }
             }
 
-            .dataTables_filter {
-                label {
-                    input {
-                        border-style: solid;
-                        border-color: var(--color-8);
-                        border-radius: 14px;
-                    }
-                    input:hover,
-                    input:focus,
-                    input:active,
-                    input:active:focus:not(:disabled):not(.disabled) {
-                        box-shadow: none !important;
-                        outline: 0;
-                    }
+            .dt-length {
+                select {
+                    border-radius: var(--maroon);
+                    color: var(--maroon) !important;
+                    border-radius: 12px;
+                }
+                select:hover,
+                select:focus,
+                select:active,
+                select:active:focus:not(:disabled):not(.disabled) {
+                    box-shadow: none !important;
+                    outline: 0;
                 }
             }
 
-            .dataTables_paginate {
-                .paginate_button {
+            .dt-paging {
+                .dt-paging-button {
                     background: var(--color-3);
                     color: var(--maroon) !important;
                     border-radius: 14px;
                 }
-
-                .paginate_button.current {
+                .current {
                     background: var(--color-11);
                     color: var(--maroon) !important;
                     border: none;
                 }
             }
         }
+
+        // .dataTables_wrapper {
+        //     .dataTables_length {
+        //         label {
+        //             select {
+        //                 border-style: solid;
+        //                 border-color: var(--color-8);
+        //                 border-radius: 8px;
+        //             }
+
+        //             select:hover,
+        //             select:focus,
+        //             select:active,
+        //             select:active:focus:not(:disabled):not(.disabled) {
+        //                 box-shadow: none !important;
+        //                 outline: 0;
+        //             }
+        //         }
+        //     }
+
+        //     .dataTables_filter {
+        //         label {
+        //             input {
+        //                 border-style: solid;
+        //                 border-color: var(--color-8);
+        //                 border-radius: 14px;
+        //             }
+        //             input:hover,
+        //             input:focus,
+        //             input:active,
+        //             input:active:focus:not(:disabled):not(.disabled) {
+        //                 box-shadow: none !important;
+        //                 outline: 0;
+        //             }
+        //         }
+        //     }
+
+        //     .dataTables_paginate {
+        //         .paginate_button {
+        //             background: var(--color-3);
+        //             color: var(--maroon) !important;
+        //             border-radius: 14px;
+        //         }
+
+        //         .paginate_button.current {
+        //             background: var(--color-11);
+        //             color: var(--maroon) !important;
+        //             border: none;
+        //         }
+        //     }
+        // }
 
         .card {
             border: none;
@@ -109,6 +153,7 @@
             .judul {
                 font-weight: bolder;
                 color: var(--maroon);
+                font-family: tubaba-bold;
                 //   font-size: large;
                 overflow: hidden;
                 display: -webkit-box;

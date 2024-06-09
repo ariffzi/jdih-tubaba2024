@@ -8,7 +8,7 @@
         content="JDIH merupakan suatu sistem yang digunakan untuk mengelola dokumen-dokumen hukum dan informasi hukum di Pemerintah Kabupaten Tulang Bawang Barat " />
     <meta name="keywords"
         content="JDIH tubaba, jdih tulang bawang barat, Jaringan Dokumentasi dan Informasi Hukum tulang bawang barat, Jaringan Dokumentasi dan Informasi Hukum tubaba, menujutubaba, menuju tubaba, tulang bawang barat, jdih" />
-    <link rel="shortcut icon" href="/assets/logo/Logo-jdih.svg" />
+    <link rel="shortcut icon" href="/assets/logo/Logo-JDIH.svg" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -39,7 +39,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" /> --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
 
     <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
