@@ -116,8 +116,8 @@ class ProdukHukumController extends Controller
                                             <td>
                                                 <button class="btn btn-sm btn-keterangan">
                                                 <!--  <a href="/contoh">
-                                                    Perubahan
-                                                    </a> -->
+                                                </a> -->
+                                                Perubahan
                                                 </button>
                                             </td>
                                         </tr>
