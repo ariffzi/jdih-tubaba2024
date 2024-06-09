@@ -86,7 +86,7 @@ class ProdukHukumController extends Controller
         ))
             ->addColumn('keterangan', function ($data) {
                 $keterangan = '
-                        <-a href="/produk-hukum/detail?code=' . $data->idData . '">
+                        <a href="/produk-hukum/detail?code=' . $data->idData . '">
                             <div class="card-tabel-produk p-md-4 p-3">
                                 <h2>' . $data->jenis . ' <span><i class="bi bi-dot"></i></span> NOMOR ' . $data->noPeraturan . ' TAHUN ' . $data->tahun_pengundangan . '</h2>
                                 <h1>' . $data->judul . '</h1>
