@@ -66,7 +66,7 @@
             <div class="konten mt-lg-5 mt-md-4 mt-3">
                 <div class="row">
                     <div class="col-lg-8 col-md-9 col-12 judul-produk">
-                        {{ $judul_dokumen_perubahan }}
+                        {{ $judul_peraturan }}
                     </div>
                 </div>
 
