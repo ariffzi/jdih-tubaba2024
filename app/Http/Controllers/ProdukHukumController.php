@@ -115,7 +115,9 @@ class ProdukHukumController extends Controller
                                             <td class="ps-3 pe-3">:</td>
                                             <td>
                                                 <button class="btn btn-sm btn-keterangan">
-                                                    <a href="/contoh">Perubahan</a>
+                                                {{--  <a href="/contoh">
+                                                    Perubahan
+                                                    </a> --}}
                                                 </button>
                                             </td>
                                         </tr>
