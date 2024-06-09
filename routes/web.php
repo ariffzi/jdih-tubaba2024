@@ -17,7 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [UserController::class, 'index']);
 Route::get('/galeri', [UserController::class, 'galeri']);
-Route::get('/berita', [UserController::class, 'berita']);
+Route::prefix('berita')->group(function () {
+    Route::get('/', [UserController::class, 'berita']);
+    Route::get('/show', [UserController::class, 'berita_show']);
+});
 Route::get('/baca-berita', [UserController::class, 'bacaBerita']);
 
 Route::prefix('produk-hukum')->group(function () {

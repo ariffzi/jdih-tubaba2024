@@ -16,15 +16,13 @@
                     <thead>
                         <tr>
                             <th></th>
-
                         </tr>
                     </thead>
                     <tbody class="row pb-5">
 
                         {{-- foreach --}}
-                        <tr class="col-lg-3 col-md-6 col-12 mt-4">
+                        {{-- <tr class="col-lg-3 col-md-6 col-12 mt-4">
                             <td>
-                                <!-- foreach -->
                                 <div class="card">
                                     <a href="#">
                                         <img class="img-fluid" src="/assets/img/berita/apbt.jpeg" alt="" />
@@ -53,7 +51,7 @@
                                     </a>
                                 </div>
                             </td>
-                        </tr>
+                        </tr> --}}
                         {{-- end foreach --}}
 
 
@@ -62,8 +60,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Rapat pembahasan Rancangan Peraturan Bupati tentang Tambahan Penghasilan ASN
@@ -85,8 +82,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Koordinasi Pengisian KKP HAM
@@ -108,8 +104,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Kepala bagian hukum menghadiri undangan Rapat Disiplin ASN dilingkungan
@@ -132,8 +127,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Rapat pembahasan Rancangan Peraturan Bupati tentang Tambahan Penghasilan ASN
@@ -155,8 +149,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Koordinasi Pengisian KKP HAM
@@ -178,8 +171,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Kepala bagian hukum menghadiri undangan Rapat Disiplin ASN dilingkungan
@@ -202,8 +194,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Rapat pembahasan Rancangan Peraturan Bupati tentang Tambahan Penghasilan ASN
@@ -225,8 +216,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Koordinasi Pengisian KKP HAM
@@ -248,8 +238,7 @@
                             <td>
                                 <div class="card">
                                     <a href="#">
-                                        <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg"
-                                            alt="" />
+                                        <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg" alt="" />
                                         <div class="p-2">
                                             <div class="judul mt-2">
                                                 Kepala bagian hukum menghadiri undangan Rapat Disiplin ASN dilingkungan
@@ -268,9 +257,6 @@
                                 </div>
                             </td>
                         </tr>
-                        {{-- hampus sampai sini! --}}
-
-
                     </tbody>
                 </table>
             </div>
@@ -278,3 +264,43 @@
         </div>
     </section>
 @endsection
+@push('script')
+    <script>
+        $(document).ready(function() {
+            // $("#pageBerita").DataTable({
+            //     ordering: false,
+            //     "lengthMenu": [8, 16, 32, 64, 128],
+            //     "pageLength": 8
+            // });
+
+            var tbPageBerita = $("#pageBerita").DataTable({
+                deferRender: true,
+                processing: true,
+                serverSide: true,
+                bDestroy: true,
+                "lengthMenu": [8, 16, 32, 64, 128],
+                order: [
+                    [1, "desc"]
+                ],
+                pagingType: "simple_numbers",
+                ajax: '/berita/show',
+                columns: [{
+                    data: 'keterangan',
+                }, ],
+                createdRow: function(row, data, dataIndex) {
+                    $(row).addClass('col-lg-3 col-md-6 col-12 mt-4');
+                }
+            });
+
+            // $('#dt-search-0').unbind();
+            // $('#dt-search-0').bind('change', function() {
+            //     var levelID = $(this).val();
+            //     if (levelID == 0) {
+            //         tbPageBerita.search('').columns().search('').draw();
+            //     } else {
+            //         tbPageBerita.columns(0).search(levelID).draw();
+            //     }
+            // });
+        });
+    </script>
+@endpush

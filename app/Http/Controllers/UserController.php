@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -50,6 +51,46 @@ class UserController extends Controller
     public function berita()
     {
         return view('berita');
+    }
+
+    public function berita_show(Request $request)
+    {
+        // dd(ENV('APP_TOKEN'));
+        $responses = Http::withToken(ENV('APP_TOKEN'))->get('https://aplikasi.tubaba.go.id/api/website', [
+            'token' => ENV('APP_TOKEN'),
+            'client_type' => 'WebSite'
+        ]);
+        $datas = collect(json_decode($responses->getBody()));
+        $data = collect($datas['data']);
+        // dd($data);
+        return DataTables()->of($data->sortBy(
+            [
+                ['id', 'desc']
+            ]
+        ))
+            ->addColumn('keterangan', function ($data) {
+                $date = Carbon::parse($data->created_at, 'UTC')->locale('id');
+                $keterangan = '
+                        <div class="card">
+                            <a href="/baca-berita?code=' . $data->slug . '">
+                                <img class="img-fluid" src="' . $data->gambar . '" alt="" />
+                                <div class="p-2">
+                                    <div class="judul mt-2">
+                                        ' . $data->judul . '
+                                    </div>
+                                    <div class="isi-berita">
+                                        ' . $data->judul_seo . '
+                                    </div>
+                                    <div class="text-end tgl mt-2">' . $date->isoFormat('dddd, D MMMM Y') . '</div>
+                                </div>
+                            </a>
+                        </div>
+                ';
+
+                return $keterangan;
+            })
+            ->rawColumns(['keterangan'])
+            ->make(true);
     }
 
     public function bacaBerita()
