@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-
 <!-- ======================== head ========================= -->
 @include('layouts.head')
 
-<body>
+<body class="bg-light">
     <!-- ======================== navbar ========================= -->
     @include('layouts.navbar')
 

@@ -29,6 +29,11 @@ return [
     */
 
     'disks' => [
+        'public_html' => [
+            'driver' => 'local',
+            'root'   => public_path('content'),
+            'throw' => false,
+        ],
 
         'local' => [
             'driver' => 'local',
@@ -39,7 +44,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
             'throw' => false,
         ],

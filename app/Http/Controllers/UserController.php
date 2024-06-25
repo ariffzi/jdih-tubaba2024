@@ -6,9 +6,121 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Jenssegers\Agent\Facades\Agent;
 
 class UserController extends Controller
 {
+
+    function __construct()
+    {
+        $now = Carbon::now()->setTimezone('Asia/Jakarta');
+        $user_ip = request()->ip();
+        $user_device = Agent::device();
+        $user_browser = Agent::browser();
+        $user_platform = Agent::platform();
+
+        $date_now = $now->format('Y-m-d');
+        $time_now = $now->format('H:i:s');
+        // $path_now = public_path('content/' . $date_now . '');
+
+        function counter($counter, $date_now, $date_from_array)
+        {
+            $last_array = last($date_from_array);
+            $last_array1 = last($last_array);
+            $last_array2 = last($last_array1);
+            // end($collect);
+            // $key = key($collect);
+            // dd($last_array2['date']);
+            if ($date_now == $last_array2['date']) {
+                $data_counter = [
+                    'count' => $counter
+                ];
+            } else {
+                $data_counter = [
+                    'count' => 1
+                ];
+            }
+            Storage::disk('public_html')->put('hari_ini.json', json_encode($data_counter));
+        }
+
+        function ip_list($user_data)
+        {
+            $data = [
+                'data' => $user_data
+            ];
+            // dd($data);
+            Storage::disk('public_html')->put('ip_list.json', json_encode($data));
+        }
+
+        function data_check($list, $user_ip, $date_now, $time_now)
+        {
+            if ($list[$user_ip] ?? false) {
+                if ($list[$user_ip][$date_now] ?? false) {
+                    # code...
+                    $data_from_list = end($list[$user_ip][$date_now]);
+                    $date_from_list = end($list[$user_ip][$date_now])['date'];
+                    $time_from_list = end($list[$user_ip][$date_now])['time'];
+                    $current_time = (strtotime($time_now) - strtotime($time_from_list)) / 60;
+                    if (($date_from_list == $date_now) && $current_time >= '20') {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return true;
+                }
+            } else {
+                return true;
+            }
+        }
+
+        $data_user_agen = [
+            'ip' => $user_ip,
+            'browser' => $user_browser,
+            'os' => $user_platform,
+            'date' => $date_now,
+            'time' => $time_now
+        ];
+
+        if (!Storage::disk('public_html')->exists('hari_ini.json') && !Storage::disk('public_html')->exists('ip_list.json')) {
+            counter(1, null, null);
+            ip_list([
+                $user_ip => [
+                    $date_now => [
+                        $data_user_agen
+                    ]
+                ]
+            ]);
+        } else {
+            $get_ip_list = Storage::disk('public_html')->get('ip_list.json');
+            $array_ip_list = json_decode($get_ip_list, true)['data'];
+
+            if (data_check($array_ip_list, $user_ip, $date_now, $time_now)) {
+
+                $get_counter_day = Storage::disk('public_html')->get('hari_ini.json');
+                $counter_data = json_decode($get_counter_day)->count + 1;
+                counter($counter_data, $date_now, $array_ip_list);
+
+                if (!array_key_exists($user_ip, $array_ip_list)) {
+                    array_push(
+                        $array_ip_list,
+                        $array_ip_list[$user_ip][$date_now] = [$data_user_agen]
+                    );
+                } elseif (!array_key_exists($date_now, $array_ip_list[$user_ip])) {
+                    array_push(
+                        $array_ip_list,
+                        $array_ip_list[$user_ip][$date_now] = [$data_user_agen]
+                    );
+                } else {
+                    array_push($array_ip_list[$user_ip][$date_now], $data_user_agen);
+                }
+                unset($array_ip_list[0]);
+                $send_data = $array_ip_list;
+                ip_list($send_data);
+            }
+        }
+    }
+
     /**
      * Display a listing of the resource.
      */
@@ -22,7 +134,7 @@ class UserController extends Controller
         $data1 = collect(json_decode($responses->getBody()));
         // dd($data1);
         $jumlah_tahun = json_decode($data_tahun);
-        // dd($data1);
+        // dd(json_decode($pengunjung));
         $jumlah_jenis = json_decode($data_jenis);
         return view('index', [
             'jenis' => $data,

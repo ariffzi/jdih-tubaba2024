@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::prefix('/')->group(function () {
+
 Route::get('/', [UserController::class, 'index']);
 Route::get('/galeri', [UserController::class, 'galeri']);
 Route::prefix('berita')->group(function () {
@@ -36,3 +38,4 @@ Route::get('/tentang', [UserController::class, 'tentang']);
 Route::get('/visi-misi', [UserController::class, 'visimisi']);
 Route::get('/perpustakaan', [UserController::class, 'perpustakaan']);
 Route::get('/detail-buku', [UserController::class, 'lihatBuku']);
+// });

@@ -1,8 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <!-- ======================== slide dashboard ========================= -->
-    <section
-        class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
+    <section class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
         <div class="slide">
             <div id="owl-car-dashboard" class="owl-carousel owl-theme">
                 <div class="item z-n1">
@@ -39,8 +38,7 @@
                         <div class="col-lg-8 col-md-8 col-12 d-flex align-items-center ver p-2">
                             <input placeholder="Judul Peraturan" class="form-control" id="judulPeraturan" />
                         </div>
-                        <div
-                            class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
+                        <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
                             <div class="cari">
                                 {{-- <a href="#"> --}}
                                 <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4" id="cari">
@@ -370,8 +368,7 @@
                                             GALERI
                                         </div>
                                         <div class="txt-2">Lihat Galeri Kami</div>
-                                        <div
-                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/gallery.jpeg" alt="" />
                                         </div>
                                     </div>
@@ -385,8 +382,7 @@
                                             PERPUSTAKAAN
                                         </div>
                                         <div class="txt-2">Lihat Perpustakaan Kami</div>
-                                        <div
-                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/perpus.jpg  " alt="" />
                                         </div>
                                     </a>
@@ -721,8 +717,7 @@
                             <canvas id="pie-chart"></canvas>
                         </div>
                         <div class="d-flex justify-content-end mt-lg-4">
-                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
+                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Ikti Survey
                                 <i class="bi bi-arrow-right ms-4"></i>
                             </button>
@@ -733,8 +728,7 @@
         </div>
 
         <!-- Modal Survey -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -751,8 +745,7 @@
                             <button type="button" class="btn btn-danger">
                                 Beri penilaian
                             </button>
-                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Sesuai</a></li>
                                 <li><a class="dropdown-item" href="#">Sangat Sesuai</a></li>

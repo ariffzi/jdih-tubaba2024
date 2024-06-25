@@ -110,17 +110,6 @@ class ProdukHukumController extends Controller
                                             <td class="ps-3 pe-3">:</td>
                                             <td>' . $data->status . '</td>
                                         </tr>
-                                        <tr>
-                                            <td>Keterangan</td>
-                                            <td class="ps-3 pe-3">:</td>
-                                            <td>
-                                                <button class="btn btn-sm btn-keterangan">
-                                                <!--  <a href="/contoh">
-                                                </a> -->
-                                                Perubahan
-                                                </button>
-                                            </td>
-                                        </tr>
                                     </table>
                                     <div class="d-flex justify-content-end">
                                         <div>Lihat selengkapnya...</div>

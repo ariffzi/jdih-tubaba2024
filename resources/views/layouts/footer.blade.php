@@ -119,14 +119,22 @@
                 </a>
             </div>
             <div class="col-6 col-md-3 col-lg-3 mt-4 mt-md-0 mt-lg-0">
+                @php
+                    $get_harian = Storage::disk('public_html')->get('hari_ini.json');
+                    $harian = json_decode($get_harian);
+                @endphp
                 <div class="head mb-2">Data Pengunjung</div>
                 <div class="row keterangan">
                     <div class="col-6 ket-2">Hari ini</div>
-                    <div class="col-6 ket-2">109</div>
+                    <div class="col-6 ket-2">{{ $harian->count }}</div>
                 </div>
                 <div class="row keterangan">
+                    @php
+                        $pengunjung = Http::get('https://aplikasi.tubaba.go.id/api/jdih/pengunjung');
+                        $total_pengunjung = json_decode($pengunjung);
+                    @endphp
                     <div class="col-6 ket-2">Total Pengunjung</div>
-                    <div class="col-6 ket-2">109.243</div>
+                    <div class="col-6 ket-2">{{ $total_pengunjung->all->total }}</div>
                 </div>
             </div>
         </div>
