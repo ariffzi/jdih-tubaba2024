@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::prefix('/')->group(function () {
+Route::fallback(function () {
+    return redirect('/404');
+});
+
+Route::get('/404', function () {
+    return view('layouts.404');
+});
 
 Route::get('/', [UserController::class, 'index']);
 Route::get('/galeri', [UserController::class, 'galeri']);

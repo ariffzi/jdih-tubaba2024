@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Storage;
 use Jenssegers\Agent\Facades\Agent;
 
@@ -167,12 +168,12 @@ class UserController extends Controller
 
     public function berita_show(Request $request)
     {
-        // dd(ENV('APP_TOKEN'));
-        $responses = Http::withToken(ENV('APP_TOKEN'))->get('https://aplikasi.tubaba.go.id/api/website', [
+        $responses = Http::withToken(ENV('APP_TOKEN'))->get('https://aplikasi.tubaba.go.id/api/website/', [
             'token' => ENV('APP_TOKEN'),
             'client_type' => 'WebSite'
         ]);
         $datas = collect(json_decode($responses->getBody()));
+        // dd($datas);
         $data = collect($datas['data']);
         // dd($data);
         return DataTables()->of($data->sortBy(
@@ -205,9 +206,19 @@ class UserController extends Controller
             ->make(true);
     }
 
-    public function bacaBerita()
+    public function bacaBerita(Request $request)
     {
-        return view('baca-berita');
+        $slug = $request->code;
+        $responses = Http::withToken(ENV('APP_TOKEN'))->get('https://aplikasi.tubaba.go.id/api/website/', [
+            'token' => ENV('APP_TOKEN'),
+            'client_type' => 'WebSite'
+        ]);
+
+        $datas = collect(json_decode($responses->getBody()));
+        $data = collect($datas['data']);
+        $detail = $data->where('slug', $slug);
+        // dd($data->where('slug', $slug));
+        return view('baca-berita', ['data' => $detail]);
     }
 
     public function ProdukHukum()

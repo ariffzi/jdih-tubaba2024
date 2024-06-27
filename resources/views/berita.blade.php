@@ -56,7 +56,7 @@
 
 
                         {{-- hapus --}}
-                        <tr class="col-lg-3 col-md-6 col-12 mt-4">
+                        {{-- <tr class="col-lg-3 col-md-6 col-12 mt-4">
                             <td>
                                 <div class="card">
                                     <a href="#">
@@ -256,7 +256,7 @@
                                     </a>
                                 </div>
                             </td>
-                        </tr>
+                        </tr> --}}
                     </tbody>
                 </table>
             </div>

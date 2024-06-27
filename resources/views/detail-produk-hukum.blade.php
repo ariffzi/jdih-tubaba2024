@@ -127,31 +127,29 @@
                     <div class="col-lg-4">
                         <div class="card shadow-sm mb-3 rounded-4">
                             <div class="card-body">
-                                @if ($status_peraturan->perubahan->judul_dokumen_perubahan)
-                                    <div class="col-12">
-                                        <div class="fw-bolder fs-5">File - File :</div>
-                                        <hr>
-                                        <div class="pt-2 text-capitalize pb-3 text-decoration-none text-primary-emphasis">Salinan Peraturan {{ $jenis_peraturan }} No {{ filter_var($nomor_peraturan, FILTER_SANITIZE_NUMBER_INT) }} Tahun {{ $tahun_peraturan }}</div>
+                                <div class="col-12">
+                                    <div class="fw-bolder fs-5">File - File :</div>
+                                    <hr>
+                                    <div class="pt-2 text-capitalize pb-3 text-decoration-none text-primary-emphasis">Salinan Peraturan {{ $jenis_peraturan }} No {{ filter_var($nomor_peraturan, FILTER_SANITIZE_NUMBER_INT) }} Tahun {{ $tahun_peraturan }}</div>
 
-                                        <div class="d-flex justify-content-center gap-1">
-                                            <input id="nameDoc" type="text" value="{{ $dokumen }}" hidden>
-                                            <span></span>
-                                            <button id="downloads" type="button" class="btn btn-unduh ps-lg-4 pe-lg-4">
-                                                Unduh
-                                                <i class="bi bi-arrow-right ms-3"></i>
-                                            </button>
-                                            <button id="priview" type="button" class="btn btn-unduh ps-lg-4 pe-lg-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                Lihat
-                                                <i class="bi bi-eye ms-3"></i>
-                                            </button>
-                                        </div>
+                                    <div class="d-flex justify-content-center gap-1">
+                                        <input id="nameDoc" type="text" value="{{ $dokumen }}" hidden>
+                                        <span></span>
+                                        <button id="downloads" type="button" class="btn btn-unduh ps-lg-4 pe-lg-4">
+                                            Unduh
+                                            <i class="bi bi-arrow-right ms-3"></i>
+                                        </button>
+                                        <button id="priview" type="button" class="btn btn-unduh ps-lg-4 pe-lg-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Lihat
+                                            <i class="bi bi-eye ms-3"></i>
+                                        </button>
                                     </div>
-                                @endif
+                                </div>
                             </div>
                         </div>
-                        <div class="card shadow-sm mb-3 rounded-4">
-                            <div class="card-body">
-                                @if ($status_peraturan->perubahan->judul_dokumen_perubahan)
+                        @if ($status_peraturan->perubahan->judul_dokumen_perubahan)
+                            <div class="card shadow-sm mb-3 rounded-4">
+                                <div class="card-body">
                                     <div class="col-12">
                                         <div class="fw-bolder fs-5">Merubah :</div>
                                         <hr>
@@ -173,13 +171,13 @@
                                             <tbody>
                                         </table>
                                     </div>
-                                @endif
+                                </div>
                             </div>
-                        </div>
+                        @endif
 
-                        <div class="card shadow-sm mb-3 rounded-4">
-                            <div class="card-body">
-                                @if ($status_peraturan->diubah_dengan->judul_dokumen_dirubah_dengan)
+                        @if ($status_peraturan->diubah_dengan->judul_dokumen_dirubah_dengan)
+                            <div class="card shadow-sm mb-3 rounded-4">
+                                <div class="card-body">
                                     <div class="col-12">
                                         <div class="fw-bolder fs-5">Diubah Dengan :</div>
                                         <hr>
@@ -201,9 +199,9 @@
                                             <tbody>
                                         </table>
                                     </div>
-                                @endif
+                                </div>
                             </div>
-                        </div>
+                        @endif
                     </div>
                 </div>
             </div>

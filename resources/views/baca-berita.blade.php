@@ -3,9 +3,9 @@
     <!-- ======================== baca berita ========================= -->
     <section class="baca-berita mt-5">
         <div class="gambar-berita pt-5">
-            <img class="img-fluid" src="/assets/img/berita/apbt.jpeg" alt="" />
+            <img class="img-fluid" src="{{ $data }}" alt="" />
         </div>
-
+        {{ $data }}
         <div class="mt-5">
             <div class="row">
                 <div class="col-lg-8 col-md-10 col-12 judul-berita">
