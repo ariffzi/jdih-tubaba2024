@@ -31,7 +31,7 @@ return [
     'disks' => [
         'public_html' => [
             'driver' => 'local',
-            'root'   => public_path('content'),
+            'root'   => public_path(),
             'throw' => false,
         ],
 
