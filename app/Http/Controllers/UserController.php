@@ -26,6 +26,8 @@ class UserController extends Controller
 
         function counter($counter, $date_now, $date_from_array)
         {
+
+            // dd(Storage::disk('public_html')->exists('content/hari_ini.json'));
             // dd($date_from_array);
             // $get_counter_all = file_get_contents('/content/total.json');
             $last_array = last($date_from_array);
@@ -41,8 +43,7 @@ class UserController extends Controller
                     'count' => 1
                 ];
             }
-            $get_counter_all = Storage::disk('public')->get('content/total.json');
-            // $get_counter_all = file_get_contents('/content/total.json');
+            $get_counter_all = Storage::disk('public_html')->get('content/total.json');
             $data_all = [
                 'count' =>  json_decode($get_counter_all)->count + 1
             ];
@@ -99,13 +100,15 @@ class UserController extends Controller
                 ]
             ]);
         } else {
+
+            // dd(Storage::disk('public_html')->exists('content/hari_ini.json'));
             // dd(Storage::disk('public_html')->get('content/hari_ini.json'));
             $get_ip_list = Storage::disk('public_html')->get('content/ip_list.json');
             $array_ip_list = json_decode($get_ip_list, true)['data'];
 
             if (data_check($array_ip_list, $user_ip, $date_now, $time_now)) {
 
-                $get_counter_day = Storage::disk('public')->get('content/hari_ini.json');
+                $get_counter_day = Storage::disk('public_html')->get('content/hari_ini.json');
                 $counter_data = json_decode($get_counter_day)->count + 1;
                 counter($counter_data, $date_now, $array_ip_list);
 
