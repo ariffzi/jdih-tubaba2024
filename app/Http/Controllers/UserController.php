@@ -41,7 +41,11 @@ class UserController extends Controller
                     'count' => 1
                 ];
             }
+            $data_all = [
+                'count' =>  $counter
+            ];
             Storage::disk('public_html')->put('hari_ini.json', json_encode($data_counter));
+            Storage::disk('public_html')->put('total.json', json_encode($data_all));
         }
 
         function ip_list($user_data)
@@ -168,6 +172,7 @@ class UserController extends Controller
 
     public function berita_show(Request $request)
     {
+        $jenis = $request->jenis;
         $responses = Http::withToken(ENV('APP_TOKEN'))->get('https://aplikasi.tubaba.go.id/api/website/', [
             'token' => ENV('APP_TOKEN'),
             'client_type' => 'WebSite'
@@ -176,6 +181,12 @@ class UserController extends Controller
         // dd($datas);
         $data = collect($datas['data']);
         // dd($data);
+        $data->sortBy(
+            [
+                ['id', 'desc']
+            ]
+        )->where('opd', 'like', '%' . $$jenis . '%');
+
         return DataTables()->of($data->sortBy(
             [
                 ['id', 'desc']

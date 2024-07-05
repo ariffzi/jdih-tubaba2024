@@ -130,10 +130,18 @@
                 </div>
                 <div class="row keterangan">
                     @php
+                        $get_total = Storage::disk('public_html')->get('total.json');
+                        $total = json_decode($get_total);
+                    @endphp
+                    <div class="col-6 ket-2">Total Pengunjung</div>
+                    <div class="col-6 ket-2">{{ $total->count }}</div>
+                </div>
+                <div class="row keterangan">
+                    @php
                         $pengunjung = Http::get('https://aplikasi.tubaba.go.id/api/jdih/pengunjung');
                         $total_pengunjung = json_decode($pengunjung);
                     @endphp
-                    <div class="col-6 ket-2">Total Pengunjung</div>
+                    <div class="col-6 ket-2">Total View Produk hukum</div>
                     <div class="col-6 ket-2">{{ $total_pengunjung->all->total }}</div>
                 </div>
             </div>
