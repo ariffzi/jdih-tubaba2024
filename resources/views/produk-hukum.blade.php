@@ -103,7 +103,24 @@
 
 @push('script')
     <script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+            return false;
+        };
+
         $(document).ready(function() {
+            console.log(getUrlParameter('param'));
             var tbprodukhukum = $("#tableProduk").DataTable({
                 deferRender: true,
                 processing: true,
@@ -113,11 +130,12 @@
                     [0, "desc"]
                 ],
                 pagingType: "simple_numbers",
-                ajax: '/produk-hukum/show',
+                ajax: '/produk-hukum/show?param=' + getUrlParameter('param'),
                 columns: [{
                     data: 'keterangan',
                 }, ],
             });
+
             $('#dt-search-0').unbind();
             $('#dt-search-0').bind('change', function() {
                 var levelID = $(this).val();

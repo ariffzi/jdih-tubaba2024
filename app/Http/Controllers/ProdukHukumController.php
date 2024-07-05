@@ -75,15 +75,19 @@ class ProdukHukumController extends Controller
     public function show(Request $request)
     {
         //
+        $param = $request->param;
+        // dd($param);
         $responses = Http::get('https://aplikasi.tubaba.go.id/api/jdih');
         $data = collect(json_decode($responses->getBody()));
         // dd($data);
-        return DataTables()->of($data->sortBy(
-            [
-                ['noPeraturan', 'asc'],
-                ['tahun_pengundangan', 'desc'],
-            ]
-        ))
+        return DataTables()->of(
+            $data->sortBy(
+                [
+                    ['noPeraturan', 'asc'],
+                    ['tahun_pengundangan', 'desc'],
+                ]
+            )->where('jenis', $param)
+        )
             ->addColumn('keterangan', function ($data) {
                 $keterangan = '
                         <a href="/produk-hukum/detail?code=' . $data->idData . '">

@@ -29,9 +29,7 @@ class UserController extends Controller
             $last_array = last($date_from_array);
             $last_array1 = last($last_array);
             $last_array2 = last($last_array1);
-            // end($collect);
-            // $key = key($collect);
-            // dd($last_array2['date']);
+
             if ($date_now == $last_array2['date']) {
                 $data_counter = [
                     'count' => $counter
