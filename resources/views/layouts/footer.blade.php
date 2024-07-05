@@ -120,7 +120,7 @@
             </div>
             <div class="col-6 col-md-3 col-lg-3 mt-4 mt-md-0 mt-lg-0">
                 @php
-                    $get_harian = Storage::disk('public_html')->get('hari_ini.json');
+                    $get_harian = Storage::disk('public_html')->get('content/hari_ini.json');
                     $harian = json_decode($get_harian);
                 @endphp
                 <div class="head mb-2">Data Pengunjung</div>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="row keterangan">
                     @php
-                        $get_total = Storage::disk('public_html')->get('total.json');
+                        $get_total = Storage::disk('public_html')->get('content/total.json');
                         $total = json_decode($get_total);
                     @endphp
                     <div class="col-6 ket-2">Total Pengunjung</div>
