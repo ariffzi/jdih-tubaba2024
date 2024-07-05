@@ -76,10 +76,9 @@ class ProdukHukumController extends Controller
     {
         //
         $param = $request->param;
-        // dd($param);
         $responses = Http::get('https://aplikasi.tubaba.go.id/api/jdih');
         $data = collect(json_decode($responses->getBody()));
-        // dd($data);
+
         return DataTables()->of(
             $data->sortBy(
                 [
