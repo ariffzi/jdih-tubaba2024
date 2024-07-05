@@ -41,7 +41,7 @@ class UserController extends Controller
                     'count' => 1
                 ];
             }
-            $get_counter_all = Storage::disk('public_html')->get('hari_ini.json');
+            $get_counter_all = Storage::disk('public_html')->get('total.json');
             $data_all = [
                 'count' =>  json_decode($get_counter_all)->count + 1
             ];
