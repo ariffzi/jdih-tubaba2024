@@ -274,6 +274,8 @@
             // });
 
             var tbPageBerita = $("#pageBerita").DataTable({
+                // "dom": 'lrtip',
+                "bInfo": false,
                 deferRender: true,
                 processing: true,
                 serverSide: true,
@@ -282,13 +284,19 @@
                 order: [
                     [1, "desc"]
                 ],
-                pagingType: "simple_numbers",
+                pagingType: "simple",
                 ajax: '/berita/show',
                 columns: [{
                     data: 'keterangan',
                 }, ],
                 createdRow: function(row, data, dataIndex) {
                     $(row).addClass('col-lg-3 col-md-6 col-12 mt-4');
+                },
+                language: {
+                    "paginate": {
+                        "next": ">",
+                        "previous": "<"
+                    }
                 }
             });
 

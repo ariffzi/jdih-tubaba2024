@@ -178,38 +178,31 @@ class UserController extends Controller
 
     public function berita_show(Request $request)
     {
-        $jenis = $request->jenis;
-        $responses = Http::withToken(ENV('APP_TOKEN'))->get('https://aplikasi.tubaba.go.id/api/website/', [
-            'token' => ENV('APP_TOKEN'),
-            'client_type' => 'WebSite'
-        ]);
+        $tokens = file_get_contents(public_path('content/token_instagram.txt'));
+
+        $responses = Http::withHeaders([
+            'Accept' => '*/*',
+        ])->get('https://graph.instagram.com/me/media?fields=id%2Cmedia_type%2Ccaption%2Cpermalink%2Cmedia_url%2Cthumbnail_url%2Ctimestamp&access_token=' . $tokens . '&limit=52');
         $datas = collect(json_decode($responses->getBody()));
-        // dd($datas);
         $data = collect($datas['data']);
-        // dd($data);
-        $data->sortBy(
-            [
-                ['id', 'desc']
-            ]
-        )->where('opd', 'like', '%' . $$jenis . '%');
 
         return DataTables()->of($data->sortBy(
             [
-                ['id', 'desc']
+                ['timestamp', 'desc']
             ]
         ))
             ->addColumn('keterangan', function ($data) {
-                $date = Carbon::parse($data->created_at, 'UTC')->locale('id');
+                $date = Carbon::parse($data->timestamp, 'UTC')->locale('id');
                 $keterangan = '
                         <div class="card">
-                            <a href="/baca-berita?code=' . $data->slug . '">
-                                <img class="img-fluid" src="' . $data->gambar . '" alt="" />
+                            <a href="/baca-berita?code=' . $data->id . '">
+                                <img class="img-fluid" src="' . $data->media_url . '" alt="" />
                                 <div class="p-2">
                                     <div class="judul mt-2">
-                                        ' . $data->judul . '
+                                        ' . $data->caption . '
                                     </div>
                                     <div class="isi-berita">
-                                        ' . $data->judul_seo . '
+                                        ' . $data->caption . '
                                     </div>
                                     <div class="text-end tgl mt-2">' . $date->isoFormat('dddd, D MMMM Y') . '</div>
                                 </div>
@@ -226,16 +219,14 @@ class UserController extends Controller
     public function bacaBerita(Request $request)
     {
         $slug = $request->code;
-        $responses = Http::withToken(ENV('APP_TOKEN'))->get('https://aplikasi.tubaba.go.id/api/website/', [
-            'token' => ENV('APP_TOKEN'),
-            'client_type' => 'WebSite'
-        ]);
-
-        $datas = collect(json_decode($responses->getBody()));
-        $data = collect($datas['data']);
-        $detail = $data->where('slug', $slug);
+        $tokens = file_get_contents(public_path('content/token_instagram.txt'));
+        $responses = Http::withHeaders([
+            'Accept' => '*/*',
+        ])->get('https://graph.instagram.com/' . $slug . '?fields=id,username,media_type,caption,permalink,media_url,thumbnail_url,timestamp&access_token=' . $tokens . '');
+        $data = collect(json_decode($responses->getBody()));
+        // dd($data);
         // dd($data->where('slug', $slug));
-        return view('baca-berita', ['data' => $detail]);
+        return view('baca-berita', ['data' => $data]);
     }
 
     public function ProdukHukum()
