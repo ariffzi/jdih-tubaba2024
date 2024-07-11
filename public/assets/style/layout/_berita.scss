@@ -37,6 +37,14 @@
             thead {
                 display: none;
             }
+
+            tbody {
+                tr {
+                    td {
+                        border: none !important;
+                    }
+                }
+            }
         }
 
         #pageBerita_wrapper {
@@ -79,6 +87,21 @@
                     background: var(--color-11);
                     color: var(--maroon) !important;
                     border: none;
+                }
+
+                .previous,
+                .next {
+                    transition: all 0.3s;
+                }
+
+                .previous:hover {
+                    background-color: var(--maroon);
+                    color: var(--color-11) !important;
+                }
+
+                .next:hover {
+                    background-color: var(--maroon);
+                    color: var(--color-11) !important;
                 }
             }
         }

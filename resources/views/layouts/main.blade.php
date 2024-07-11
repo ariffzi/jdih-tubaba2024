@@ -4,7 +4,7 @@
 <!-- ======================== head ========================= -->
 @include('layouts.head')
 
-<body class="bg-light">
+<body>
     <!-- ======================== navbar ========================= -->
     @include('layouts.navbar')
 

@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('content')
     <!-- ======================== slide dashboard ========================= -->
-    <section class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
+    <section
+        class="slide-dashboard d-flex justify-content-start justify-content-md-center justify-content-lg-center align-items-end">
         <div class="slide">
             <div id="owl-car-dashboard" class="owl-carousel owl-theme">
                 <div class="item z-n1">
@@ -38,7 +39,8 @@
                         <div class="col-lg-8 col-md-8 col-12 d-flex align-items-center ver p-2">
                             <input placeholder="Judul Peraturan" class="form-control" id="judulPeraturan" />
                         </div>
-                        <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
+                        <div
+                            class="col-lg-1 col-md-1 col-12 d-flex justify-content-end pe-lg-0 pe-md-0 pe-2 mt-lg-0 mt-md-0 mt-2">
                             <div class="cari">
                                 {{-- <a href="#"> --}}
                                 <button type="button" class="cari btn btn-cari ps-lg-4 pe-lg-4" id="cari">
@@ -368,7 +370,8 @@
                                             GALERI
                                         </div>
                                         <div class="txt-2">Lihat Galeri Kami</div>
-                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div
+                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/gallery.jpeg" alt="" />
                                         </div>
                                     </div>
@@ -382,7 +385,8 @@
                                             PERPUSTAKAAN
                                         </div>
                                         <div class="txt-2">Lihat Perpustakaan Kami</div>
-                                        <div class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
+                                        <div
+                                            class="d-flex justify-content-center ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 ps-0 pe-0">
                                             <img class="img-fluid" src="/assets/img/perpus.jpg  " alt="" />
                                         </div>
                                     </a>
@@ -450,85 +454,96 @@
                 <div class="judul-atas">Berita Terbaru</div>
                 <span class="line-3"></span>
             </div>
-            <div class="row mt-3">
-                <div class="col-lg-3 col-md-6 col-12 m-0 p-0">
-                    <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
-                        <div class="card">
-                            <img class="img-fluid" src="/assets/img/berita/apbt.jpeg" alt="" />
-                            <a href="#">
-                                <div class="txt-1 mt-md-2 mt-lg-3">
-                                    Pemberian Nomor Register Peraturan Tiyuh tentang Anggaran Pendapatan dan Belanja Tiyuh
-                                    Tahun Anggaran 2024 Kecamatan Tulang Bawang Udik dan Kecamatan Tulang Bawang Tengah
+            <div class="mt-3 grid-berbar">
+                <div class="m-0 p-0 card-berbar">
+                    <div class="p-0 m-0">
+                        <a href="#">
+                            <div class="card">
+                                <img class="img-fluid" src="/assets/img/berita/apbt.jpeg" alt="" />
+                                <div class="p-2">
+                                    <div class="txt-1 mt-md-2 mt-lg-3">
+                                        Pemberian Nomor Register Peraturan Tiyuh tentang Anggaran Pendapatan dan Belanja
+                                        Tiyuh
+                                        Tahun Anggaran 2024 Kecamatan Tulang Bawang Udik dan Kecamatan Tulang Bawang Tengah
+                                    </div>
+                                    <div class="d-flex justify-content-end txt-2 mt-2">
+                                        <div>
+                                            <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
+                                        </div>
+                                        <div class="ms-2 me-2 text-black-50">|</div>
+                                        <div><i class="bi bi-eye me-1"></i> 53 Kali</div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="d-flex txt-2 mt-2">
-                                <div>
-                                    <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
-                                </div>
-                                <div class="ms-2 me-2 text-black-50">|</div>
-                                <div><i class="bi bi-eye me-1"></i> 53 Kali</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 m-0 p-0">
-                    <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
-                        <div class="card">
-                            <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg" alt="" />
-                            <a href="#">
-                                <div class="txt-1 mt-md-2 mt-lg-3">
-                                    Rapat pembahasan Rancangan Peraturan Bupati tentang Tambahan Penghasilan ASN
+                <div class="m-0 p-0 card-berbar">
+                    <div class="p-0 m-0">
+                        <a href="#">
+                            <div class="card">
+                                <img class="img-fluid" src="/assets/img/berita/penghasilan-asn.jpeg" alt="" />
+                                <div class="p-2">
+                                    <div class="txt-1 mt-md-2 mt-lg-3">
+                                        Rapat pembahasan Rancangan Peraturan Bupati tentang Tambahan Penghasilan ASN
+                                    </div>
+                                    <div class="d-flex justify-content-end txt-2 mt-2">
+                                        <div>
+                                            <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
+                                        </div>
+                                        <div class="ms-2 me-2 text-black-50">|</div>
+                                        <div><i class="bi bi-eye me-1"></i> 42 Kali</div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="d-flex txt-2 mt-2">
-                                <div>
-                                    <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
-                                </div>
-                                <div class="ms-2 me-2 text-black-50">|</div>
-                                <div><i class="bi bi-eye me-1"></i> 42 Kali</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 m-0 p-0">
-                    <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
-                        <div class="card">
-                            <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg" alt="" />
-                            <a href="#">
-                                <div class="txt-1 mt-md-2 mt-lg-3">
-                                    Koordinasi Pengisian KKP HAM
+                <div class="m-0 p-0 card-berbar">
+                    <div class="p-0 m-0">
+                        <a href="#">
+                            <div class="card">
+                                <img class="img-fluid" src="/assets/img/berita/pengisian-kkp-ham.jpeg" alt="" />
+                                <div class="p-2">
+                                    <div class="txt-1 mt-md-2 mt-lg-3">
+                                        Koordinasi Pengisian KKP HAM
+                                    </div>
+                                    <div class="d-flex justify-content-end txt-2 mt-2">
+                                        <div>
+                                            <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
+                                        </div>
+                                        <div class="ms-2 me-2 text-black-50">|</div>
+                                        <div><i class="bi bi-eye me-1"></i> 73 Kali</div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="d-flex txt-2 mt-2">
-                                <div>
-                                    <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
-                                </div>
-                                <div class="ms-2 me-2 text-black-50">|</div>
-                                <div><i class="bi bi-eye me-1"></i> 73 Kali</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 m-0 p-0">
-                    <div class="p-lg-2 p-md-2 p-1 mt-lg-0 mt-md-3 mt-3">
-                        <div class="card">
-                            <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg" alt="" />
-                            <a href="#">
-                                <div class="txt-1 mt-md-2 mt-lg-3">
-                                    Kepala bagian hukum menghadiri undangan Rapat Disiplin ASN dilingkungan Dinas Kesehatan
+                <div class="m-0 p-0 card-berbar">
+                    <div class="p-0 m-0">
+                        <a href="#">
+                            <div class="card">
+                                <img class="img-fluid" src="/assets/img/berita/rapat-disiplin.jpeg" alt="" />
+                                <div class="p-2">
+
+                                    <div class="txt-1 mt-md-2 mt-lg-3">
+                                        Kepala bagian hukum menghadiri undangan Rapat Disiplin ASN dilingkungan Dinas
+                                        Kesehatan
+                                    </div>
+                                    <div class="d-flex justify-content-end txt-2 mt-2">
+                                        <div>
+                                            <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
+                                        </div>
+                                        <div class="ms-2 me-2 text-black-50">|</div>
+                                        <div><i class="bi bi-eye me-1"></i> 27 Kali</div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="d-flex txt-2 mt-2">
-                                <div>
-                                    <i class="bi bi-calendar2-event me-2"></i>21 Februari 2024
-                                </div>
-                                <div class="ms-2 me-2 text-black-50">|</div>
-                                <div><i class="bi bi-eye me-1"></i> 27 Kali</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -594,6 +609,11 @@
                         <div class="item">
                             <div class="dash-img ps-md-3">
                                 <img class="img-fluid" src="/assets/img/pp8.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/pp9.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -695,8 +715,6 @@
         </div>
     </section> --}}
 
-
-
     <!-- ======================== Info APK JDIH dan survey ========================= -->
     <section class="margin-top apk-survey pt-lg-5 pt-md-3 pt-3 pb-lg-5 pb-md-3 pb-3">
         <div class="container">
@@ -717,7 +735,8 @@
                             <canvas id="pie-chart"></canvas>
                         </div>
                         <div class="d-flex justify-content-end mt-lg-4">
-                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <button type="button" class="btn btn-survey ps-lg-4 pe-lg-4" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
                                 Ikti Survey
                                 <i class="bi bi-arrow-right ms-4"></i>
                             </button>
@@ -728,7 +747,8 @@
         </div>
 
         <!-- Modal Survey -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -745,7 +765,8 @@
                             <button type="button" class="btn btn-danger">
                                 Beri penilaian
                             </button>
-                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown" aria-expanded="false"></button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Sesuai</a></li>
                                 <li><a class="dropdown-item" href="#">Sangat Sesuai</a></li>
@@ -767,16 +788,96 @@
     </section>
 
     <!-- ======================== Link Terkait ========================= -->
-    <section class="dash-link-terkait margin-top pb-5">
+    <section class="dash-link margin-top pb-5">
         <div class="container">
             <div class="head d-flex justify-content-center align-items-center pt-1 pb-1 mb-4">
                 <span class="line-4"></span>
                 <div class="ms-lg-3 ms-md-3 ms-2 me-lg-3 me-md-3 me-2">
-                    Link Terkait
+                    Desa Sadar Hukum
                 </div>
                 <span class="line-4"></span>
             </div>
-            <div class="d-flex justify-content-center">
+
+            <div class="desa-sadar-hukum">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="https://panaraganjayautama.desa.id/">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">PANARAGAN JAYA UTAMA</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="https://www.panaraganjayaindah.web.id/">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">PANARAGAN JAYA INDAH</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="https://www.penumangan.desa.id/">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">PENUMANGAN</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="https://www.gedungratu.desa.id/">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">GEDUNG RATU</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="https://kagunganratu.digitaldesa.id/">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">KAGUNGAN RATU</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="https://www.kibangmulyajaya.com/">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">KIBANG MULYA JAYA</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">MULYO JADI</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="https://www.cahyourandu-tubaba.desa.id/">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">CAHYO RANDU</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
+                        <a href="">
+                            <div class="card p-md-3 p-3">
+                                <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
+                                <h4 class="text-center mt-3">-</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4">
+
+            <div class="d-flex link-terkait justify-content-center mt-lg-5">
                 <div id="owl-link-terkait" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="link-jdih-nas p-2 p-md-2 p-lg-2">

@@ -210,44 +210,66 @@
 }
 
 .berita-terbaru {
-    .card {
-        border: none;
-
-        transition: all 0.5s;
-
-        img {
+    .grid-berbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+        .card-berbar {
+            background-color: var(--color-3);
+            transition: all 0.3s;
+            border: none;
             border-radius: 24px;
-            height: 200px;
-            width: auto;
-            object-fit: cover;
-        }
+            box-shadow:
+                rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+                rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 
-        .txt-2 {
-            font-size: 12px;
-            font-weight: 400;
-        }
+            a {
+                text-decoration: none;
+                .card {
+                    transition: all 0.3s;
 
-        a {
-            text-decoration: none;
-            .txt-1 {
-                font-size: medium;
-                color: #000;
-                // font-weight: 500;
-                font-family: tubaba-bold;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-                overflow: hidden;
-                transition: all 0.5s;
+                    background-color: transparent;
+                    border: none;
+
+                    img {
+                        border-radius: 24px;
+                        height: 200px;
+                        width: auto;
+                        object-fit: cover;
+                    }
+
+                    .txt-2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+
+                    .txt-1 {
+                        font-size: medium;
+                        color: #000;
+                        // font-weight: 500;
+                        font-family: tubaba-bold;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                        transition: all 0.3s;
+                    }
+                }
             }
         }
 
-        a:hover {
-            .txt-1 {
-                color: var(--color-12);
+        .card-berbar:hover {
+            transform: scale(1.03);
+            .card {
+                color: var(--color-8);
+
+                .txt-1 {
+                    color: var(--color-8);
+                }
             }
         }
     }
+
     .btn-lihat-semua {
         a {
             width: 25%;
@@ -386,29 +408,58 @@
     }
 }
 
-.dash-link-terkait {
+.dash-link {
     .head {
         font-size: 30px;
         // font-weight: bold;
         font-family: tubaba-bold;
     }
-
-    .card {
-        background-color: transparent;
-        border: none;
-        transition: all 0.3s;
-
-        img {
-            border-radius: 48px;
+    .link-terkait {
+        .card {
+            background-color: transparent;
+            border: none;
             transition: all 0.3s;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+            img {
+                border-radius: 48px;
+                transition: all 0.3s;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+        }
+
+        .card:hover {
+            img {
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                transform: scale(1.1);
+            }
         }
     }
 
-    .card:hover {
-        img {
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            transform: scale(1.1);
+    .desa-sadar-hukum {
+        a {
+            text-decoration: none;
+
+            .card {
+                background-color: transparent;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                border-radius: 24px;
+                transition: all 0.5s;
+
+                img {
+                    height: 70px;
+                    width: auto;
+                }
+            }
+        }
+
+        a:hover {
+            .card {
+                background-color: var(--maroon);
+                color: var(--color-11);
+                transform: scale(1.05);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
         }
     }
 }
@@ -505,22 +556,6 @@
     }
 
     .berita-terbaru {
-        .card {
-            img {
-                height: 170px;
-            }
-
-            .txt-2 {
-                font-size: 12px;
-                font-weight: 400;
-            }
-
-            a {
-                .txt-1 {
-                    font-size: 13px;
-                }
-            }
-        }
         .btn-lihat-semua {
             a {
                 width: 50%;
@@ -579,14 +614,16 @@
         }
     }
 
-    .dash-link-terkait {
+    .dash-link {
         .head {
             font-size: 25px;
         }
 
-        .card {
-            img {
-                border-radius: 28px;
+        .link-terkait {
+            .card {
+                img {
+                    border-radius: 28px;
+                }
             }
         }
     }
@@ -636,21 +673,8 @@
     }
 
     .berita-terbaru {
-        .card {
-            img {
-                height: 170px;
-            }
-
-            .txt-2 {
-                font-size: 12px;
-                font-weight: 400;
-            }
-
-            a {
-                .txt-1 {
-                    font-size: 13px;
-                }
-            }
+        .grid-berbar {
+            grid-template-columns: repeat(1, 1fr);
         }
         .btn-lihat-semua {
             a {
@@ -698,14 +722,39 @@
         }
     }
 
-    .dash-link-terkait {
+    .dash-link {
         .head {
             font-size: 17px;
         }
 
-        .card {
-            img {
-                border-radius: 14px;
+        .link-terkait {
+            .card {
+                img {
+                    border-radius: 14px;
+                }
+            }
+        }
+
+        .desa-sadar-hukum {
+            a {
+                .card {
+                    h4 {
+                        font-size: 10px;
+                    }
+                    img {
+                        height: 50px;
+                        width: auto;
+                    }
+                }
+            }
+
+            a:hover {
+                .card {
+                    background-color: var(--maroon);
+                    color: var(--color-11);
+                    transform: scale(1.05);
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
             }
         }
     }

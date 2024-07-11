@@ -34,8 +34,8 @@
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
                                         src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                         alt="" />
-                                    <div class="nama">BUDI SUGIYANTO, SH., MH</div>
-                                    <div class="jabatan">Kepala Bagian</div>
+                                    {{-- <div class="nama">BUDI SUGIYANTO, SH., MH</div>
+                                    <div class="jabatan">Kepala Bagian</div> --}}
                                 </div>
 
                             </div>
@@ -44,8 +44,8 @@
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp4.jpeg" alt="" />
-                                    <div class="nama">NOVRIADI, SH., MM</div>
-                                    <div class="jabatan">Perancang Peraturan Per UU</div>
+                                    {{-- <div class="nama">NOVRIADI, SH., MM</div>
+                                    <div class="jabatan">Perancang Peraturan Per UU</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -55,8 +55,8 @@
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
                                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                         alt="" />
-                                    <div class="nama">MADE ITA PIRLIYANTI, SH., MM</div>
-                                    <div class="jabatan">Analis Hukum Muda</div>
+                                    {{-- <div class="nama">MADE ITA PIRLIYANTI, SH., MM</div>
+                                    <div class="jabatan">Analis Hukum Muda</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -65,8 +65,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp9.jpeg" alt="" />
-                                    <div class="nama">RIKA ELVIANA, SE., MM</div>
-                                    <div class="jabatan">Analis Kebijakan Ahli Muda</div>
+                                    {{-- <div class="nama">RIKA ELVIANA, SE., MM</div>
+                                    <div class="jabatan">Analis Kebijakan Ahli Muda</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -75,8 +75,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp5.jpeg" alt="" />
-                                    <div class="nama">YUNIAR ASTINA, Amd</div>
-                                    <div class="jabatan">Staff</div>
+                                    {{-- <div class="nama">YUNIAR ASTINA, Amd</div>
+                                    <div class="jabatan">Staff</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -85,8 +85,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp7.jpeg" alt="" />
-                                    <div class="nama">ACHMAD FAISOL, Amd</div>
-                                    <div class="jabatan">staff</div>
+                                    {{-- <div class="nama">ACHMAD FAISOL, Amd</div>
+                                    <div class="jabatan">staff</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -95,8 +95,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp3.jpeg" alt="" />
-                                    <div class="nama">ANDIKA SEPRIYANTO, SM</div>
-                                    <div class="jabatan">Staff</div>
+                                    {{-- <div class="nama">ANDIKA SEPRIYANTO, SM</div>
+                                    <div class="jabatan">Staff</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -105,8 +105,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp1.jpeg" alt="" />
-                                    <div class="nama">NUR'AINI, SE</div>
-                                    <div class="jabatan">Staff</div>
+                                    {{-- <div class="nama">NUR'AINI, SE</div>
+                                    <div class="jabatan">Staff</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -115,8 +115,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp2.jpeg" alt="" />
-                                    <div class="nama">JUSI ELITA SARI, SE</div>
-                                    <div class="jabatan">Staff</div>
+                                    {{-- <div class="nama">JUSI ELITA SARI, SE</div>
+                                    <div class="jabatan">Staff</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -125,8 +125,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp8.jpeg" alt="" />
-                                    <div class="nama">ROSITA IBRAHIM, SH., MH</div>
-                                    <div class="jabatan">Staff</div>
+                                    {{-- <div class="nama">ROSITA IBRAHIM, SH., MH</div>
+                                    <div class="jabatan">Staff</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -137,8 +137,8 @@
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
                                         src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                         alt="" />
-                                    <div class="nama">DESI NOVITA SARI</div>
-                                    <div class="jabatan">Staff</div>
+                                    {{-- <div class="nama">DESI NOVITA SARI</div>
+                                    <div class="jabatan">Staff</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -147,8 +147,8 @@
                                 <div>
 
                                     <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/pp6.jpeg" alt="" />
-                                    <div class="nama">ADHELIA FEBRIZA</div>
-                                    <div class="jabatan">Staff</div>
+                                    {{-- <div class="nama">ADHELIA FEBRIZA</div>
+                                    <div class="jabatan">Staff</div> --}}
                                 </div>
                             </div>
                         </div>
