@@ -11,7 +11,6 @@ use Jenssegers\Agent\Facades\Agent;
 
 class UserController extends Controller
 {
-
     function __construct()
     {
         $now = Carbon::now()->setTimezone('Asia/Jakarta');
@@ -26,7 +25,6 @@ class UserController extends Controller
 
         function counter($counter, $date_now, $date_from_array)
         {
-
             // dd(Storage::disk('public_html')->exists('content/hari_ini.json'));
             // dd($date_from_array);
             // $get_counter_all = file_get_contents('/content/total.json');
@@ -36,16 +34,16 @@ class UserController extends Controller
 
             if ($date_now == $last_array2['date']) {
                 $data_counter = [
-                    'count' => $counter
+                    'count' => $counter,
                 ];
             } else {
                 $data_counter = [
-                    'count' => 1
+                    'count' => 1,
                 ];
             }
             $get_counter_all = Storage::disk('public_html')->get('content/total.json');
             $data_all = [
-                'count' =>  json_decode($get_counter_all)->count + 1
+                'count' => json_decode($get_counter_all)->count + 1,
             ];
             Storage::disk('public_html')->put('content/hari_ini.json', json_encode($data_counter));
             Storage::disk('public_html')->put('content/total.json', json_encode($data_all));
@@ -54,7 +52,7 @@ class UserController extends Controller
         function ip_list($user_data)
         {
             $data = [
-                'data' => $user_data
+                'data' => $user_data,
             ];
             // dd($data);
             Storage::disk('public_html')->put('content/ip_list.json', json_encode($data));
@@ -69,7 +67,7 @@ class UserController extends Controller
                     $date_from_list = end($list[$user_ip][$date_now])['date'];
                     $time_from_list = end($list[$user_ip][$date_now])['time'];
                     $current_time = (strtotime($time_now) - strtotime($time_from_list)) / 60;
-                    if (($date_from_list == $date_now) && $current_time >= '20') {
+                    if ($date_from_list == $date_now && $current_time >= '20') {
                         return true;
                     } else {
                         return false;
@@ -87,41 +85,31 @@ class UserController extends Controller
             'browser' => $user_browser,
             'os' => $user_platform,
             'date' => $date_now,
-            'time' => $time_now
+            'time' => $time_now,
         ];
 
         if (!Storage::disk('public_html')->exists('content/hari_ini.json') && !Storage::disk('public_html')->exists('content/ip_list.json')) {
             counter(1, null, null);
             ip_list([
                 $user_ip => [
-                    $date_now => [
-                        $data_user_agen
-                    ]
-                ]
+                    $date_now => [$data_user_agen],
+                ],
             ]);
         } else {
-
             // dd(Storage::disk('public_html')->exists('content/hari_ini.json'));
             // dd(Storage::disk('public_html')->get('content/hari_ini.json'));
             $get_ip_list = Storage::disk('public_html')->get('content/ip_list.json');
             $array_ip_list = json_decode($get_ip_list, true)['data'];
 
             if (data_check($array_ip_list, $user_ip, $date_now, $time_now)) {
-
                 $get_counter_day = Storage::disk('public_html')->get('content/hari_ini.json');
                 $counter_data = json_decode($get_counter_day)->count + 1;
                 counter($counter_data, $date_now, $array_ip_list);
 
                 if (!array_key_exists($user_ip, $array_ip_list)) {
-                    array_push(
-                        $array_ip_list,
-                        $array_ip_list[$user_ip][$date_now] = [$data_user_agen]
-                    );
+                    array_push($array_ip_list, $array_ip_list[$user_ip][$date_now] = [$data_user_agen]);
                 } elseif (!array_key_exists($date_now, $array_ip_list[$user_ip])) {
-                    array_push(
-                        $array_ip_list,
-                        $array_ip_list[$user_ip][$date_now] = [$data_user_agen]
-                    );
+                    array_push($array_ip_list, $array_ip_list[$user_ip][$date_now] = [$data_user_agen]);
                 } else {
                     array_push($array_ip_list[$user_ip][$date_now], $data_user_agen);
                 }
@@ -149,18 +137,8 @@ class UserController extends Controller
         $jumlah_jenis = json_decode($data_jenis);
         return view('index', [
             'jenis' => $data,
-            'data' => $data1->sortBy(
-                [
-                    ['noPeraturan', 'asc'],
-                    ['tahun_pengundangan', 'desc']
-                ]
-            ),
-            'data1' => $data1->sortBy(
-                [
-                    ['tahun_pengundangan', 'desc'],
-                    ['noPeraturan', 'desc'],
-                ]
-            ),
+            'data' => $data1->sortBy([['noPeraturan', 'asc'], ['tahun_pengundangan', 'desc']]),
+            'data1' => $data1->sortBy([['tahun_pengundangan', 'desc'], ['noPeraturan', 'desc']]),
             'jumlah_tahun' => $jumlah_tahun,
             'jumlah_jenis' => $jumlah_jenis,
         ]);
@@ -186,25 +164,33 @@ class UserController extends Controller
         $datas = collect(json_decode($responses->getBody()));
         $data = collect($datas['data']);
 
-        return DataTables()->of($data->sortBy(
-            [
-                ['timestamp', 'desc']
-            ]
-        ))
+        return DataTables()
+            ->of($data->sortBy([['timestamp', 'desc']]))
             ->addColumn('keterangan', function ($data) {
                 $date = Carbon::parse($data->timestamp, 'UTC')->locale('id');
-                $keterangan = '
+                $keterangan =
+                    '
                         <div class="card">
-                            <a href="/baca-berita?code=' . $data->id . '">
-                                <img class="img-fluid" src="' . $data->media_url . '" alt="" />
+                            <a href="/baca-berita?code=' .
+                    $data->id .
+                    '">
+                                <img class="img-fluid" src="' .
+                    $data->media_url .
+                    '" alt="" />
                                 <div class="p-2">
                                     <div class="judul mt-2">
-                                        ' . $data->caption . '
+                                        ' .
+                    $data->caption .
+                    '
                                     </div>
                                     <div class="isi-berita">
-                                        ' . $data->caption . '
+                                        ' .
+                    $data->caption .
+                    '
                                     </div>
-                                    <div class="text-end tgl mt-2">' . $date->isoFormat('dddd, D MMMM Y') . '</div>
+                                    <div class="text-end tgl mt-2">' .
+                    $date->isoFormat('dddd, D MMMM Y') .
+                    '</div>
                                 </div>
                             </a>
                         </div>
@@ -262,6 +248,11 @@ class UserController extends Controller
     public function visimisi()
     {
         return view('visi-misi');
+    }
+
+    public function dasarhukum()
+    {
+        return view('dasar-hukum');
     }
 
     public function store(Request $request)

@@ -1,0 +1,176 @@
+.page-sop {
+    .content {
+        margin-top: 30px;
+
+        thead {
+            tr {
+                th {
+                    background-color: var(--maroon);
+                    color: var(--color-11);
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                font-family: tubaba-bold;
+
+                td {
+                    transition: all 0.3s;
+                    color: var(--color-1);
+
+                    a {
+                        color: var(--color-1);
+                        text-decoration: none;
+                        font-family: tubaba-bold;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+
+            tr:hover {
+                td {
+                    color: var(--color-11);
+
+                    background-color: var(--maroon);
+                    a {
+                        color: var(--color-11);
+                    }
+                }
+            }
+        }
+
+        // .judul {
+        //     font-weight: bolder;
+        //     color: var(--color-1);
+        //     font-size: 20px;
+        //     overflow: hidden;
+
+        //     line-height: 15px;
+        // }
+
+        .inf {
+            font-size: 12px;
+            color: var(--color-1);
+        }
+
+        #pageSop_wrapper {
+            .dt-search {
+                input {
+                    border-radius: 12px;
+                }
+
+                input:hover,
+                input:focus,
+                input:active,
+                input:active:focus:not(:disabled):not(.disabled) {
+                    box-shadow: none !important;
+                    outline: 0;
+                }
+            }
+
+            .dt-length {
+                select {
+                    border-radius: var(--maroon);
+                    color: var(--maroon) !important;
+                    border-radius: 12px;
+                }
+                select:hover,
+                select:focus,
+                select:active,
+                select:active:focus:not(:disabled):not(.disabled) {
+                    box-shadow: none !important;
+                    outline: 0;
+                    background-color: var(--maroon) !important;
+                    color: var(--color-11) !important;
+                }
+            }
+
+            .dt-paging {
+                .dt-paging-button {
+                    border-style: solid;
+                    color: var(--maroon) !important;
+                    border-radius: 14px;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    min-width: 1.5em;
+                    // padding: 0.5em 1em;
+                    margin-left: 2px;
+                    text-align: center;
+                    text-decoration: none !important;
+                    cursor: pointer;
+                    border: 1px solid var(--maroon);
+                    background: transparent;
+                    transition: all 0.3s;
+                }
+            }
+
+            .dt-paging .dt-paging-button:hover {
+                box-shadow: none !important;
+                outline: 0;
+                background-color: var(--maroon) !important;
+                color: var(--color-11) !important;
+            }
+
+            .dt-paging .current {
+                background: var(--maroon);
+                color: var(--color-11) !important;
+                border-style: solid;
+                border-color: var(--maroon);
+            }
+        }
+
+        nav {
+            margin-top: 70px;
+            .page-item,
+            .page-link {
+                border-radius: 0;
+                border-color: white;
+                border-radius: 14px;
+            }
+
+            .page-item {
+                .active {
+                    background-color: var(--maroon);
+                    border-color: white;
+
+                    color: white;
+                }
+                a {
+                    color: var(--maroon);
+                    font-weight: bolder;
+                }
+
+                a:hover {
+                    background-color: var(--maroon);
+                    border-color: var(--maroon);
+                    color: white;
+                    border-color: white;
+                }
+
+                a:focus {
+                    box-shadow: none !important;
+                    background-color: var(--maroon);
+                    border-color: white;
+
+                    color: white;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .jud {
+            font-size: x-large !important;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        .jud {
+            font-size: large !important;
+        }
+    }
+}

@@ -45,4 +45,5 @@ Route::get('/tentang', [UserController::class, 'tentang']);
 Route::get('/visi-misi', [UserController::class, 'visimisi']);
 Route::get('/perpustakaan', [UserController::class, 'perpustakaan']);
 Route::get('/detail-buku', [UserController::class, 'lihatBuku']);
+Route::get('/dasar-hukum', [UserController::class, 'dasarhukum']);
 // });

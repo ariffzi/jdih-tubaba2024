@@ -25,46 +25,108 @@
                     <div class="col-lg-3 col-md-3 col-12">
                     </div>
                     <div class="col-lg-9 col-md-9 col-12 mt-lg-0 mt-md-0 mt-4 isber">
+                        <h3>Visi :</h3>
+                        <h3 class="mb-3">“Tulang Bawang Barat Maju, Sejahtera, dan Berdaya Saing”</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                            autem saepe corporis, aperiam dolorum, minima suscipit, modi sit
-                            repudiandae fugiat placeat deleniti aut corrupti facilis
-                            cupiditate exercitationem pariatur! Dolorem, magnam? Lorem Ipsum
-                            is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing
-                            Lorem Ipsum passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <span class="tbb-bold"> Maju :</span> Suatu kondisi masyarakat dengan tingkat pendapatan
+                            rata-rata yang lebih tinggi dan terus meningkat serta lebih merata pembagiannya. Sektor industri
+                            dan sektor jasanya telah berkembang secara terpadu dengan sektor pertanian serta pemanfaatan
+                            sumber alam secara rasional, efisien, dan berwawasan lingkungan. Bangsa yang maju juga ditandai
+                            oleh tingkat pendidikan dan kesehatan penduduknya yang tinggi, laju pertumbuhan penduduk yang
+                            lebih kecil, peran serta rakyat secara nyata dan efektif dalam segala aspek kehidupan, baik
+                            ekonomi, sosial, politik, maupun pertahanan keamanan. Bangsa yang maju pada umumnya adalah yang
+                            menganut demokrasi, dengan sendirinya yang sesuai dengan budaya dan latar belakang sejarahnya.
+                            Bangsa yang maju adalah bangsa yang warganya terjamin hak-haknya, yang terjamin rasa keamanan
+                            dan ketenteraman dalam kehidupannya. Selain unsur-unsur tersebut, bangsa yang maju juga harus
+                            didukung dengan infrastruktur yang maju.
                         </p>
+
                         <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random
-                            text. It has roots in a piece of classical Latin literature from
-                            45 BC, making it over 2000 years old. Richard McClintock, a
-                            Latin professor at Hampden-Sydney College in Virginia, looked up
-                            one of the more obscure Latin words, consectetur, from a Lorem
-                            Ipsum passage, and going through the cites of the word in
-                            classical literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus
-                            Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                            written in 45 BC. This book is a treatise on the theory of
-                            ethics, very popular during the Renaissance. The first line of
-                            Lorem Ipsum, "Lorem ipsum dolor sit amet.." , comes from a line
-                            in section 1.10.32. The standard chunk of Lorem Ipsum used since
-                            the 1500s is reproduced below for those interested. Sections
-                            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
-                            Cicero are also reproduced in their exact original form,
-                            accompanied by English versions from the 1914 translation by H.
-                            Rackham.
+                            <span class="tbb-bold">Sejahtera :</span> Suatu kondisi masyarakat yang makmursecara ekonomi,
+                            dengan pembagian
+                            yang lebih adil dan merata. Jumlah penduduk terkendali, derajat kesehatan tinggi, derajat
+                            pendidikan tinggi, dan kualitas pelayanan sosial lebih baik. Masyarakat sejahtera terjamin hak-
+                            haknya dan berkesempatan sama untuk meningkatkan hidup, memperoleh pekerjaan, pendidikan,
+                            kesehatan, kesetaraan gender, dan pelayanan sosial, serta kebutuhan dasar yang layak. Masyarakat
+                            memperoleh perlindungan keamanan, ketentraman, dan ketertiban. Masyarakat sejahtera umumnya
+                            berkehidupan religius dan bermoral tinggi, rukun, harmonis, berbudaya, berkesenian, dan
+                            berolahraga.
                         </p>
+
+                        <p>
+                            <span class="tbb-bold"> Berdaya saing :</span> Suatu kondisi masyarakat yangmemiliki kemampuan
+                            yang lebih unggul
+                            secara kuantitas ataupun kualitasnya. Daya saing daerah didefinisikan sebagai kemampuan daerah
+                            untuk bersaing di tingkat regional, nasional, dan bahkan internasional. Dengan demikian, daya
+                            saing merupakan akumulasi dari berbagai faktor yang dimulai dari penyusunan kebijakan, sampai
+                            dengan implementasi berupa kelembagaan dan tata kelola dan berupa pembangunan infrastruktur.
+                            Muara dari implementasi kebijakan-kebijakan tersebut adalah tercapainya produktivitas suatu
+                            negara/daerah sehingga akan meningkatkan kesejahteraan rakyat pada skala perekonomian
+                            nasional/daerah. Semakin kompetitif daya saing sebuah sistem perekonomian, maka pembangunan akan
+                            tumbuh lebih cepat.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row mt-lg-5 mt-md-5 mt-3">
+                    <div class="col-lg-3 col-md-3 col-12">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-12 mt-lg-0 mt-md-0 mt-4 isber">
+                        <h3>Misi :</h3>
+                        <div class="row">
+                            <div class="col-auto">1</div>
+                            <div class="col">Mengembangkan Sumberdaya Manusia (SDM) yang Produktif, Kreatif, dan
+                                Inovatif; </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-auto">2</div>
+                            <div class="col">Mengembangkan Perekonomian Daerah yang Kokoh, Merata, dan Berkelanjutan;
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-auto">3</div>
+                            <div class="col"> Memperluas Cakupan Prasarana, Sarana, dan Utilitas Wilayah yang Bersinergi
+                                dan Terintegrasi antar Wilayah; </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-auto">4</div>
+                            <div class="col">Mewujudkan Tata Kelola Pemerintahan yang Baik, Bersih dan efektif; </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-auto">5</div>
+                            <div class="col">Membangun Kehidupan Masyarakat yang Religius, Demokratis, Partisipasif, Taat
+                                Hukum, dan Mentransformasi Budaya Daerah sebagai Sumber Energi Sosial Pembangunan.</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mt-lg-5 mt-md-5 mt-3">
+                    <div class="col-lg-3 col-md-3 col-12">
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-12 mt-lg-0 mt-md-0 mt-4 isber">
+                        <h3>Latar Belakang :</h3>
+                        <p>
+                            Perencanaan Pembangunan Daerah (regional development planning) secara sederhana dapat
+                            didefinisikan sebagai suatu proses pengambilan keputusan kebijakan dan program pembangunan
+                            daerah oleh pemerintah provinsi dan atau pemerintah kabupaten/kota yang dilakukan secara terpadu
+                            bagi peningkatan kesejahteraan masyarakat di daerah yang bersangkutan dengan memanfaatkan dan
+                            memperhitungkan kemampuan sumber daya, informasi, ilmu pengetahuan, dan teknologi serta
+                            memperhatikan perkembangan nasional. Perencanaan pembangunan daerah merupakan bagian dari
+                            Perencanaan Pembangunan Nasional yang disusun oleh Pemerintah Daerah sesuai dengan
+                            kewenangannya.
+                        </p>
+
                     </div>
                 </div>
             </div>
 
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-end mt-md-5 mt-3">
                 <div>
                     <div class="text-end">
                         Diposting oleh<span class="bold"> Admin</span>

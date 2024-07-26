@@ -42,7 +42,10 @@
                                 <a class="dropdown-item text-wrap" href="/sop">SOP</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/tentang">Tentang JDIH</a>
+                                <a class="dropdown-item text-wrap" href="/tentang">Tentang</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-wrap" href="/dasar-hukum">Dasar Hukum</a>
                             </li>
                         </ul>
                     </li>
@@ -54,28 +57,36 @@
                         </a>
                         <ul class="dropdown-menu modif-drop mt-3">
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Peraturan Daerah</a>
+                                <a class="dropdown-item text-wrap"
+                                    href="/produk-hukum?param=PERATURAN%20DAERAH%20KABUPATEN">Peraturan Daerah</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Peraturan Bupati</a>
+                                <a class="dropdown-item text-wrap"
+                                    href="/produk-hukum?param=PERATURAN%20BUPATI">Peraturan Bupati</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Keputusan Bupati</a>
+                                <a class="dropdown-item text-wrap"
+                                    href="/produk-hukum?param=KEPUTUSAN%20BUPATI">Keputusan Bupati</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Instruksi Bupati</a>
+                                <a class="dropdown-item text-wrap"
+                                    href="/produk-hukum?param=INSTRUKSI%20BUPATI">Instruksi Bupati</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Surat Edaran Bupati</a>
+                                <a class="dropdown-item text-wrap" href="/produk-hukum?param=SURAT%20EDARAN">Surat
+                                    Edaran Bupati</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Peraturan DPRD</a>
+                                <a class="dropdown-item text-wrap"
+                                    href="/produk-hukum?param=PERATURAN%20DPRD%20KABUPATEN">Peraturan DPRD</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Keputusan DPRD</a>
+                                <a class="dropdown-item text-wrap"
+                                    href="/produk-hukum?param=KEPUTUSAN%20DPRD%20KABUPATEN">Keputusan DPRD</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-wrap" href="/produk-hukum">Kerjasama Daerah</a>
+                                <a class="dropdown-item text-wrap"
+                                    href="/produk-hukum?param=MEMORANDUM%20OF%20UNDERSTANDING">Kerjasama Daerah</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider" />
