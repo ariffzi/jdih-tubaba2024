@@ -849,7 +849,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
-                        <a href="">
+                        <a href="https://⁠mulyojadi.desa.id/">
                             <div class="card p-md-3 p-3">
                                 <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
                                 <h4 class="text-center mt-3">MULYO JADI</h4>
@@ -865,10 +865,10 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-6 mt-lg-4 mt-md-3 mt-3">
-                        <a href="">
+                        <a href="https://makarti.desa.id/">
                             <div class="card p-md-3 p-3">
                                 <img class="img-fluid" src="/assets/logo/logopemda.svg" alt="">
-                                <h4 class="text-center mt-3">-</h4>
+                                <h4 class="text-center mt-3">MAKARTI</h4>
                             </div>
                         </a>
                     </div>
