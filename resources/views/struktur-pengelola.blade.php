@@ -31,8 +31,7 @@
                         <div class="col-12 d-flex justify-content-center mt-lg-4 mt-md-4 mt-3">
                             <div class="card d-grid justify-content-center text-center">
                                 <div>
-                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2"
-                                        src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    <img class="img-fluid mb-lg-3 mb-md-2 mb-2" src="/assets/img/kabag.jpeg"
                                         alt="" />
                                     {{-- <div class="nama">BUDI SUGIYANTO, SH., MH</div>
                                     <div class="jabatan">Kepala Bagian</div> --}}

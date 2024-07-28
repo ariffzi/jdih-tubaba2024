@@ -573,6 +573,11 @@
                     <div id="owl-profil-dash" class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="dash-img ps-md-3">
+                                <img class="img-fluid" src="/assets/img/kabag.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dash-img ps-md-3">
                                 <img class="img-fluid" src="/assets/img/pp1.jpeg" alt="">
                             </div>
                         </div>
