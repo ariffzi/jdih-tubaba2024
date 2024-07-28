@@ -1,68 +1,7 @@
 @extends('layouts.main')
 @section('content')
-    <section class="margin-top pt-lg-3 pt-md-3 pt-5">
-        <div class="page-detail-produk container">
-            <div id="owl-jenis-produk" class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="/produk-hukum?param=INSTRUKSI%20BUPATI">
-                            <img class="img-fluid" src="/assets/logo/instruksi.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="/produk-hukum?param=PERATURAN%20BUPATI">
-                            <img class="img-fluid" src="/assets/logo/perbub.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="/produk-hukum?param=PERATURAN%20DAERAH%20KABUPATEN">
-                            <img class="img-fluid" src="/assets/logo/perda.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="/produk-hukum?param=KEPUTUSAN%20BUPATI">
-                            <img class="img-fluid" src="/assets/logo/kepbup.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="/produk-hukum?param=SURAT%20EDARAN">
-                            <img class="img-fluid" src="/assets/logo/surat_edaran.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="produk-hukum?param=PERATURAN%20DPRD%20KABUPATEN">
-                            <img class="img-fluid" src="/assets/logo/peraturan-dprd.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="produk-hukum?param=KEPUTUSAN%20DPRD%20KABUPATEN">
-                            <img class="img-fluid" src="/assets/logo/keputusan-dprd.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card p-lg-3 p-md-1 p-1">
-                        <a href="produk-hukum?param=MEMORANDUM%20OF%20UNDERSTANDING ">
-                            <img class="img-fluid" src="/assets/logo/kerjasama.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-    </section>
     <!-- ======================== judul pages ========================= -->
-    <section class="pages-all">
+    <section class="margin-top pages-all">
         <div class="container">
             <div class="head mb-2">
                 <div class="row">
@@ -220,6 +159,68 @@
             </div>
         </div>
         </div>
+    </section>
+
+    <section class="pt-lg-3 pt-md-3 pt-5">
+        <div class="page-detail-produk container">
+            <div id="owl-jenis-produk" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="/produk-hukum?param=INSTRUKSI%20BUPATI">
+                            <img class="img-fluid" src="/assets/logo/instruksi.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="/produk-hukum?param=PERATURAN%20BUPATI">
+                            <img class="img-fluid" src="/assets/logo/perbub.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="/produk-hukum?param=PERATURAN%20DAERAH%20KABUPATEN">
+                            <img class="img-fluid" src="/assets/logo/perda.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="/produk-hukum?param=KEPUTUSAN%20BUPATI">
+                            <img class="img-fluid" src="/assets/logo/kepbup.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="/produk-hukum?param=SURAT%20EDARAN">
+                            <img class="img-fluid" src="/assets/logo/surat_edaran.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="produk-hukum?param=PERATURAN%20DPRD%20KABUPATEN">
+                            <img class="img-fluid" src="/assets/logo/peraturan-dprd.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="produk-hukum?param=KEPUTUSAN%20DPRD%20KABUPATEN">
+                            <img class="img-fluid" src="/assets/logo/keputusan-dprd.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card p-lg-3 p-md-1 p-1">
+                        <a href="produk-hukum?param=MEMORANDUM%20OF%20UNDERSTANDING ">
+                            <img class="img-fluid" src="/assets/logo/kerjasama.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
     </section>
 @endsection
 
